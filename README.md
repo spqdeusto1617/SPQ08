@@ -8,6 +8,10 @@
 - View list of recieved mails
 - Delete mail
 
-### Instalation guide
+### Technologies 
 
-Coming soon...
+- [Intellij IDEA](https://www.jetbrains.com/idea/)
+- [MongoDB](https://www.mongodb.com/)
+- [RMI](http://docs.oracle.com/javase/7/docs/technotes/guides/rmi/hello/hello-world.html)
+- [Maven](https://maven.apache.org/)
+- [YouTrack](https://www.jetbrains.com/youtrack/)
