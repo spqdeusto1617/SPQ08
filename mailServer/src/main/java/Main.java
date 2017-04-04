@@ -16,21 +16,34 @@ public class Main extends UnicastRemoteObject implements RMIInterface{
     }
 
     public static void main(String[] args) {
-//        System.out.println(new MongoDB().sign_up("inigo","nuevo"));
-//        System.out.println(new MongoDB().sign_in("inigo","nuevo"));
-//        new MongoDB().save_emails("","","","");
-
+        //String source, String target, String header,String message
+        System.out.println(new MongoDB().sign_up("inigo22","nuevo7768675gff"));
+        System.out.println(new MongoDB().sign_in("inigo22","nuevo7768675gff"));
         try {
-
-            Naming.rebind("//localhost/MyServer", new Main());
-            System.err.println("Server ready");
-
+            new MongoDB().save_emails(new Email("inigo22","noExisto2","rtFav","message"));
         } catch (Exception e) {
-
-            System.err.println("Server exception: " + e.toString());
             e.printStackTrace();
-
+            System.out.println("he petado");
         }
+        System.out.println(new MongoDB().sign_up("noExisto2","nuevo"));
+        try {
+            new MongoDB().save_emails(new Email("inigo","noExisto2","rtFav","messageULTIMO MUA JA JA x2"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(new MongoDB().getEmails("noExisto2").get(0).message);
+
+//        try {
+//
+//            Naming.rebind("//localhost/MyServer", new Main());
+//            System.err.println("Server ready");
+//
+//        } catch (Exception e) {
+//
+//            System.err.println("Server exception: " + e.toString());
+//            e.printStackTrace();
+//
+//        }
 
     }
 

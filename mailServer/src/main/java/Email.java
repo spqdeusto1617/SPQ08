@@ -27,9 +27,9 @@ public class Email {
     /**
      * Use on server when queried
      * @param source
-     * @param target
      * @param header
      * @param message
+     * @param time
      */
     public Email(String source, String header,String message, Long time){
         this.source=source;

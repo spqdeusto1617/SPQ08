@@ -49,16 +49,17 @@ public class MongoDB {
      * @return if user exists -> false, else -> true
      */
     public boolean sign_up(String user, String password){
-
-        Map<String,String> document = new HashMap<String, String>();
-        document.put("user", user);
-        document.put("password", password);
-        if(this.dbPasswordCollection.findOne(new BasicDBObject( "_id", new BasicDBObject(document))) != null ){
+        BasicDBObject fichero = new BasicDBObject();
+        fichero.put("_id", user);
+        System.out.println(this.dbPasswordCollection.findOne(fichero));
+        if(this.dbPasswordCollection.findOne(fichero) != null){
             return false;
         }else{
-            DBObject groupFields = new BasicDBObject( "_id", new BasicDBObject(document));
-            this.dbPasswordCollection.insert(groupFields);
-            db.getCollection("user");
+            BasicDBObject ficheroIntroducir = new BasicDBObject();
+            ficheroIntroducir.put("_id", user);
+            ficheroIntroducir.put("password", password);
+            this.dbPasswordCollection.insert(ficheroIntroducir);
+            db.getCollection(user);
             return true;
         }
     }
@@ -70,20 +71,31 @@ public class MongoDB {
      * @return if user & password OK then true, else false
      */
     public boolean sign_in(String user, String password){
-        Map<String,String> document = new HashMap<String, String>();
-        document.put("user", user);
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", user);
         document.put("password", password);
-        return this.dbPasswordCollection.findOne(new BasicDBObject( "_id", new BasicDBObject(document))) != null;
+        return this.dbPasswordCollection.findOne(document) != null;
     }
 
-    public void save_emails(Email email){
-        DBCollection usuario = this.db.getCollection(email.target);
-        BasicDBObject documento = new BasicDBObject();
-        documento.put("date",email.time);
-        documento.put("source",email.source);
-        documento.put("header", email.header);
-        documento.put("message",email.message);
-        usuario.insert(documento);
+    /**
+     *
+     * @param email
+     * @throws Exception If target doesn't exist, throws an exception
+     */
+    public void save_emails(Email email) throws Exception {
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", email.target);
+        if(this.dbPasswordCollection.findOne(document) == null ) {
+            throw new Exception();
+        }else{
+            DBCollection usuario = this.db.getCollection(email.target);
+            BasicDBObject documento = new BasicDBObject();
+            documento.put("date", email.time);
+            documento.put("source", email.source);
+            documento.put("header", email.header);
+            documento.put("message", email.message);
+            usuario.insert(documento);
+        }
     }
 
     public ArrayList<Email> getEmails(String user){
@@ -103,7 +115,4 @@ public class MongoDB {
         }
         return listaCorreo;
     }
-
-
-
 }
