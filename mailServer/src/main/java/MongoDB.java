@@ -1,10 +1,7 @@
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBObject;
-import com.mongodb.MongoClient;
+import com.mongodb.*;
 import org.joda.time.LocalDateTime;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -79,15 +76,32 @@ public class MongoDB {
         return this.dbPasswordCollection.findOne(new BasicDBObject( "_id", new BasicDBObject(document))) != null;
     }
 
-    public void save_emails(String source, String target, String header,String messsage){
-        DBCollection usuario = this.db.getCollection(target);
-        Long time = System.currentTimeMillis();
+    public void save_emails(Email email){
+        DBCollection usuario = this.db.getCollection(email.target);
         BasicDBObject documento = new BasicDBObject();
-        documento.put("date",time);
-        documento.put("source",source);
-        documento.put("header", header);
-        documento.put("message",messsage);
+        documento.put("date",email.time);
+        documento.put("source",email.source);
+        documento.put("header", email.header);
+        documento.put("message",email.message);
         usuario.insert(documento);
+    }
+
+    public ArrayList<Email> getEmails(String user){
+        DBCollection usuario = this.db.getCollection(user);
+        BasicDBObject sortby = new BasicDBObject();
+        sortby.put("date",-1);
+        DBCursor cursor=usuario.find().sort( sortby );
+        ArrayList<Email> listaCorreo = new ArrayList<Email>();
+        while(cursor.hasNext()) {
+            DBObject object=cursor.next();
+            //String source, String header,String message, Long time
+            String source=(String)object.get("source");
+            String header=(String)object.get("header");
+            String message=(String)object.get("message");
+            Long time=(Long)object.get("date");
+            listaCorreo.add(new Email(source, header, message,  time));
+        }
+        return listaCorreo;
     }
 
 
