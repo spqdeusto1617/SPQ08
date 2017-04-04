@@ -6,7 +6,7 @@
 package gui.spq;
 
 /**
- *
+ * a
  * @author gotzon gerrikabeitia
  */
 public class Window extends javax.swing.JFrame {
