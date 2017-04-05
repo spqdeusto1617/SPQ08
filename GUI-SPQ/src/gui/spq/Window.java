@@ -5,6 +5,7 @@
  */
 package gui.spq;
 
+
 /**
  * a
  * @author gotzon gerrikabeitia
@@ -16,7 +17,9 @@ public class Window extends javax.swing.JFrame {
      */
     public Window() {
         initComponents();
+        this.setVisible(false);
         jDialog1.setVisible(true);
+        
         
     }
 
@@ -59,10 +62,22 @@ public class Window extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
 
+        jDialog1.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         jDialog1.setTitle("Login");
         jDialog1.setAlwaysOnTop(true);
         jDialog1.setResizable(false);
         jDialog1.setSize(new java.awt.Dimension(305, 194));
+        jDialog1.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                jDialog1WindowClosing(evt);
+            }
+        });
+
+        jPanel3.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                jPanel3ComponentHidden(evt);
+            }
+        });
 
         jLabel1.setText("User");
 
@@ -229,8 +244,14 @@ public class Window extends javax.swing.JFrame {
         setTitle("Inbox");
         setMinimumSize(new java.awt.Dimension(717, 691));
         setSize(new java.awt.Dimension(717, 691));
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
 
         jButton2.setText("New");
+        jButton2.setToolTipText("Create new email");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -238,11 +259,14 @@ public class Window extends javax.swing.JFrame {
         });
 
         jButton3.setText("Refresh");
+        jButton3.setToolTipText("Refresh the inbox");
 
         jButton1.setText("Respond");
+        jButton1.setToolTipText("Respond the current email");
         jButton1.setEnabled(false);
 
         jButton8.setText("Delete");
+        jButton8.setToolTipText("Delete the current email");
         jButton8.setEnabled(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -326,6 +350,7 @@ public class Window extends javax.swing.JFrame {
         // TODO add your handling code here:
         jDialog1.dispose();
         this.dispose();
+        System.exit(0);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -340,6 +365,20 @@ public class Window extends javax.swing.JFrame {
         // TODO add your handling code here:
         jDialog2.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_formKeyPressed
+
+    private void jPanel3ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel3ComponentHidden
+
+    }//GEN-LAST:event_jPanel3ComponentHidden
+
+    private void jDialog1WindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jDialog1WindowClosing
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jDialog1WindowClosing
 
     /**
      * @param args the command line arguments
