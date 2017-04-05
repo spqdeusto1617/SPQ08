@@ -66,6 +66,7 @@ public class Window extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jLabel3 = new javax.swing.JLabel();
@@ -171,6 +172,7 @@ public class Window extends javax.swing.JFrame {
         );
 
         jDialog2.setTitle("New Message");
+        jDialog2.setAlwaysOnTop(true);
         jDialog2.setMinimumSize(new java.awt.Dimension(400, 340));
         jDialog2.setResizable(false);
         jDialog2.setSize(new java.awt.Dimension(400, 340));
@@ -310,6 +312,11 @@ public class Window extends javax.swing.JFrame {
                 .addComponent(jButton8))
         );
 
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane1.setViewportView(jTextArea2);
+
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -317,9 +324,9 @@ public class Window extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jList1);
 
-        jLabel3.setText("Mail Sender:");
+        jLabel3.setText("Sender:");
 
-        jLabel5.setText("Mail Topic:");
+        jLabel5.setText("Topic:");
 
         jLabel8.setText("Date:");
 
@@ -506,6 +513,7 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

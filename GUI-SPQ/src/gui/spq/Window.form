@@ -130,6 +130,7 @@
     <Container class="javax.swing.JDialog" name="jDialog2">
       <Properties>
         <Property name="title" type="java.lang.String" value="New Message"/>
+        <Property name="alwaysOnTop" type="boolean" value="true"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[400, 340]"/>
         </Property>
@@ -437,6 +438,15 @@
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
           <AuxValues>
@@ -465,12 +475,12 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Mail Sender:"/>
+            <Property name="text" type="java.lang.String" value="Sender:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Mail Topic:"/>
+            <Property name="text" type="java.lang.String" value="Topic:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
