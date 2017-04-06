@@ -54,7 +54,7 @@ public class MongoDB {
         System.out.println(this.dbPasswordCollection.findOne(fichero));
         if(this.dbPasswordCollection.findOne(fichero) != null){
             return false;
-        }else{
+        } else {
             BasicDBObject ficheroIntroducir = new BasicDBObject();
             ficheroIntroducir.put("_id", user);
             ficheroIntroducir.put("password", password);
@@ -87,7 +87,7 @@ public class MongoDB {
         document.put("_id", email.target);
         if(this.dbPasswordCollection.findOne(document) == null ) {
             throw new Exception();
-        }else{
+        } else {
             DBCollection usuario = this.db.getCollection(email.target);
             BasicDBObject documento = new BasicDBObject();
             documento.put("date", email.time);
