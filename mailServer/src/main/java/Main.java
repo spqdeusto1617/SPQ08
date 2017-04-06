@@ -37,7 +37,7 @@ public class Main extends UnicastRemoteObject implements RMIInterface{
         try {
 
             Naming.rebind("//localhost/MyServer", new Main());
-            System.err.println("Server ready");
+            System.err.println("Server is running...");
 
         } catch (Exception e) {
 
