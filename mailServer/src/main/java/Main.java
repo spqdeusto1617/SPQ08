@@ -1,6 +1,7 @@
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
 
 /**
  * Created by inigo on 30/03/17.
@@ -33,21 +34,37 @@ public class Main extends UnicastRemoteObject implements RMIInterface{
         }
         System.out.println(new MongoDB().getEmails("noExisto2").get(0).message);
 
-//        try {
-//
-//            Naming.rebind("//localhost/MyServer", new Main());
-//            System.err.println("Server ready");
-//
-//        } catch (Exception e) {
-//
-//            System.err.println("Server exception: " + e.toString());
-//            e.printStackTrace();
-//
-//        }
+        try {
+
+            Naming.rebind("//localhost/MyServer", new Main());
+            System.err.println("Server ready");
+
+        } catch (Exception e) {
+
+            System.err.println("Server exception: " + e.toString());
+            e.printStackTrace();
+
+        }
 
     }
 
     public String helloTo(String name) throws RemoteException {
+        return null;
+    }
+
+    public boolean signIn(String user, String password) throws RemoteException {
+        return false;
+    }
+
+    public boolean signUp(String user, String password) throws RemoteException {
+        return false;
+    }
+
+    public boolean sendEmail(Email email) throws RemoteException {
+        return false;
+    }
+
+    public ArrayList<Email> getEmails() throws RemoteException {
         return null;
     }
 }
