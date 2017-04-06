@@ -12,7 +12,7 @@ import java.rmi.RemoteException;
 import static java.lang.System.exit;
 
 /**
- * 
+ *
  * @author gotzon gerrikabeitia
  */
 public class Window extends javax.swing.JFrame {
