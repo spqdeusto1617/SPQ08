@@ -6,11 +6,17 @@
 package gui.spq;
 
 
+import java.rmi.RemoteException;
+
+
+import static java.lang.System.exit;
+
 /**
- * a
+ * 
  * @author gotzon gerrikabeitia
  */
 public class Window extends javax.swing.JFrame {
+
 
     /**
      * Creates new form Window
@@ -37,6 +43,12 @@ public class Window extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        try {
+            cntr=new Controller("127.0.0.1", "1099", "EmailServer");
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        ;
         jDialog1 = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -97,6 +109,7 @@ public class Window extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
+
             }
         });
 
@@ -110,6 +123,13 @@ public class Window extends javax.swing.JFrame {
         jButton5.setText("Login");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
+                System.out.println("LOGIN HECHO");
+                try {
+                    cntr.signIn(jTextField1.getText(),jPasswordField1.getText());
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+
                 jButton5ActionPerformed(evt);
             }
         });
@@ -407,7 +427,7 @@ public class Window extends javax.swing.JFrame {
         // TODO add your handling code here:
         jDialog1.dispose();
         this.dispose();
-        System.exit(0);
+        exit(0);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -434,7 +454,7 @@ public class Window extends javax.swing.JFrame {
 
     private void jDialog1WindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jDialog1WindowClosing
         // TODO add your handling code here:
-        System.exit(0);
+        exit(0);
     }//GEN-LAST:event_jDialog1WindowClosing
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -451,6 +471,7 @@ public class Window extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -473,7 +494,8 @@ public class Window extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Window().setVisible(true);
+                Window mens=new Window();
+                mens.setVisible(true);
             }
         });
     }
@@ -488,6 +510,7 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JDialog jDialog1;
+    private Controller cntr;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
