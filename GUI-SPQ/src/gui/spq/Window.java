@@ -19,12 +19,9 @@ public class Window extends javax.swing.JFrame {
         initComponents();
         this.setEnabled(false);
         jDialog1.setVisible(true);
-        
-        
     }
     
-    public void login()
-    {
+    public void login() {
         if (true) {
             this.setEnabled(true);
             jDialog1.dispose();

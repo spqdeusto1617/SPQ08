@@ -22,14 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="mailServer" />
+        <module name="mailSport" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mailServer" target="1.5" />
+      <module name="mailSport" target="1.5" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="RmicSettings">
-    <option name="IS_EANABLED" value="true" />
   </component>
 </project>
