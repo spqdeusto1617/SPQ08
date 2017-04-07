@@ -5,10 +5,14 @@
  */
 
 
-import java.rmi.RemoteException;
 
 
 import static java.lang.System.exit;
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.DefaultListModel;
 
 /**
  *
@@ -16,7 +20,7 @@ import static java.lang.System.exit;
  */
 public class Window extends javax.swing.JFrame {
 
-
+    static String pass,usr;
     /**
      * Creates new form Window
      */
@@ -24,13 +28,32 @@ public class Window extends javax.swing.JFrame {
         initComponents();
         this.setEnabled(false);
         jDialog1.setVisible(true);
+        /* cargar datos de prueba
+        emails = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            emails.add(new Email("a"+i, "a"+i, "a"+i, Long.MIN_VALUE));
+        }
+        */
+        try {
+            cntr=new Controller("127.0.0.1", "1099", "EmailServer");
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     public void login() {
-        if (true) {
-            this.setEnabled(true);
-            jDialog1.dispose();
+        pass=jPasswordField1.getText();
+        usr=jTextField1.getText();
+      
+        try {
+            if (cntr.signIn(usr,pass)) {
+                this.setEnabled(true);
+                jDialog1.dispose();
+            }
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }
+        refresh();
     }
 
     /**
@@ -42,12 +65,6 @@ public class Window extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        try {
-            cntr=new Controller("127.0.0.1", "1099", "EmailServer");
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-        ;
         jDialog1 = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -75,14 +92,14 @@ public class Window extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
 
         jDialog1.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         jDialog1.setTitle("Login");
@@ -108,7 +125,6 @@ public class Window extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
-
             }
         });
 
@@ -122,13 +138,6 @@ public class Window extends javax.swing.JFrame {
         jButton5.setText("Login");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                System.out.println("LOGIN HECHO");
-                try {
-                    cntr.signIn(jTextField1.getText(),jPasswordField1.getText());
-                } catch (RemoteException e) {
-                    e.printStackTrace();
-                }
-
                 jButton5ActionPerformed(evt);
             }
         });
@@ -224,6 +233,11 @@ public class Window extends javax.swing.JFrame {
         });
 
         jButton7.setText("Send");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -296,14 +310,29 @@ public class Window extends javax.swing.JFrame {
 
         jButton3.setText("Refresh");
         jButton3.setToolTipText("Refresh the inbox");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Respond");
         jButton1.setToolTipText("Respond the current email");
         jButton1.setEnabled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("Delete");
         jButton8.setToolTipText("Delete the current email");
         jButton8.setEnabled(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -333,24 +362,18 @@ public class Window extends javax.swing.JFrame {
         jTextArea2.setRows(5);
         jScrollPane1.setViewportView(jTextArea2);
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane2.setViewportView(jList1);
-
         jLabel3.setText("Sender:");
 
         jLabel5.setText("Topic:");
 
         jLabel8.setText("Date:");
 
-        jLabel9.setText("lala@opendeusto.es");
-
-        jLabel10.setText("First Mail");
-
-        jLabel11.setText("05/04/2017");
+        jList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                jList1ValueChanged(evt);
+            }
+        });
+        jScrollPane4.setViewportView(jList1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -358,8 +381,8 @@ public class Window extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -384,19 +407,21 @@ public class Window extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(jLabel8)
                             .addComponent(jLabel9)
                             .addComponent(jLabel11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel10))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 614, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 2, Short.MAX_VALUE)
+                                .addComponent(jLabel5))
+                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 614, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane4)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -461,6 +486,77 @@ public class Window extends javax.swing.JFrame {
         login();
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        try {
+            // TODO add your handling code here:
+            Email e=new Email(usr,jTextArea2.getText(),jTextField3.getText(),jTextArea1.getText());
+            cntr.sendEmail(e);
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       refresh();
+
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jDialog2.setVisible(true);
+        jTextField2.setText(jLabel9.getText());
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        delete(null);
+        refresh();
+        jLabel9.setText("");
+        jLabel10.setText("");
+        jLabel11.setText("");
+        jTextArea2.setText("");
+        jButton1.setEnabled(false);
+        jButton8.setEnabled(false);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
+        // TODO add your handling code here:.
+        cEmail=find(jList1.getSelectedValue());
+        if (cEmail!=null) {
+            jLabel9.setText(cEmail.source);
+            jLabel10.setText(cEmail.header);
+            jLabel11.setText(cEmail.time.toString());
+            jTextArea2.setText(cEmail.message);
+            jButton1.setEnabled(true);
+            jButton8.setEnabled(true);
+        }
+    }//GEN-LAST:event_jList1ValueChanged
+    public Email find(String query){
+        for (Email email : emails) {
+            if (query.equals(email.source+" : "+email.header+" : "+email.time)) {
+                return email;
+            }
+        }
+        return null;
+    }
+    public boolean delete(Email email){
+        return false;
+    }
+    public void refresh(){
+        listModel = new DefaultListModel<>();
+         try {
+            // TODO add your handling code here:
+            emails=cntr.getEmails(usr);
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        String[] e=new String[emails.size()];
+        int j=0;
+        for (Email object : emails) {
+            listModel.addElement(object.source+" : "+object.header+" : "+object.time);
+        }
+        jList1.setModel(listModel);
+    }
     /**
      * @param args the command line arguments
      */
@@ -498,7 +594,10 @@ public class Window extends javax.swing.JFrame {
             }
         });
     }
-
+    DefaultListModel<String> listModel ;
+    private Email cEmail;
+    private ArrayList<Email> emails;
+    private Controller cntr;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -509,7 +608,6 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JDialog jDialog1;
-    private Controller cntr;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -529,8 +627,8 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;

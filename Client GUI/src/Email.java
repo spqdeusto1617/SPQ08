@@ -1,7 +1,10 @@
+
+import java.io.Serializable;
+
 /**
  * Created by inigo on 4/04/17.
  */
-public class Email {
+public class Email implements Serializable{
 
     String source=null;
     String target=null;
