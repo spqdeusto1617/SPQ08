@@ -8,6 +8,8 @@
 
 
 import static java.lang.System.exit;
+import static java.lang.System.setOut;
+
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -489,8 +491,11 @@ public class Window extends javax.swing.JFrame {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         try {
             // TODO add your handling code here:
-            Email e=new Email(usr,jTextArea2.getText(),jTextField3.getText(),jTextArea1.getText());
-            cntr.sendEmail(e);
+            Email e=new Email(usr,jTextField2.getText(),jTextField3.getText(),jTextArea1.getText());
+            if (cntr.sendEmail(e)){
+                jDialog2.setVisible(false);
+            }
+
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -543,7 +548,8 @@ public class Window extends javax.swing.JFrame {
         return false;
     }
     public void refresh(){
-        listModel = new DefaultListModel<>();
+        jList1.clearSelection();
+        listModel.clear();
          try {
             // TODO add your handling code here:
             emails=cntr.getEmails(usr);
@@ -594,7 +600,7 @@ public class Window extends javax.swing.JFrame {
             }
         });
     }
-    DefaultListModel<String> listModel ;
+    DefaultListModel<String> listModel = new DefaultListModel<>();
     private Email cEmail;
     private ArrayList<Email> emails;
     private Controller cntr;

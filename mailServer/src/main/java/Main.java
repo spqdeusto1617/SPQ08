@@ -9,6 +9,11 @@
 public class Main {
 
     public static void main(String[] args) {
+        //Create user
+        MongoDB db = new MongoDB();
+        //db.sign_up("inigo","a");
+//        db.sign_up("gotzon","a");
+
         //String source, String target, String header,String message
         Server.runServer("127.0.0.1", "1099", "EmailServer");
     }
