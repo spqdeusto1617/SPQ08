@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Client GUI" />
+        <module name="User_Windows" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Client GUI" target="1.5" />
+      <module name="User_Windows" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
