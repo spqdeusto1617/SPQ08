@@ -27,13 +27,16 @@ In order to run the projects on your computer you should first of all install th
 
 #### Run Server
 
-When everything is set up you are ready to run the project. Perform the following steps:
-- Clone repository which contains both applications: server and client by running: `git clone https://github.com/spqdeusto1617/SPQ08.git`
-- Navigate to mailServer project`cd spqdeusto1617/mailServer`
-- Run `mvn install` to download all dependencies of the project 
-- Open **mailServer** folder your Intellij IDEA in order to run the server. 
-- Edit configurations and add codebase in VM option. You should specify path to classes which will be in `/target/classes/`. Example: `-Djava.rmi.server.codebase=file:/home/inigo/workspace/Java/SPQ08/mailServer/target/classes/`
-- Run rmiregistry `rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false`
+When everything is set up you are ready to run the project. Perform the following steps:<br />
+- Clone repository which contains both applications: server and client by running: <br />
+`git clone https://github.com/spqdeusto1617/SPQ08.git`
+- Navigate to mailServer project: <br />
+`cd spqdeusto1617/mailServer`
+- Download all dependencies of the project. In the root of mailServer project: <br />
+ `mvn install`
+- Open **mailServer** folder in your Intellij IDEA in order to run the server. 
+- Edit configurations and add codebase in VM option. You should specify path to classes which will be in `/target/classes/`. Example: <br />`-Djava.rmi.server.codebase=file:/home/inigo/workspace/Java/SPQ08/mailServer/target/classes/`
+- Run rmiregistry: <br />`rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false`
 - Run **mailServer** from IDE.
 
 You should see message like: 
