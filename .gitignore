@@ -51,5 +51,10 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-User_Windows/target/production/
-mailServer/target/production/
+
+# Ignore .idea from git root of common folder of both projects(SPQ08). Prevent adding to repo .idea folder in git root.
+.idea/
+
+# Ignore target in both projects
+User_Windows/target/
+mailServer/target/
