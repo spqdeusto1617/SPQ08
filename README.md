@@ -43,7 +43,6 @@ Read carefully installation guide. In order to run the projects on your computer
  `mvn install`
 - Open **mailServer** folder in your Intellij IDEA in order to run the server. 
 - Edit configurations and add codebase in VM option. You should specify path to classes which will be in `/target/classes/`. Example: <br />`-Djava.rmi.server.codebase=file:/home/inigo/workspace/Java/SPQ08/mailServer/target/classes/`
-- Run rmiregistry: <br />`rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false`
 - Run **mailServer** from IDE.
 
 You should see message like: 
