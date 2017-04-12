@@ -10,7 +10,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     private MongoDB db = null;
 
-    protected Server() throws RemoteException {
+    private Server() throws RemoteException {
         this.db = new MongoDB();
     }
 
@@ -20,6 +20,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean signIn(String user, String password) throws RemoteException {
         try {
+            System.out.println("Login action succeful for the user: " + user);
             return this.db.sign_in(user, password);
         } catch(Exception exception) {
             System.err.println("Server when trying to sign in. Exception: " + exception.toString());
@@ -29,6 +30,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean signUp(String user, String password) throws RemoteException {
         try {
+            System.out.println("Sign up action succeful for the user: " + user);
             return this.db.sign_up(user, password);
         } catch(Exception exception) {
             System.err.println("Server when trying to sign up. Exception: " + exception.toString());
