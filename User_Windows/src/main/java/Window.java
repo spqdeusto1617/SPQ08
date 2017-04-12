@@ -51,9 +51,11 @@ public class Window extends javax.swing.JFrame {
             if (cntr.signIn(usr,pass)) {
                 this.setEnabled(true);
                 jDialog1.dispose();
+                System.out.println("Login action successful");
             }
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Login action fail!");
         }
         refresh();
     }

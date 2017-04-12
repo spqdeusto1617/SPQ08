@@ -11,7 +11,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
     private MongoDB db = null;
 
     protected Server() throws RemoteException {
-        this.db= new MongoDB();
+        this.db = new MongoDB();
     }
 
     public String helloTo(String name) throws RemoteException {
