@@ -31,10 +31,12 @@ Read carefully installation guide. In order to run the projects on your computer
 - Clone repository which contains both applications: server and client by running: <br />
 `git clone https://github.com/spqdeusto1617/SPQ08.git`
 
-#### Run rmiregistry
+#### Run rmiregistry and Mongo
 
 - Open your command line, navigate to root of mailServer and run: <br />
 `rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false`
+- Open one more command line and run: <br />
+`mongod`
 
 #### Run Server
 
