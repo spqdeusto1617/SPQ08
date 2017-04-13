@@ -43,9 +43,11 @@ Read carefully installation guide. In order to run the projects on your computer
 
 - Download all dependencies of the project. In the root of mailServer project: <br />
  `mvn install`
-- Open **mailServer** folder in your Intellij IDEA in order to run the server. 
+ - Compile sources of the project: <br />
+ `mvn compile`
+- Open **mailServer** folder in your Intellij IDEA in order to run the server. <br />**IMPORTANT:** Intellij will ask you if you want to import it as maven project. DO IT.
 - Edit configurations and add codebase in VM option. You should specify path to classes which will be in `/target/classes/`. Example: <br />`-Djava.rmi.server.codebase=file:/home/inigo/workspace/Java/SPQ08/mailServer/target/classes/`
-- Run **mailServer** from IDE.
+- Run **mailServer** from IDE by clicking `run` button.
 
 You should see message like: 
 `* Server '//127.0.0.1:1099/EmailServer' active and waiting...`
@@ -53,9 +55,9 @@ You should see message like:
 #### Run Client
 
 When server is ready you can run client application:
-- Open client folder in NEW window of your IDE.
+- Open **User_Windows** folder in a NEW window of your Intellij IDE.
 - Edit configurations of build and specify that you want to run an Application with `Window` as main class
-- Run client application from IDE by clicking `run` button.
+- Run **client** application from IDE by clicking `run` button.
 
 Client and Server is working...
 
