@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mailServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mailServer" target="1.5" />
       <module name="mailSport" target="1.5" />
     </bytecodeTargetLevel>
   </component>
