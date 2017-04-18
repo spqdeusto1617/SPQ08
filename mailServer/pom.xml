@@ -4,9 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>mailSport_artifact</groupId>
+    <groupId>es.deusto.spq</groupId>
     <artifactId>mailSport</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <server.IP>127.0.0.1</server.IP>
+        <server.port>1099</server.port>
+        <server.Name>Main</server.Name>
+        <policy.file>${basedir}/src/main/resources/security/java.policy</policy.file>
+        <config.files.dir>${basedir}/src/main/resources</config.files.dir>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -19,6 +28,27 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>3.4.2</version>
         </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>Main</mainClass>
+                    <arguments>
+                        <argument>argument1</argument>
+                    </arguments>
+                    <systemProperty>
+                        <key>java.rmi.server.codebase</key>
+                        <value>file:${basedir}/target/classes/</value>
+                    </systemProperty>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
