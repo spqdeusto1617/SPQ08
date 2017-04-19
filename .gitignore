@@ -4,10 +4,12 @@
 # Ignore user workspace in both projects:
 User_Windows/.idea/workspace.xml
 mailServer/.idea/workspace.xml
+common/.idea/workspace.xml
 
 # Ignore tasks for both projects
 User_Windows/.idea/tasks.xml
 mailServer/.idea/tasks.xml
+common/.idea/tasks.xml
 
 /**/.idea/**/workspace.xml
 /**/.idea/**/tasks.xml
@@ -58,3 +60,4 @@ fabric.properties
 # Ignore target in both projects
 User_Windows/target/
 mailServer/target/
+common/target/
