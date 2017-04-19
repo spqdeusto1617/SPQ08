@@ -41,7 +41,9 @@ Read carefully installation guide. In order to run the projects on your computer
 #### Run Server
 
 
-- Download all dependencies of the project. In the root of mailServer project: <br />
+- Compile common module of client and server. Navigate to **common** folder and run: <br />
+`mvn package`
+- Download all dependencies of the project. Navigate to the root of **mailServer** project: <br />
  `mvn install`
  - Compile sources of the project: <br />
  `mvn compile`
@@ -60,4 +62,3 @@ When server is ready you can run client application:
 - Run **client** application from IDE by clicking `run` button.
 
 Client and Server is working...
-
