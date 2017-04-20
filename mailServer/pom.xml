@@ -7,7 +7,7 @@
     <groupId>es.deusto.spq</groupId>
     <artifactId>mailSport</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <server.IP>127.0.0.1</server.IP>
