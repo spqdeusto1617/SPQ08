@@ -59,11 +59,13 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 //			objServer.registerUser("client","pass");
             Naming.rebind(name, objServer);
             System.out.println("* Server '" + name + "' active and waiting...");
+            java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
+            java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
+            String line  = stdin.readLine();
         } catch (Exception e) {
             System.err.println("- Exception running the server: " + e.getMessage());
             e.printStackTrace();
         }
-
 
     }
 }

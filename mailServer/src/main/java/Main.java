@@ -15,6 +15,8 @@ public class Main {
 //        db.sign_up("gotzon","a");
 
         //String source, String target, String header,String message
-        Server.runServer("127.0.0.1", "1099", "EmailServer");
+//        Server.runServer("127.0.0.1", "1099", "EmailServer");
+        Server.runServer(args[0], args[1], args[2]);
+//        while (true);
     }
 }
