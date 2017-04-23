@@ -82,8 +82,9 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
             String line  = stdin.readLine();
 
-            System.out.println("Insert Image");
+            System.out.println("Insert Image start ++++");
             objServer.insertImage("vitiok");
+            System.out.println("Insert Image end ++++");
         } catch (Exception e) {
             System.err.println("- Exception running the server: " + e.getMessage());
             e.printStackTrace();
