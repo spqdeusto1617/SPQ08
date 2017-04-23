@@ -18,7 +18,7 @@ public class Controller implements RMIInterface{
     }
 
     public boolean signIn(String user, String password) throws RemoteException {
-        System.out.println("Retrive emails for user: " + user);
+        System.out.println("Sign in user: " + user + " with passord: " + password);
         return rsl.getService().signIn(user, password);
     }
 
@@ -28,7 +28,7 @@ public class Controller implements RMIInterface{
     }
 
     public boolean sendEmail(Email email) throws RemoteException {
-        System.out.println("Send email: " + email);
+        System.out.println("Send email: " + email.toString());
         return rsl.getService().sendEmail(email);
     }
 

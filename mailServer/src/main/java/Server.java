@@ -20,6 +20,9 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean signIn(String user, String password) throws RemoteException {
         try {
+            System.out.println("=================================");
+            System.out.println("sign in for user: " + user);
+            System.out.println("=================================");
             return this.db.sign_in(user, password);
         } catch(Exception exception) {
             System.err.println("Server when trying to sign in. Exception: " + exception.toString());
@@ -38,8 +41,10 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean sendEmail(Email email) throws RemoteException {
         try {
+            System.out.println("=================================");
             this.db.save_emails(email);
-            System.out.println("Email have been send.");
+            System.out.println("Email have been send: " + email.toString());
+            System.out.println("=================================");
             return true;
         } catch(Exception exception) {
             System.err.println("Server exception when trying to send Email. Exception: " + exception.toString());

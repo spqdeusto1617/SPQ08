@@ -48,7 +48,10 @@ public class Window extends javax.swing.JFrame {
         usr=jTextField1.getText();
       
         try {
-            if (cntr.signIn(usr,pass)) {
+            if (cntr.signIn(usr, pass)) {
+                System.out.println("++++++++++++++++++++++++++++++++");
+                System.out.println("Trying to login user: " + usr + " with password: " + pass);
+                System.out.println("++++++++++++++++++++++++++++++++");
                 this.setEnabled(true);
                 jDialog1.dispose();
                 refresh();
@@ -56,7 +59,6 @@ public class Window extends javax.swing.JFrame {
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 
     /**
@@ -493,6 +495,9 @@ public class Window extends javax.swing.JFrame {
         try {
             // TODO add your handling code here:
             Email e=new Email(usr,jTextField2.getText(),jTextField3.getText(),jTextArea1.getText());
+            System.out.println("+++++++++++++++++++++++++++++++++");
+            System.out.println("Frontend: Send email: " + e.toString());
+            System.out.println("+++++++++++++++++++++++++++++++++");
             if (cntr.sendEmail(e)){
                 jDialog2.setVisible(false);
             }
@@ -553,7 +558,10 @@ public class Window extends javax.swing.JFrame {
         listModel.clear();
          try {
             // TODO add your handling code here:
-            emails=cntr.getEmails(usr);
+             System.out.println("++++++++++++++++++++++++++++++++");
+             System.out.println("Trying to refresh user: " + usr);
+             emails=cntr.getEmails(usr);
+             System.out.println("++++++++++++++++++++++++++++++++");
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }

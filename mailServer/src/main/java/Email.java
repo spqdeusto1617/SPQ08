@@ -40,4 +40,9 @@ public class Email implements Serializable{
         this.message=message;
         this.time= time;
     }
+
+    @Override
+    public String toString() {
+        return "\n Source: '" + this.source + "', Target: '" + this.target + "', Header: '" + this.header + "'";
+    }
 }
