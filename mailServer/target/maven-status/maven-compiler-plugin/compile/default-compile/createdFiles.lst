@@ -1,5 +1,5 @@
 MongoDB.class
-Server.class
-RMIInterface.class
 Main.class
+RMIInterface.class
+Server.class
 Email.class

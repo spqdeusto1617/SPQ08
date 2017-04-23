@@ -51,11 +51,12 @@ public class Window extends javax.swing.JFrame {
             if (cntr.signIn(usr,pass)) {
                 this.setEnabled(true);
                 jDialog1.dispose();
+                refresh();
             }
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }
-        refresh();
+
     }
 
     /**

@@ -30,6 +30,7 @@ public class Controller implements RMIInterface{
     }
 
     public ArrayList<Email> getEmails(String user) throws RemoteException {
+        System.out.println("Retrive emails for user: " + user);
         return rsl.getService().getEmails(user);
     }
 }
