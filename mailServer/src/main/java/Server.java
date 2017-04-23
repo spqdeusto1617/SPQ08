@@ -51,7 +51,6 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
         try {
             System.out.println("=================================");
             this.db.save_emails(email);
-            System.out.println("Email have been send: " + email.toString());
             System.out.println("=================================");
             return true;
         } catch(Exception exception) {
