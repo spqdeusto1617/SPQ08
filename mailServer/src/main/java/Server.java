@@ -3,6 +3,14 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import com.mongodb.gridfs.GridFS;
+import com.mongodb.gridfs.GridFSDBFile;
+import com.mongodb.gridfs.GridFSInputFile;
+
 /**
  * Created by inigo on 6/04/17.
  */
@@ -21,7 +29,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
     public boolean signIn(String user, String password) throws RemoteException {
         try {
             System.out.println("=================================");
-            System.out.println("sign in for user: " + user);
+            System.out.println("get profile for user: " + user);
             System.out.println("=================================");
             return this.db.sign_in(user, password);
         } catch(Exception exception) {
@@ -57,20 +65,32 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
         return this.db.getEmails(user);
     }
 
+    public boolean insertImage(String user) throws RemoteException {
+        try {
+            return this.db.insertProfileImage(user);
+        } catch (Exception exception) {
+            return false;
+        }
+    }
+
     public static void runServer(String ip, String port, String serviceName){
         String name = "//" + ip + ":" + port + "/" + serviceName;
         try {
             RMIInterface objServer = new Server();
-//			objServer.registerUser("client","pass");
             Naming.rebind(name, objServer);
             System.out.println("* Server '" + name + "' active and waiting...");
             java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
             java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
             String line  = stdin.readLine();
+
+            System.out.println("Insert Image");
+            objServer.insertImage("vitiok");
         } catch (Exception e) {
             System.err.println("- Exception running the server: " + e.getMessage());
             e.printStackTrace();
         }
-
     }
+
+
+
 }

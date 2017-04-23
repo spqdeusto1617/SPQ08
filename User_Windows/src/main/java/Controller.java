@@ -4,7 +4,7 @@ import java.util.ArrayList;
 /**
  * Created by inigo on 6/04/17.
  */
-public class Controller implements RMIInterface{
+public class Controller implements RMIInterface {
 
     private RMIServiceLocator rsl;
 
@@ -36,4 +36,6 @@ public class Controller implements RMIInterface{
         System.out.println("Retrive emails for user: " + user);
         return rsl.getService().getEmails(user);
     }
+
+
 }

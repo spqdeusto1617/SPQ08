@@ -12,4 +12,5 @@ public interface RMIInterface extends Remote {
     boolean signUp(String user, String password) throws RemoteException;
     boolean sendEmail(Email email) throws RemoteException;
     ArrayList<Email> getEmails(String user) throws RemoteException;
+    boolean insertImage(String user) throws RemoteException;
 }
