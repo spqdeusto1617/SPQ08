@@ -18,18 +18,22 @@ public class Controller implements RMIInterface{
     }
 
     public boolean signIn(String user, String password) throws RemoteException {
+        System.out.println("Sign in user: " + user + " with passord: " + password);
         return rsl.getService().signIn(user, password);
     }
 
     public boolean signUp(String user, String password) throws RemoteException {
+        System.out.println("Sign up: " + user + " password: " + password);
         return rsl.getService().signUp(user,password);
     }
 
     public boolean sendEmail(Email email) throws RemoteException {
+        System.out.println("Send email: " + email.toString());
         return rsl.getService().sendEmail(email);
     }
 
     public ArrayList<Email> getEmails(String user) throws RemoteException {
+        System.out.println("Retrive emails for user: " + user);
         return rsl.getService().getEmails(user);
     }
 }
