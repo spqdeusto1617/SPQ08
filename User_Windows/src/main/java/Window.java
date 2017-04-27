@@ -30,12 +30,6 @@ public class Window extends javax.swing.JFrame {
         initComponents();
         this.setEnabled(false);
         jDialog1.setVisible(true);
-        /* cargar datos de prueba
-        emails = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            emails.add(new Email("a"+i, "a"+i, "a"+i, Long.MIN_VALUE));
-        }
-        */
         try {
             cntr=new Controller("127.0.0.1", "1099", "EmailServer");
         } catch (RemoteException ex) {
@@ -54,7 +48,7 @@ public class Window extends javax.swing.JFrame {
                 System.out.println("++++++++++++++++++++++++++++++++");
                 this.setEnabled(true);
                 jDialog1.dispose();
-                refresh();
+                load();
             }
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
@@ -532,31 +526,38 @@ public class Window extends javax.swing.JFrame {
 
     private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
         // TODO add your handling code here:.
-        cEmail=find(jList1.getSelectedValue());
-        if (cEmail!=null) {
-            jLabel9.setText(cEmail.source);
-            jLabel10.setText(cEmail.header);
-            jLabel11.setText(cEmail.time.toString());
-            jTextArea2.setText(cEmail.message);
-            jButton1.setEnabled(true);
-            jButton8.setEnabled(true);
-        }
-    }//GEN-LAST:event_jList1ValueChanged
-    public Email find(String query){
-        for (Email email : emails) {
-            if (query.equals(email.source+" : "+email.header+" : "+email.time)) {
-                return email;
+        if (!jList1.isSelectionEmpty()) {
+            cEmail=find(jList1.getSelectedValue());
+            if (cEmail!=null) {
+                jLabel9.setText(cEmail.source);
+                jLabel10.setText(cEmail.header);
+                jLabel11.setText(cEmail.time.toString());
+                jTextArea2.setText(cEmail.message);
+                jButton1.setEnabled(true);
+                jButton8.setEnabled(true);
             }
         }
+        
+    }//GEN-LAST:event_jList1ValueChanged
+    public Email find(String query){
+        if (!emails.isEmpty()) {
+             for (Email email : emails) {
+                if (query.equals(email.source+" : "+email.header+" : "+email.time)) {
+                    return email;
+                }
+            }
+        }       
         return null;
     }
     public boolean delete(Email email){
         return false;
     }
-    public void refresh(){
-        jList1.clearSelection();
-        listModel.clear();
-         try {
+    public void setModel(){
+        jList1.setModel(listModel);   
+    }
+    public void load(){
+        setModel();
+           try {
             // TODO add your handling code here:
              System.out.println("++++++++++++++++++++++++++++++++");
              System.out.println("Trying to refresh user: " + usr);
@@ -570,7 +571,27 @@ public class Window extends javax.swing.JFrame {
         for (Email object : emails) {
             listModel.addElement(object.source+" : "+object.header+" : "+object.time);
         }
-        jList1.setModel(listModel);
+            
+    }
+    public void refresh(){
+        //jList1.clearSelection();
+        emails.clear();
+        listModel.removeAllElements();
+         try {
+            // TODO add your handling code here:
+             System.out.println("++++++++++++++++++++++++++++++++");
+             System.out.println("Trying to refresh user: " + usr);
+             
+             emails=cntr.getEmails(usr);
+             System.out.println("++++++++++++++++++++++++++++++++");
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        String[] e=new String[emails.size()];
+        int j=0;
+        for (Email object : emails) {
+            listModel.addElement(object.source+" : "+object.header+" : "+object.time);
+        }
     }
     /**
      * @param args the command line arguments
