@@ -19,7 +19,7 @@ System.out.println(System.currentTimeMillis());
 
 /**
  * Created by inigo on 30/03/17.
- * http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/+
+ * http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/
  * http://howtodoinjava.com/nosql/mongodb/java-mongodb-insert-documents-in-collection-examples/
  */
 /*
@@ -116,5 +116,14 @@ public class MongoDB {
             listaCorreo.add(new Email(source, header, message,  time));
         }
         return listaCorreo;
+    }
+
+    public boolean delete_message(Delete message){
+        DBCollection table = db.getCollection(message.user);
+        BasicDBObject searchQuery = new BasicDBObject();
+        searchQuery.put("date", message.date );
+        searchQuery.put("source", message.source);
+        table.remove(searchQuery);
+        return true;
     }
 }
