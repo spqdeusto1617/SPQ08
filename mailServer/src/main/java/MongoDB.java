@@ -7,15 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-/*
-System.out.println(System.currentTimeMillis());
-        LocalDateTime a = new LocalDateTime(System.currentTimeMillis());
-        LocalDateTime b = new LocalDateTime();
-        System.out.println(a.getDayOfMonth());
-        System.out.println(a.compareTo(b));
-        System.out.println(b.compareTo(a));
-        System.out.println(a.compareTo(a));
- */
 
 /**
  * Created by inigo on 30/03/17.
