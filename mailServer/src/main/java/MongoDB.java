@@ -110,10 +110,10 @@ public class MongoDB {
     }
 
     public boolean delete_message(Delete message){
-        DBCollection table = db.getCollection(message.user);
+        DBCollection table = db.getCollection(message.getUser());
         BasicDBObject searchQuery = new BasicDBObject();
-        searchQuery.put("date", message.date );
-        searchQuery.put("source", message.source);
+        searchQuery.put("date", message.getDate() );
+        searchQuery.put("source", message.getSource());
         table.remove(searchQuery);
         return true;
     }

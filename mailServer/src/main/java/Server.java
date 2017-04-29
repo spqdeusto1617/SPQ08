@@ -18,7 +18,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
         return null;
     }
 
-    boolean deleteEmail(Delete delete) throws RemoteException{
+    public boolean deleteEmail(Delete delete) throws RemoteException{
         try {
             return this.db.delete_message(delete);
         } catch(Exception exception) {
