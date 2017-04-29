@@ -17,6 +17,11 @@ public class Controller implements RMIInterface{
         return null;
     }
 
+    public boolean deleteEmail(Delete delete) throws RemoteException{
+        System.out.println("delete = " + delete);
+        return rsl.getService().deleteEmail(delete);
+    }
+
     public boolean signIn(String user, String password) throws RemoteException {
         System.out.println("Sign in user: " + user + " with passord: " + password);
         return rsl.getService().signIn(user, password);
