@@ -514,7 +514,7 @@ public class Window extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        delete(null);
+        delete(cEmail);
         refresh();
         jLabel9.setText("");
         jLabel10.setText("");
@@ -550,6 +550,12 @@ public class Window extends javax.swing.JFrame {
         return null;
     }
     public boolean delete(Email email){
+         Delete delete = new Delete(email.target, email.source, email.time);
+        try {
+            return cntr.deleteEmail(delete);
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return false;
     }
     public void setModel(){
