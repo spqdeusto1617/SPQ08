@@ -104,16 +104,16 @@ public class MongoDB {
             String header=(String)object.get("header");
             String message=(String)object.get("message");
             Long time=(Long)object.get("date");
-            listaCorreo.add(new Email(source, header, message,  time));
+            listaCorreo.add(new Email(user,source, header, message,  time));
         }
         return listaCorreo;
     }
 
-    public boolean delete_message(Delete message){
-        DBCollection table = db.getCollection(message.getUser());
+    public boolean delete_message(Delete del){
+        DBCollection table = db.getCollection(del.getUser());
         BasicDBObject searchQuery = new BasicDBObject();
-        searchQuery.put("date", message.getDate() );
-        searchQuery.put("source", message.getSource());
+        searchQuery.put("date", del.getDate() );
+        searchQuery.put("source", del.getSource());
         table.remove(searchQuery);
         return true;
     }

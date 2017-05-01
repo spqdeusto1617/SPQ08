@@ -4,6 +4,8 @@
 
 
 
+
+
 public class RMIServiceLocator {
 
     public RMIInterface service;

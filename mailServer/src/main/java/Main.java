@@ -12,7 +12,24 @@ public class Main {
         //Create user
         MongoDB db = new MongoDB();
         db.sign_up("inigo","inigo");
+        db.sign_up("inigo2","inigo2");
         db.sign_up("gotzon","gotzon");
+
+        Email em = new Email("inigo","gotzon","","ULTIMO0");
+        Email em2 = new Email("inigo","gotzon","","anteultimo");
+//        Email em3 = new Email("inigo2","gotzon","","anteultimo");
+        try {
+            db.save_emails(em2);
+            db.save_emails(em);
+//            db.save_emails(em3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Delete del = new Delete(em.target, em.source, em.time);
+        db.delete_message(del);
+        System.out.println(db.getEmails(em.target).size());
+        System.out.println(db.getEmails(em.target).get(0));
+
 
         //String source, String target, String header,String message
 //        Server.runServer("127.0.0.1", "1099", "EmailServer");

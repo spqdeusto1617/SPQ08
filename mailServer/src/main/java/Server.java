@@ -20,6 +20,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean deleteEmail(Delete delete) throws RemoteException{
         try {
+            System.out.println("delete = " + delete);
             return this.db.delete_message(delete);
         } catch(Exception exception) {
             System.err.println("Server when trying to sign delete. Exception: " + exception.toString());
