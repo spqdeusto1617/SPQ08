@@ -1,4 +1,6 @@
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
 import junit.framework.JUnit4TestAdapter;
@@ -14,6 +16,8 @@ import org.junit.Before;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.ArrayList;
 
 /**
  * Created by inigo on 3/05/17.
@@ -49,6 +53,7 @@ public class MongoMockTest {
         logger.info("Starting testRegisterUserCorrectly() ");
         logger.info("Introduce new user");
 //        when( this.db.sign_up("user","user")).thenReturn( true );
+        assertEquals( this.db.sign_up("user","user"),true );
         logger.info("User already in the db");
 //        verify(this.db.sign_up("user","user"));
         assertEquals(this.db.sign_up("user","user"),false);
@@ -56,22 +61,40 @@ public class MongoMockTest {
 
     @Test
     public void sign_in() throws Exception {
-
+        assertEquals(db.sign_in("usuario","usuario"), false);
+        db.sign_up("usuario","usuario");
+        assertEquals(db.sign_in("usuario","usuario"),true);
     }
 
-    @org.junit.Test
-    public void save_emails() throws Exception {
-
+    @Test
+    public void save_emails_AND_getEmails() throws Exception {
+        db.sign_up("inigo","inigo");
+        int emails = db.getEmails("inigo").size();
+        Email m = new Email("inigo","inigo","mensaje test","mensaje test");
+        db.save_emails(m);
+        ArrayList<Email> emails2 = db.getEmails("inigo");
+        assertTrue((emails+1)==emails2.size());
+        assertEquals(m.message,emails2.get(emails2.size()-1));
     }
 
-    @org.junit.Test
+    @Test
     public void getEmails() throws Exception {
-
+        db.sign_up("inigo","inigo");
+        int emails = db.getEmails("inigo").size();
+        Email m = new Email("inigo","inigo","mensaje test","mensaje test");
+        db.save_emails(m);
+        int emails2 = db.getEmails("inigo").size();
+        assertTrue((emails+1)==emails2);
     }
 
     @org.junit.Test
     public void delete_message() throws Exception {
-
+        db.sign_up("inigo","inigo");
+        int emails = db.getEmails("inigo").size();
+        Email m = new Email("inigo2","inigo","mensaje test","mensaje test");
+        db.save_emails(m);
+        int emails2 = db.getEmails("inigo").size();
+        assertTrue((emails+1)==emails2);
     }
 
 }

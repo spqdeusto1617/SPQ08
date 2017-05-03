@@ -42,7 +42,6 @@ public class MongoDB {
     public boolean sign_up(String user, String password){
         BasicDBObject fichero = new BasicDBObject();
         fichero.put("_id", user);
-//        System.out.println(this.dbPasswordCollection.findOne(fichero));
         if(this.dbPasswordCollection.findOne(fichero) != null){
             return false;
         } else {

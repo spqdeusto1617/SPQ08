@@ -34,8 +34,7 @@ public class Email implements Serializable{
      * @param message
      * @param time
      */
-    public Email(String target, String source, String header,String message, Long time){
-        this.target=target;
+    public Email(String source, String header,String message, Long time){
         this.source=source;
         this.header=header;
         this.message=message;
@@ -44,12 +43,6 @@ public class Email implements Serializable{
 
     @Override
     public String toString() {
-        return "Email{" +
-                "source='" + source + '\'' +
-                ", target='" + target + '\'' +
-                ", header='" + header + '\'' +
-                ", message='" + message + '\'' +
-                ", time=" + time +
-                '}';
+        return "\n Source: '" + this.source + "', Target: '" + this.target + "', Header: '" + this.header + "'";
     }
 }

@@ -25,10 +25,10 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Delete del = new Delete(em.target, em.source, em.time);
-        db.delete_message(del);
-        System.out.println(db.getEmails(em.target).size());
-        System.out.println(db.getEmails(em.target).get(0));
+//        Delete del = new Delete(em.target, em.source, em.time);
+//        db.delete_message(del);
+//        System.out.println(db.getEmails(em.target).size());
+//        System.out.println(db.getEmails(em.target).get(0));
 
 
         //String source, String target, String header,String message
