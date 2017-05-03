@@ -14,25 +14,12 @@ package test;
         import org.slf4j.LoggerFactory;
         import org.junit.AfterClass;
 
-        //import org.junit.Ignore;
-
-        import db.*;
-
-        import server.data.*;
-        import server.remote.IRemote;
-        import server.remote.Remote;
-
 
 
         import java.rmi.Naming;
         import java.rmi.RemoteException;
         import java.net.MalformedURLException;
 
-        import javax.jdo.JDOHelper;
-        import javax.jdo.PersistenceManagerFactory;
-        import javax.jdo.Query;
-        import javax.jdo.PersistenceManager;
-        import javax.jdo.Transaction;
 
 
 
@@ -49,7 +36,7 @@ public class RMI_test {
     private static Thread rmiRegistryThread = null;
     private static Thread rmiServerThread = null;
 
-    private IRemote remote;
+    private RMIInterface remote;
     final static Logger logger = LoggerFactory.getLogger(RMI_test.class);
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(RMI_test.class);

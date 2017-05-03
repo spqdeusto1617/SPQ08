@@ -31,6 +31,11 @@ public class Controller implements RMIInterface{
         System.out.println("Send email: " + email.toString());
         return rsl.getService().sendEmail(email);
     }
+    
+    public boolean deleteEmail(Delete delete) throws RemoteException {
+        System.out.println("Delete email: " + delete.toString());
+        return rsl.getService().deleteEmail(delete);
+    }
 
     public ArrayList<Email> getEmails(String user) throws RemoteException {
         System.out.println("Retrive emails for user: " + user);

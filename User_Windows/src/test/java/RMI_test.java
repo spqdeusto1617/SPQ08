@@ -1,38 +1,21 @@
-package test;
 
-/**
- * Created by inigo on 3/05/17.
- */
+import junit.framework.JUnit4TestAdapter;
+import org.junit.*;
 
-        import static org.junit.Assert.*;
-        import junit.framework.JUnit4TestAdapter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import static org.junit.Assert.*;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import static org.mockito.Mockito.*;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
 
-        import org.junit.BeforeClass;
-        import org.junit.Before;
-        import org.junit.Test;
-        import org.slf4j.Logger;
-        import org.slf4j.LoggerFactory;
-        import org.junit.AfterClass;
-
-        //import org.junit.Ignore;
-
-        import db.*;
-
-        import server.data.*;
-        import server.remote.IRemote;
-        import server.remote.Remote;
-
-
-
-        import java.rmi.Naming;
-        import java.rmi.RemoteException;
-        import java.net.MalformedURLException;
-
-        import javax.jdo.JDOHelper;
-        import javax.jdo.PersistenceManagerFactory;
-        import javax.jdo.Query;
-        import javax.jdo.PersistenceManager;
-        import javax.jdo.Transaction;
 
 
 
@@ -48,12 +31,14 @@ public class RMI_test {
     private static String cwd = RMI_test.class.getProtectionDomain().getCodeSource().getLocation().getFile();
     private static Thread rmiRegistryThread = null;
     private static Thread rmiServerThread = null;
-
-    private IRemote remote;
+  
     final static Logger logger = LoggerFactory.getLogger(RMI_test.class);
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(RMI_test.class);
     }
+    @Mock
+    private RMIInterface remote;
+    @Rule public MockitoRule mockitoRule = MockitoJUnit.rule(); 
 
 
     @BeforeClass static public void setUp() {
@@ -99,7 +84,7 @@ public class RMI_test {
 
                 try {
 
-                    IRemote remote = new Remote();
+                    RMIInterface remote = new Controller("//127.0.0.1","1099", "EmailServer");
                     Naming.rebind(name, remote);
                 } catch (RemoteException re) {
                     logger.error(" # Messenger RemoteException: ");
@@ -138,7 +123,7 @@ public class RMI_test {
 
             String name = "//127.0.0.1:1099/MessengerRMIDAO";
             logger.info("BeforeTest - Setting the client ready for calling TestServer name: " + name);
-            remote = (IRemote) java.rmi.Naming.lookup(name);
+            remote = (RMIInterface) java.rmi.Naming.lookup(name);
         }
         catch (Exception re) {
             logger.error(" # Messenger RemoteException: ");
@@ -150,9 +135,11 @@ public class RMI_test {
     }
 
     @Test public void registerNewUserTest() {
+        RMIInterface remote  = Mockito.mock(Controller.class);
+        boolean t=false;
         try{
             logger.info("Test 1 - Register new user");
-            remote.registerUser("ipina", "ipina",false);
+            t=remote.signUp("victor", "victor");
         }
         catch (Exception re) {
             logger.error(" RemoteException: " );
@@ -162,19 +149,23 @@ public class RMI_test {
 		/*
 		 * Very simple test, inserting a valid new user
 		 */
-        assertTrue( true );
+        assertTrue( t );
+        try {
+            verify(remote).signUp("victor","victor");
+        } catch (RemoteException ex) {
+            java.util.logging.Logger.getLogger(RMI_test.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 
 
 
-    @Test public void registerExistingUserTest() {
+    @Test public void loginTest() {
+        RMIInterface remote  = Mockito.mock(Controller.class);
+        boolean t=false;
         try{
-            logger.info("Test 2 - Register existing user. Change password");
-            remote.registerUser("smith", "smith",false);
-            // Silly way of testing the password testing
-            remote.registerUser("smith", "doe",false);
-
+            logger.info("Test 2 - Register existing user.");
+            t=remote.signIn("gotzon", "gotzon");
         }
         catch (Exception re) {
             logger.error(" RemoteException: " + re.getMessage());
@@ -184,23 +175,25 @@ public class RMI_test {
 		/*
 		 * Very simple test
 		 */
-        assertTrue( true );
+        assertTrue( t );
+        try {
+            verify(remote).signIn("gotzon","gotzon");
+        } catch (RemoteException ex) {
+            java.util.logging.Logger.getLogger(RMI_test.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 
     //@Test public void sayMessageValidUser() {
 
-    @Test public void bookTestValidation() {
-        logger.info("Test 3 - Game Test ");
+    @Test public void emailRetrieveTest() {
+        logger.info("Test 3 - email retrieve test ");
 
-
-        Book b = new Book(1,"Prueba de librooo","Maria", 19.90);
-
-
-        Book bookTest = null;
-
+        RMIInterface remote  = Mockito.mock(Controller.class);
+        ArrayList<Email> emails = null;
+        boolean t=true;
         try{
-            bookTest = remote.bookTest();
+             emails= remote.getEmails("gotzon");
 
         } catch (RemoteException e){
             logger.error(" # RemoteException: " + e.getMessage());
@@ -209,11 +202,16 @@ public class RMI_test {
 
 
         }
-
-        assertEquals(b.toString(), bookTest.toString());
+        if(emails.isEmpty())t=false;
+        assertTrue( t );
+        try {
+            verify(remote).getEmails("gotzon");
+        } catch (RemoteException ex) {
+            java.util.logging.Logger.getLogger(RMI_test.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     }
-
+/*
     @Test public void showBooksInStoreTest() {
         try{
             logger.info("Test 4 - showBooksInStore");
@@ -300,7 +298,7 @@ public class RMI_test {
         assertEquals(r.getBook().getTitle(), reviewTest.getBook().getTitle());
         assertEquals(r.getUser().getEmail(), reviewTest.getUser().getEmail());
     }
-
+*/
     @AfterClass static public void tearDown() {
         try	{
             rmiServerThread.join();

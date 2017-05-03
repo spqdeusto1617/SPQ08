@@ -5,7 +5,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-public interface RMIInterface extends Remote {
+public interface IMongoDB extends Remote {
 
     String helloTo(String name) throws RemoteException;
     boolean signIn(String user, String password) throws RemoteException;
