@@ -1,12 +1,12 @@
 
+import java.net.MalformedURLException;
+import java.rmi.Naming;
 import junit.framework.JUnit4TestAdapter;
 import org.junit.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.rmi.Naming;
 import java.rmi.RemoteException;
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import static org.junit.Assert.*;
@@ -36,9 +36,7 @@ public class RMI_test {
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(RMI_test.class);
     }
-    @Mock
     private RMIInterface remote;
-    @Rule public MockitoRule mockitoRule = MockitoJUnit.rule(); 
 
 
     @BeforeClass static public void setUp() {
@@ -135,7 +133,6 @@ public class RMI_test {
     }
 
     @Test public void registerNewUserTest() {
-        RMIInterface remote  = Mockito.mock(Controller.class);
         boolean t=false;
         try{
             logger.info("Test 1 - Register new user");
@@ -150,18 +147,13 @@ public class RMI_test {
 		 * Very simple test, inserting a valid new user
 		 */
         assertTrue( t );
-        try {
-            verify(remote).signUp("victor","victor");
-        } catch (RemoteException ex) {
-            java.util.logging.Logger.getLogger(RMI_test.class.getName()).log(Level.SEVERE, null, ex);
-        }
+       
     }
 
 
 
 
     @Test public void loginTest() {
-        RMIInterface remote  = Mockito.mock(Controller.class);
         boolean t=false;
         try{
             logger.info("Test 2 - Register existing user.");
@@ -176,11 +168,7 @@ public class RMI_test {
 		 * Very simple test
 		 */
         assertTrue( t );
-        try {
-            verify(remote).signIn("gotzon","gotzon");
-        } catch (RemoteException ex) {
-            java.util.logging.Logger.getLogger(RMI_test.class.getName()).log(Level.SEVERE, null, ex);
-        }
+      
     }
 
 
@@ -188,8 +176,6 @@ public class RMI_test {
 
     @Test public void emailRetrieveTest() {
         logger.info("Test 3 - email retrieve test ");
-
-        RMIInterface remote  = Mockito.mock(Controller.class);
         ArrayList<Email> emails = null;
         boolean t=true;
         try{
@@ -204,12 +190,7 @@ public class RMI_test {
         }
         if(emails.isEmpty())t=false;
         assertTrue( t );
-        try {
-            verify(remote).getEmails("gotzon");
-        } catch (RemoteException ex) {
-            java.util.logging.Logger.getLogger(RMI_test.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
+        
     }
 /*
     @Test public void showBooksInStoreTest() {
