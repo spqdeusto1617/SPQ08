@@ -74,7 +74,7 @@ public class MongoMockTest {
         db.save_emails(m);
         ArrayList<Email> emails2 = db.getEmails("inigo");
         assertTrue((emails+1)==emails2.size());
-        assertEquals(m.message,emails2.get(emails2.size()-1));
+        assertEquals(m.message,emails2.get(emails2.size()-1).message);
     }
 
     @Test
@@ -92,7 +92,10 @@ public class MongoMockTest {
         db.sign_up("inigo","inigo");
         int emails = db.getEmails("inigo").size();
         Email m = new Email("inigo2","inigo","mensaje test","mensaje test");
+        Email m2 = new Email("inigo3","inigo","mensaje test","mensaje test");
         db.save_emails(m);
+        db.save_emails(m2);
+        db.delete_message(new Delete(m.target, m.source, m.time));
         int emails2 = db.getEmails("inigo").size();
         assertTrue((emails+1)==emails2);
     }

@@ -74,7 +74,6 @@ public class MongoDB {
      */
     public void save_emails(Email email) throws Exception {
         BasicDBObject document = new BasicDBObject();
-        document.put("_id", email.target);
         System.out.println(email.target);
         if(this.dbPasswordCollection.findOne(document) == null ) {
             System.out.println("IM CRASHING HERE");
