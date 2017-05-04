@@ -1,3 +1,4 @@
+import java.rmi.RemoteException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
@@ -71,6 +72,16 @@ public class MongoMockTest {
         db.sign_up("inigo","inigo");
         int emails = db.getEmails("inigo").size();
         Email m = new Email("inigo","inigo","mensaje test","mensaje test");
+        db.save_emails(m);
+        ArrayList<Email> emails2 = db.getEmails("inigo");
+        assertTrue((emails+1)==emails2.size());
+        assertEquals(m.message,emails2.get(emails2.size()-1).message);
+    }
+    @Test (expected = Exception.class)
+    public void save_email_crash() throws Exception {
+        db.sign_up("inigo","inigo");
+        int emails = db.getEmails("inigo").size();
+        Email m = new Email("inigo","inigo333","mensaje test","mensaje test");
         db.save_emails(m);
         ArrayList<Email> emails2 = db.getEmails("inigo");
         assertTrue((emails+1)==emails2.size());
