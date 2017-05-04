@@ -67,7 +67,7 @@ public class PerformanceTest {
     }
 
     @Test
-    @PerfTest(invocations = 1000, threads = 10)
+    @PerfTest(invocations = 100, threads = 10)
     @Required(max = 1000, average = 500)
     public void testSignUp() throws Exception {
         logger.info("Starting SignUp PerformanceTest", iterationSignUpTest++);
@@ -91,7 +91,7 @@ public class PerformanceTest {
     }
 
     @Test
-    @PerfTest(invocations = 1000, threads = 10)
+    @PerfTest(invocations = 100, threads = 10)
     @Required(max = 800, average = 400)
     public void testSendEmails() throws Exception {
         logger.info("Starting SendMailPerformaceTest", iterationSendMailTest++);
@@ -112,7 +112,7 @@ public class PerformanceTest {
     }
 
     @Test
-    @PerfTest(invocations = 1000, threads = 10)
+    @PerfTest(invocations = 100, threads = 10)
     @Required(max = 1000, average = 600)
     public void testGetEmails() throws Exception {
         logger.info("Starting testGetEmails", iterationGetMailTest++);

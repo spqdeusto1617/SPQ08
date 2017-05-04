@@ -24,9 +24,14 @@ public class WindowTest {
     private Controller remote;
     Logger logger = LoggerFactory.getLogger(WindowTest.class);
     private ArrayList<Email> emails ;
+    private int testCounter = 0;
+    private String testName = "inigo";
+    private String testPassword = "inigo";
+
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(WindowTest.class);
     }
+
     @Before
     public void setUp(){
          try {
@@ -38,115 +43,89 @@ public class WindowTest {
 
 
     @Test
-    public void registerNewUserTest() {
-        try {
-            logger.info("Test 1 - Register new user");
-            assertEquals( remote.signUp("victor" + Math.random(), "victor" + Math.random()),true );
-        } catch (Exception re) {
-            logger.error(" RemoteException: ");
-            logger.trace(re.getMessage());
-        }
+    public void signUpTest() throws RemoteException {
+        boolean success = false;
+        logger.info("Test 1 - Starting registerNewUserTest ");
+        success = remote.signUp(testName, testPassword);
+        logger.info("Value of success variable: " + success);
+        assertTrue( success);
+        logger.info("Test 1 - Finish registerNewUserTest");
     }
 
     @Test
-    public void loginTest() {
-        try {
-            logger.info("Test 2 - Register existing user.");
-           assertEquals( remote.signIn("gotzon", "gotzon"),true);
-
-        } catch (Exception re) {
-            logger.error(" RemoteException: " + re.getMessage());
-            logger.trace(re.getMessage());
-        }
-
+    public void loginTest() throws RemoteException {
+        boolean success = false;
+        logger.info("Test 2 - Starting loginTest ");
+        remote.signUp(testName + "1", testPassword);
+        success = remote.signIn(testName + "1", testPassword);
+        logger.info("Value of success variable: " + success);
+        assertTrue(success);
+        logger.info("Test 2 - Finishing loginTest");
     }
 
     @Test
-    public void emailRetrieveTest() {
-        logger.info("Test 3 - email retrieve test ");
-        boolean t = true;
-        try {
-            emails = remote.getEmails("gotzon");
-        } catch (RemoteException e) {
-            logger.error(" # RemoteException: " + e.getMessage());
-            logger.trace(e.getMessage());
-        }
+    public void getEmailTest() throws RemoteException {
+        logger.info("Test 3 - Starting getEmailTest");
+        boolean success = true;
+        emails = remote.getEmails("gotzon");
         if (emails.isEmpty()) {
-            t = false;
+            success = false;
         }
-        assertTrue(t);
+        assertTrue(success);
+        logger.info("Test 3 - Finishing getEmailTest");
     }
 
     @Test
-    public void deleteEmailTest() {
-        logger.info("Test 4 - email delete test ");
-        try {
-            emails = remote.getEmails("gotzon");
-        } catch (RemoteException ex) {
-            java.util.logging.Logger.getLogger(WindowTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    public void deleteEmailTest() throws RemoteException {
+        logger.info("Test 4 - Starting deleteEmailTest ");
+        emails = remote.getEmails("gotzon");
         Delete delete = new Delete(emails.get(emails.size() - 1).source, emails.get(emails.size() - 1).target, emails.get(emails.size() - 1).time);
         logger.info(delete.toString());
-        try {
-            assertEquals( remote.deleteEmail(delete),true);
+        assertTrue( remote.deleteEmail(delete));
+        logger.info("Test 4 - Finishing deleteEmailTest ");
 
-        } catch (RemoteException e) {
-            logger.error(" # RemoteException: " + e.getMessage());
-            logger.trace(e.getMessage());
-
-        }
 
     }
 
     @Test
-    public void sendEmailTest() {
-        logger.info("Test 5 - email sending test ");
-        Email email = new Email("javi", "julen55555", "Test", "Email Test");
-        try {
-            assertEquals(  remote.sendEmail(email),true);
-        } catch (RemoteException e) {
-            logger.error(" # RemoteException: " + e.getMessage());
-            logger.trace(e.getMessage());
-        }
+    public void sendEmailTest() throws RemoteException {
+        boolean success = false;
+        logger.info("Test 5 - Starting sendEmailTest ");
+        Email email = new Email("gotzon", "inigo", "Test", "Email Test");
+        success = remote.sendEmail(email);
+        assertTrue(success);
+        logger.info("Test 5 - Finishing sendEmailTest ");
     }
 
     @Test
-    public void helloTest() {
-        logger.info("Test 6 - hello test ");
-        boolean t = false;
-        String a=null;
-        try {
-            a = remote.helloTo("gotzon");
-            logger.info(a);
-        } catch (RemoteException e) {
-            logger.error(" # RemoteException: " + e.getMessage());
-            logger.trace(e.getMessage());
-        }
-        if(a!=null) {
-            t = true;
-        }
-        assertTrue(t);
+    public void helloTest() throws RemoteException {
+        logger.info("Test 6 - Starting helloTest ");
+        String response = null;
+        response = remote.helloTo("gotzon");
+        assertEquals(response, null);
+        logger.info("Test 6 - Finishing helloTest ");
     }
+
     @Test
-    public void deleteClassTest() {
-        logger.info("Test 6 - hello test ");
-        boolean t = false;
-        Delete delete= new Delete("gotzon", "inigo", Long.MIN_VALUE);
-        Delete delete2= new Delete("gotzon44", "inig3o", Long.MIN_VALUE);
-        delete2.setDate(delete.getDate());
-        delete2.setSource(delete.getSource());
-        delete2.setUser(delete.getUser());
-        if (delete.toString().equals(delete2.toString())) {
-            t=true;
-        }
-        assertTrue(t);
+    public void deleteClassTest() throws RemoteException {
+        logger.info("Test 7 - Starting deleteClassTest ");
+        boolean success = false;
+        Email email = new Email("gotzon", "inigo", "Test delete class", "Test message");
+        remote.sendEmail(email);
+        Delete delete = new Delete("inigo", "gotzon", email.time);
+        success = remote.deleteEmail(delete);
+        assertTrue(success);
+        logger.info("Test 7 - Finishing deleteClassTest ");
     }
     @Test
     public void emailClassTest() {
-        logger.info("Test 6 - hello test ");
-        boolean t = true;
-        Email email=new Email("gotzon", "inigo", "test", "test", Long.MIN_VALUE);
+        logger.info("Test 6 - Starting emailClassTest ");
+        Email email = new Email("gotzon", "inigo", "test", "test", Long.MIN_VALUE);
+        assertEquals(email.target, "gotzon");
+        assertEquals(email.source, "inigo");
+        assertEquals(email.header, "test");
+        assertEquals(email.message, "test");
+        logger.info("Test 6 - Finishing emailClassTest ");
 
-        assertTrue(t);
     }
 }
