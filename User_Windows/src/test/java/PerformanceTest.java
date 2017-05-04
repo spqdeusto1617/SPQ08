@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.rmi.RemoteException;
+import java.util.logging.Level;
 
 
 @PerfTest(invocations = 100, threads = 20)
@@ -38,7 +39,8 @@ public class PerformanceTest {
     private String user4Name = "Elizabeth";
     private String passwordUser4 = "123456";
 
-    private static Server server;
+    private static Controller remote;
+
     private static Email email;
 
     final static Logger logger = LoggerFactory.getLogger(PerformanceTest.class);
@@ -55,10 +57,12 @@ public class PerformanceTest {
 
     @BeforeClass
     public static void setUp() throws RemoteException {
-        //logger.info("Entering setUp");
         logger.info("Entering setUp: {}");
-        server = new Server();
-        server.runServer("127.0.0.1", "1099", "EmailServer");
+        try {
+            remote = new Controller("127.0.0.1", "1099", "EmailServer");
+        } catch (RemoteException ex) {
+            java.util.logging.Logger.getLogger(WindowTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
         logger.info("Leaving setUp");
     }
 
@@ -68,17 +72,17 @@ public class PerformanceTest {
     public void testSignUp() throws Exception {
         logger.info("Starting SignUp PerformanceTest", iterationSignUpTest++);
 
-        server.signUp(user1Name, passwordUser1);
-        user1LoggedIn = server.signIn(user1Name, passwordUser1);
+        remote.signUp(user1Name, passwordUser1);
+        user1LoggedIn = remote.signIn(user1Name, passwordUser1);
         assertTrue(user1LoggedIn);
-        server.signUp(user2Name, passwordUser2);
-        user2LoggedIn = server.signIn(user2Name, passwordUser2);
+        remote.signUp(user2Name, passwordUser2);
+        user2LoggedIn = remote.signIn(user2Name, passwordUser2);
         assertTrue(user2LoggedIn);
-        server.signUp(user3Name, passwordUser3);
-        user3LoggedIn = server.signIn(user3Name, passwordUser3);
+        remote.signUp(user3Name, passwordUser3);
+        user3LoggedIn = remote.signIn(user3Name, passwordUser3);
         assertTrue(user3LoggedIn);
-        server.signUp(user4Name, passwordUser4);
-        user4LoggedIn = server.signIn(user4Name, passwordUser4);
+        remote.signUp(user4Name, passwordUser4);
+        user4LoggedIn = remote.signIn(user4Name, passwordUser4);
         assertTrue(user4LoggedIn);
 
         Thread.sleep(200);
@@ -100,7 +104,7 @@ public class PerformanceTest {
                 System.currentTimeMillis()
         );
 
-        server.sendEmail(email);
+        remote.sendEmail(email);
 
         Thread.sleep(200);
 
@@ -113,7 +117,7 @@ public class PerformanceTest {
     public void testGetEmails() throws Exception {
         logger.info("Starting testGetEmails", iterationGetMailTest++);
 
-        server.getEmails(user1Name);
+        remote.getEmails(user1Name);
 
         Thread.sleep(200);
 
