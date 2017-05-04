@@ -96,14 +96,7 @@
     </dependencies>
 
     <build>
-        <resources>
-            <resource>
-                <directory>${config.files.dir}</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                </includes>
-            </resource>
-        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -194,6 +187,14 @@
         <profile>
             <id>client</id>
             <build>
+                <resources>
+                    <resource>
+                        <directory>${config.files.dir}</directory>
+                        <includes>
+                            <include>**/*.properties</include>
+                        </includes>
+                    </resource>
+                </resources>
                 <plugins>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
