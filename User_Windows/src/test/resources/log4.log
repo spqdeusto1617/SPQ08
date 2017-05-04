@@ -1,0 +1,1630 @@
+18:30:32> INFO  (PerformanceTest.java:60): Entering setUp: {}
+18:30:38> INFO  (PerformanceTest.java:66): Leaving setUp
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438103}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438103}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438105}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438106}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438108}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438112}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 4', message='Test message 4', time=1493915438102}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 2', message='Test message 2', time=1493915438102}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438115}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 10', message='Test message 10', time=1493915438104}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 11', message='Test message 11', time=1493915438323}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 12', message='Test message 12', time=1493915438327}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 13', message='Test message 13', time=1493915438328}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 14', message='Test message 14', time=1493915438334}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 15', message='Test message 15', time=1493915438335}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 16', message='Test message 16', time=1493915438337}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 17', message='Test message 17', time=1493915438340}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 18', message='Test message 18', time=1493915438341}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 19', message='Test message 19', time=1493915438342}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 20', message='Test message 20', time=1493915438342}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 21', message='Test message 21', time=1493915438536}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 24', message='Test message 24', time=1493915438548}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 24', message='Test message 24', time=1493915438550}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 24', message='Test message 24', time=1493915438549}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 25', message='Test message 25', time=1493915438556}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 26', message='Test message 26', time=1493915438559}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 28', message='Test message 28', time=1493915438565}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 28', message='Test message 28', time=1493915438565}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 29', message='Test message 29', time=1493915438566}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 30', message='Test message 30', time=1493915438568}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 31', message='Test message 31', time=1493915438745}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 32', message='Test message 32', time=1493915438758}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 35', message='Test message 35', time=1493915438764}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 35', message='Test message 35', time=1493915438764}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 35', message='Test message 35', time=1493915438765}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 36', message='Test message 36', time=1493915438767}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 38', message='Test message 38', time=1493915438776}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 40', message='Test message 40', time=1493915438776}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 40', message='Test message 40', time=1493915438776}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 40', message='Test message 40', time=1493915438777}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 41', message='Test message 41', time=1493915438955}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 42', message='Test message 42', time=1493915438967}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 46', message='Test message 46', time=1493915438979}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 46', message='Test message 46', time=1493915438979}
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 46', message='Test message 46', time=1493915438979}
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 46', message='Test message 46', time=1493915438981}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 47', message='Test message 47', time=1493915438983}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 48', message='Test message 48', time=1493915438985}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 49', message='Test message 49', time=1493915438986}
+18:30:38> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:38> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:38> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 50', message='Test message 50', time=1493915438987}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 51', message='Test message 51', time=1493915439161}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 52', message='Test message 52', time=1493915439173}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 53', message='Test message 53', time=1493915439201}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 55', message='Test message 55', time=1493915439211}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 56', message='Test message 56', time=1493915439212}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 57', message='Test message 57', time=1493915439213}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 58', message='Test message 58', time=1493915439215}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 59', message='Test message 59', time=1493915439216}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 60', message='Test message 60', time=1493915439217}
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 60', message='Test message 60', time=1493915439220}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 61', message='Test message 61', time=1493915439369}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 62', message='Test message 62', time=1493915439380}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 63', message='Test message 63', time=1493915439417}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 64', message='Test message 64', time=1493915439423}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 65', message='Test message 65', time=1493915439429}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 66', message='Test message 66', time=1493915439430}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 67', message='Test message 67', time=1493915439431}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 68', message='Test message 68', time=1493915439432}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 69', message='Test message 69', time=1493915439434}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 70', message='Test message 70', time=1493915439435}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 71', message='Test message 71', time=1493915439577}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 72', message='Test message 72', time=1493915439589}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 73', message='Test message 73', time=1493915439638}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 74', message='Test message 74', time=1493915439639}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 78', message='Test message 78', time=1493915439646}
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 78', message='Test message 78', time=1493915439645}
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 78', message='Test message 78', time=1493915439646}
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 78', message='Test message 78', time=1493915439646}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 80', message='Test message 80', time=1493915439657}
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 80', message='Test message 80', time=1493915439658}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 81', message='Test message 81', time=1493915439784}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 82', message='Test message 82', time=1493915439795}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 84', message='Test message 84', time=1493915439848}
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 84', message='Test message 84', time=1493915439848}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 86', message='Test message 86', time=1493915439859}
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 86', message='Test message 86', time=1493915439860}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 88', message='Test message 88', time=1493915439865}
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 88', message='Test message 88', time=1493915439865}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 90', message='Test message 90', time=1493915439869}
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 90', message='Test message 90', time=1493915439869}
+18:30:39> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:39> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:39> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 91', message='Test message 91', time=1493915439992}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 92', message='Test message 92', time=1493915440003}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 94', message='Test message 94', time=1493915440060}
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 94', message='Test message 94', time=1493915440059}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 96', message='Test message 96', time=1493915440070}
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 96', message='Test message 96', time=1493915440069}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 97', message='Test message 97', time=1493915440073}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 98', message='Test message 98', time=1493915440073}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 100', message='Test message 100', time=1493915440076}
+18:30:40> INFO  (PerformanceTest.java:97): Starting SendMailPerformaceTest
+18:30:40> INFO  (Controller.java:38): Send email: Email{source='Mark', target='John', header='Test 100', message='Test message 100', time=1493915440077}
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> DEBUG (PerformanceTest.java:111): Finishing SendMailPerformaceTest
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:40> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:40> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:40> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:41> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:41> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:118): Starting testGetEmails
+18:30:42> INFO  (Controller.java:43): Retrive emails for user: John
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> DEBUG (PerformanceTest.java:124): Finishing testGetEmails
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:42> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:42> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:42> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:43> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:43> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:43> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:43> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:43> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (PerformanceTest.java:73): Starting SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: John password: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: John with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Mark password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Mark with passord: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Jane password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Jane with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:33): Sign up: Elizabeth password: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> INFO  (Controller.java:28): Sign in user: Elizabeth with passord: 123456
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:44> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:45> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:45> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:45> DEBUG (PerformanceTest.java:90): Finishing SignUp PerformanceTest
+18:30:45> INFO  (WindowTest.java:93): Test 5 - Starting sendEmailTest 
+18:30:45> INFO  (Controller.java:38): Send email: Email{source='gotzon', target='inigo', header='Test', message='Email Test', time=1493915445077}
+18:30:45> INFO  (WindowTest.java:97): Test 5 - Finishing sendEmailTest 
+18:30:45> INFO  (WindowTest.java:58): Test 2 - Starting loginTest 
+18:30:45> INFO  (Controller.java:33): Sign up: inigo1 password: inigo
+18:30:45> INFO  (Controller.java:28): Sign in user: inigo1 with passord: inigo
+18:30:45> INFO  (WindowTest.java:61): Value of success variable: true
+18:30:45> INFO  (WindowTest.java:63): Test 2 - Finishing loginTest
+18:30:45> INFO  (WindowTest.java:48): Test 1 - Starting registerNewUserTest 
+18:30:45> INFO  (Controller.java:33): Sign up: inigo password: inigo
+18:30:45> INFO  (WindowTest.java:50): Value of success variable: true
+18:30:45> INFO  (WindowTest.java:52): Test 1 - Finish registerNewUserTest
+18:30:45> INFO  (WindowTest.java:80): Test 4 - Starting deleteEmailTest 
+18:30:45> INFO  (Controller.java:43): Retrive emails for user: gotzon
+18:30:45> INFO  (WindowTest.java:83): Delete{user='inigo2', source='gotzon', date=1493915384768}
+18:30:45> INFO  (Controller.java:23): delete = Delete{user='inigo2', source='gotzon', date=1493915384768}
+18:30:45> INFO  (WindowTest.java:85): Test 4 - Finishing deleteEmailTest 
+18:30:45> INFO  (WindowTest.java:122): Test 6 - Starting emailClassTest 
+18:30:45> INFO  (WindowTest.java:128): Test 6 - Finishing emailClassTest 
+18:30:45> INFO  (WindowTest.java:111): Test 7 - Starting deleteClassTest 
+18:30:45> INFO  (Controller.java:38): Send email: Email{source='gotzon', target='inigo', header='Test delete class', message='Test message', time=1493915445123}
+18:30:45> INFO  (Controller.java:23): delete = Delete{user='inigo', source='gotzon', date=1493915445123}
+18:30:45> INFO  (WindowTest.java:118): Test 7 - Finishing deleteClassTest 
+18:30:45> INFO  (WindowTest.java:102): Test 6 - Starting helloTest 
+18:30:45> INFO  (WindowTest.java:106): Test 6 - Finishing helloTest 
+18:30:45> INFO  (WindowTest.java:68): Test 3 - Starting getEmailTest
+18:30:45> INFO  (Controller.java:43): Retrive emails for user: gotzon
+18:30:45> INFO  (WindowTest.java:75): Test 3 - Finishing getEmailTest
