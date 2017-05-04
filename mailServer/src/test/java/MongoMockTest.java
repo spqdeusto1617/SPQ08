@@ -5,8 +5,7 @@ import junit.framework.JUnit4TestAdapter;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.powermock.modules.junit4.PowerMockRunner;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -64,7 +63,7 @@ public class MongoMockTest {
     public void save_emails_AND_getEmails() throws Exception {
         db.sign_up("inigo","inigo");
         int emails = db.getEmails("inigo").size();
-        Email m = new Email("inigo","inigo55","mensaje test","mensaje test");
+        Email m = new Email("inigo","inigo","mensaje test","mensaje test");
         db.save_emails(m);
         ArrayList<Email> emails2 = db.getEmails("inigo");
         assertTrue((emails+1)==emails2.size());

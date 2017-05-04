@@ -61,7 +61,7 @@ public class PerformanceTest {
         try {
             remote = new Controller("127.0.0.1", "1099", "EmailServer");
         } catch (RemoteException ex) {
-            java.util.logging.Logger.getLogger(WindowTest.class.getName()).log(Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PerformanceTest.class.getName()).log(Level.SEVERE, null, ex);
         }
         logger.info("Leaving setUp");
     }
