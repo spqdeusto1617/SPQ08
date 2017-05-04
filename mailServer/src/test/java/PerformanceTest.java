@@ -44,6 +44,7 @@ public class PerformanceTest {
     final static Logger logger = LoggerFactory.getLogger(PerformanceTest.class);
     static int iterationSignUpTest = 0;
     static int iterationSendMailTest = 0;
+    static int iterationGetMailTest = 0;
 
     @Rule public ContiPerfRule rule = new ContiPerfRule();
 
@@ -104,5 +105,18 @@ public class PerformanceTest {
         Thread.sleep(200);
 
         logger.debug("Finishing SendMailPerformaceTest");
+    }
+
+    @Test
+    @PerfTest(invocations = 1000, threads = 10)
+    @Required(max = 1000, average = 600)
+    public void testGetEmails() throws Exception {
+        logger.info("Starting testGetEmails", iterationGetMailTest++);
+
+        server.getEmails(user1Name);
+
+        Thread.sleep(200);
+
+        logger.debug("Finishing testGetEmails");
     }
 }
