@@ -87,6 +87,14 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${config.files.dir}</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
