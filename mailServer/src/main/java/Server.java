@@ -25,7 +25,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             logger.info("delete = " + delete);
             return this.db.delete_message(delete);
         } catch(Exception exception) {
-            System.err.println("Server when trying to sign delete. Exception: " + exception.toString());
+            logger.debug("Server when trying to sign delete. Exception: " + exception.toString());
             return false;
         }
     }
@@ -37,7 +37,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             logger.info("=================================");
             return this.db.sign_in(user, password);
         } catch(Exception exception) {
-            System.err.println("Server when trying to sign in. Exception: " + exception.toString());
+            logger.debug("Server when trying to sign in. Exception: " + exception.toString());
             return false;
         }
     }
@@ -46,7 +46,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
         try {
             return this.db.sign_up(user, password);
         } catch(Exception exception) {
-            System.err.println("Server when trying to sign up. Exception: " + exception.toString());
+            logger.debug("Server when trying to sign up. Exception: " + exception.toString());
             return false;
         }
     }
@@ -59,7 +59,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             logger.info("=================================");
             return true;
         } catch(Exception exception) {
-            System.err.println("Server exception when trying to send Email. Exception: " + exception.toString());
+            logger.debug("Server exception when trying to send Email. Exception: " + exception.toString());
             return false;
         }
     }
@@ -80,7 +80,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
             String line  = stdin.readLine();
         } catch (Exception e) {
-            System.err.println("- Exception running the server: " + e.getMessage());
+            logger.debug("- Exception running the server: " + e.getMessage());
             e.printStackTrace();
         }
 

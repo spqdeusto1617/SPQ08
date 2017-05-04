@@ -33,7 +33,7 @@ public class WindowTest {
     }
 
     @Before
-    public void setUp() {
+    public void setUp(){
          try {
             remote = new Controller("127.0.0.1", "1099", "EmailServer");
         } catch (RemoteException ex) {
@@ -84,6 +84,7 @@ public class WindowTest {
         assertTrue( remote.deleteEmail(delete));
         logger.info("Test 4 - Finishing deleteEmailTest ");
 
+
     }
 
     @Test
@@ -119,11 +120,12 @@ public class WindowTest {
     @Test
     public void emailClassTest() {
         logger.info("Test 6 - Starting emailClassTest ");
-        Email email=new Email("gotzon", "inigo", "test", "test", Long.MIN_VALUE);
+        Email email = new Email("gotzon", "inigo", "test", "test", Long.MIN_VALUE);
         assertEquals(email.target, "gotzon");
         assertEquals(email.source, "inigo");
         assertEquals(email.header, "test");
         assertEquals(email.message, "test");
         logger.info("Test 6 - Finishing emailClassTest ");
+
     }
 }
