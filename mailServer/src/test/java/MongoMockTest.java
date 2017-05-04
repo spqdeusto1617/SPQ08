@@ -1,52 +1,23 @@
-<<<<<<< HEAD
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.*;
 
-import com.mongodb.*;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-=======
->>>>>>> afaef5ee255a82b9a767942b6d4e7b1daf040700
 import junit.framework.JUnit4TestAdapter;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-<<<<<<< HEAD
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.mockito.runners.MockitoJUnitRunner;
-
-import org.junit.Before;
-
-import org.powermock.api.mockito.PowerMockito;
 import org.powermock.modules.junit4.PowerMockRunner;
-=======
-import org.mockito.runners.MockitoJUnitRunner;
->>>>>>> afaef5ee255a82b9a767942b6d4e7b1daf040700
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-import static org.mockito.Mockito.when;
-=======
 import java.util.logging.Level;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
->>>>>>> afaef5ee255a82b9a767942b6d4e7b1daf040700
 
 /**
  * Created by inigo on 3/05/17.
  */
 
-//@RunWith(MockitoJUnitRunner.class)
-@RunWith(PowerMockRunner.class)
+
 public class MongoMockTest {
 
     private MongoDB db;
@@ -57,32 +28,6 @@ public class MongoMockTest {
         return new JUnit4TestAdapter(MongoMockTest.class);
     }
 
-//    @Mock
-//    private MongoClient mockClient;
-//    @Mock
-//    private MongoCollection mockCollection;
-//    @Mock
-//    private MongoDatabase mockDB;
-//
-//    @InjectMocks
-//    private MongoDB wrapper;
-
-
-    @Before
-    public void setUp_mockito() throws Exception {
-        logger.info("Entering setUp mockito: {}", iteration++);
-//        MockitoAnnotations.initMocks(this);
-//        when(mockClient.getDatabase(db.getDatabasePassword())).thenReturn(mockDB);
-//        when(mockDB.getCollection(db.getUserCollection())).thenReturn(mockCollection);
-        Mongo mongo = PowerMockito.mock(Mongo.class);
-        DB db2 = PowerMockito.mock(DB.class);
-        DBCollection dbCollection = PowerMockito.mock(DBCollection.class);
-        logger.info("Leaving setUp");
-    }
-
-    public void sign_in_using_mockito() throws Exception{
-
-    }
 
     @Before
     public void setUp() throws Exception {
