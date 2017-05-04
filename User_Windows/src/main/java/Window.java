@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -22,6 +23,7 @@ import javax.swing.DefaultListModel;
 public class Window extends javax.swing.JFrame {
 
     static String pass,usr;
+    org.slf4j.Logger logger = LoggerFactory.getLogger(Window.class);
     /**
      * Creates new form Window
      */
@@ -42,9 +44,9 @@ public class Window extends javax.swing.JFrame {
       
         try {
             if (cntr.signIn(usr, pass)) {
-                System.out.println("++++++++++++++++++++++++++++++++");
-                System.out.println("Trying to login user: " + usr + " with password: " + pass);
-                System.out.println("++++++++++++++++++++++++++++++++");
+                logger.info("++++++++++++++++++++++++++++++++");
+                logger.info("Trying to login user: " + usr + " with password: " + pass);
+                logger.info("++++++++++++++++++++++++++++++++");
                 this.setEnabled(true);
                 jDialog1.dispose();
                 load();
@@ -488,9 +490,9 @@ public class Window extends javax.swing.JFrame {
         try {
             // TODO add your handling code here:
             Email e=new Email(usr,jTextField2.getText(),jTextField3.getText(),jTextArea1.getText());
-            System.out.println("+++++++++++++++++++++++++++++++++");
-            System.out.println("Frontend: Send email: " + e.toString());
-            System.out.println("+++++++++++++++++++++++++++++++++");
+            logger.info("+++++++++++++++++++++++++++++++++");
+            logger.info("Frontend: Send email: " + e.toString());
+            logger.info("+++++++++++++++++++++++++++++++++");
             if (cntr.sendEmail(e)){
                 jDialog2.setVisible(false);
             }
@@ -564,10 +566,10 @@ public class Window extends javax.swing.JFrame {
         setModel();
            try {
             // TODO add your handling code here:
-             System.out.println("++++++++++++++++++++++++++++++++");
-             System.out.println("Trying to refresh user: " + usr);
+             logger.info("++++++++++++++++++++++++++++++++");
+             logger.info("Trying to refresh user: " + usr);
              emails=cntr.getEmails(usr);
-             System.out.println("++++++++++++++++++++++++++++++++");
+             logger.info("++++++++++++++++++++++++++++++++");
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -584,11 +586,11 @@ public class Window extends javax.swing.JFrame {
         listModel.removeAllElements();
          try {
             // TODO add your handling code here:
-             System.out.println("++++++++++++++++++++++++++++++++");
-             System.out.println("Trying to refresh user: " + usr);
+             logger.info("++++++++++++++++++++++++++++++++");
+             logger.info("Trying to refresh user: " + usr);
              
              emails=cntr.getEmails(usr);
-             System.out.println("++++++++++++++++++++++++++++++++");
+             logger.info("++++++++++++++++++++++++++++++++");
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }

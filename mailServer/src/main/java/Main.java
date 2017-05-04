@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Create user
-        MongoDB db = new MongoDB();
+        /*MongoDB db = new MongoDB();
         db.sign_up("inigo","inigo");
         db.sign_up("inigo2","inigo2");
         db.sign_up("gotzon","gotzon");
@@ -27,12 +27,12 @@ public class Main {
         }
 //        Delete del = new Delete(em.target, em.source, em.time);
 //        db.delete_message(del);
-//        System.out.println(db.getEmails(em.target).size());
-//        System.out.println(db.getEmails(em.target).get(0));
+//        logger.info(db.getEmails(em.target).size());
+//        logger.info(db.getEmails(em.target).get(0));
 
 
         //String source, String target, String header,String message
-//        Server.runServer("127.0.0.1", "1099", "EmailServer");
+//        Server.runServer("127.0.0.1", "1099", "EmailServer");*/
         Server.runServer(args[0], args[1], args[2]);
 //        while (true);
     }

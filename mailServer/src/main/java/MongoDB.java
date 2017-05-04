@@ -5,6 +5,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import org.slf4j.LoggerFactory;
 
 
 
@@ -32,7 +33,8 @@ public class MongoDB {
     private DBCollection dbPasswordCollection = null;
 
     final String userCollection = "user";
-
+    
+    org.slf4j.Logger logger = LoggerFactory.getLogger(MongoDB.class);
 
     MongoClient mongo;
 
@@ -106,9 +108,9 @@ public class MongoDB {
      */
     public void save_emails(Email email) throws Exception {
         BasicDBObject document = new BasicDBObject();
-        System.out.println(email.target);
+        logger.info(email.target);
         if(this.dbPasswordCollection.findOne(document) == null ) {
-            System.out.println("IM CRASHING HERE");
+            logger.info("IM CRASHING HERE");
             throw new Exception();
         } else {
             DBCollection usuario = this.db.getCollection(email.target);

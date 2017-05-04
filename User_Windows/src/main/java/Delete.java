@@ -1,18 +1,21 @@
+
 import java.io.Serializable;
 
 /**
  * Created by Maria Blaja on 4/28/2017.
  */
 public class Delete implements Serializable {
+
     private String user;
     private String source;
     private Long date;
 
-    public Delete(String user, String source, Long date){
+    public Delete(String user, String source, Long date) {
         this.user = user;
         this.source = source;
         this.date = date;
-    }
+    } 
+
 
     public String getUser() {
         return user;
@@ -40,10 +43,10 @@ public class Delete implements Serializable {
 
     @Override
     public String toString() {
-        return "Delete{" +
-                "user='" + user + '\'' +
-                ", source='" + source + '\'' +
-                ", date=" + date +
-                '}';
+        return "Delete{"
+                + "user='" + user + '\''
+                + ", source='" + source + '\''
+                + ", date=" + date
+                + '}';
     }
 }

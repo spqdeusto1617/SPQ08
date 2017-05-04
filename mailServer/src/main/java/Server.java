@@ -2,6 +2,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by inigo on 6/04/17.
@@ -10,6 +11,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     private MongoDB db = null;
 
+    static org.slf4j.Logger logger = LoggerFactory.getLogger(Server.class);
     protected Server() throws RemoteException {
         this.db= new MongoDB();
     }
@@ -20,7 +22,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean deleteEmail(Delete delete) throws RemoteException{
         try {
-            System.out.println("delete = " + delete);
+            logger.info("delete = " + delete);
             return this.db.delete_message(delete);
         } catch(Exception exception) {
             System.err.println("Server when trying to sign delete. Exception: " + exception.toString());
@@ -30,9 +32,9 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean signIn(String user, String password) throws RemoteException {
         try {
-            System.out.println("=================================");
-            System.out.println("sign in for user: " + user);
-            System.out.println("=================================");
+            logger.info("=================================");
+            logger.info("sign in for user: " + user);
+            logger.info("=================================");
             return this.db.sign_in(user, password);
         } catch(Exception exception) {
             System.err.println("Server when trying to sign in. Exception: " + exception.toString());
@@ -51,10 +53,10 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
 
     public boolean sendEmail(Email email) throws RemoteException {
         try {
-            System.out.println("=================================");
+            logger.info("=================================");
             this.db.save_emails(email);
-            System.out.println("Email have been send: " + email.toString());
-            System.out.println("=================================");
+            logger.info("Email have been send: " + email.toString());
+            logger.info("=================================");
             return true;
         } catch(Exception exception) {
             System.err.println("Server exception when trying to send Email. Exception: " + exception.toString());
@@ -63,7 +65,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
     }
 
     public ArrayList<Email> getEmails(String user) throws RemoteException {
-        System.out.println("Retrive all the emails for the user: " + user);
+        logger.info("Retrive all the emails for the user: " + user);
         return this.db.getEmails(user);
     }
 
@@ -73,7 +75,7 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             RMIInterface objServer = new Server();
 //			objServer.registerUser("client","pass");
             Naming.rebind(name, objServer);
-            System.out.println("* Server '" + name + "' active and waiting...");
+            logger.info("* Server '" + name + "' active and waiting...");
             java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
             java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
             String line  = stdin.readLine();
