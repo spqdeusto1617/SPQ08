@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Created by inigo on 6/04/17.
  */
-public class Controller implements RMIInterface{
+public class Controller implements RMIInterface {
 
     private RMIServiceLocator rsl;
     
@@ -16,7 +16,7 @@ public class Controller implements RMIInterface{
     }
 
     public String helloTo(String name) throws RemoteException {
-        return "Hello";
+        return rsl.getService().helloTo(name);
     }
 
     public boolean deleteEmail(Delete delete) throws RemoteException{

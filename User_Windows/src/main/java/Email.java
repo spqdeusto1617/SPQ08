@@ -6,10 +6,10 @@ import java.io.Serializable;
  */
 public class Email implements Serializable{
 
-    String source=null;
-    String target=null;
-    String header=null;
-    String message=null;
+    String source = null;
+    String target = null;
+    String header = null;
+    String message = null;
     Long time = 0l;
 
     /**
@@ -20,11 +20,11 @@ public class Email implements Serializable{
      * @param message
      */
     public Email(String source, String target, String header,String message){
-        this.source=source;
-        this.target=target;
-        this.header=header;
-        this.message=message;
-        this.time= System.currentTimeMillis();
+        this.source = source;
+        this.target = target;
+        this.header = header;
+        this.message = message;
+        this.time = System.currentTimeMillis();
     }
 
     /**
@@ -35,11 +35,11 @@ public class Email implements Serializable{
      * @param time
      */
     public Email(String target, String source, String header,String message, Long time){
-        this.target=target;
-        this.source=source;
-        this.header=header;
-        this.message=message;
-        this.time= time;
+        this.target = target;
+        this.source = source;
+        this.header = header;
+        this.message = message;
+        this.time = time;
     }
 
     @Override
