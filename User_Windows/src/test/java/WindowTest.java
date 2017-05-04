@@ -27,15 +27,15 @@ public class WindowTest {
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(WindowTest.class);
     }
-
     @Before
-    public void setUp() {
-        try {
+    public void setUp(){
+         try {
             remote = new Controller("127.0.0.1", "1099", "EmailServer");
         } catch (RemoteException ex) {
             java.util.logging.Logger.getLogger(WindowTest.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+   
    
     @Test
     public void registerNewUserTest() {
@@ -106,7 +106,7 @@ public class WindowTest {
     @Test
     public void sendEmailTest() {
         logger.info("Test 5 - email sending test ");
-        Email email = new Email("javi", "julen", "Test", "Email Test");
+        Email email = new Email("javi", "julen55555", "Test", "Email Test");
         try {
             assertEquals(  remote.sendEmail(email),true);
         } catch (RemoteException e) {
@@ -120,7 +120,7 @@ public class WindowTest {
     public void helloTest() {
         logger.info("Test 6 - hello test ");
         boolean t = false;
-        String a="";
+        String a=null;
         try {
             a = remote.helloTo("gotzon");
             logger.info(a);
@@ -128,7 +128,7 @@ public class WindowTest {
             logger.error(" # RemoteException: " + e.getMessage());
             logger.trace(e.getMessage());
         }
-        if(a==null) {
+        if(a!=null) {
             t = true;
         }
         assertTrue(t);

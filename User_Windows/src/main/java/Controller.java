@@ -16,7 +16,7 @@ public class Controller implements RMIInterface{
     }
 
     public String helloTo(String name) throws RemoteException {
-        return null;
+        return "Hello";
     }
 
     public boolean deleteEmail(Delete delete) throws RemoteException{
