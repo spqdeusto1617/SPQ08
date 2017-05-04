@@ -18,22 +18,54 @@ Crear 1 collección por usuario -> los documentos serán los correos
  */
 public class MongoDB {
 
+    public String getDatabaseName() {
+        return databaseName;
+    }
+
+    public String getDatabasePassword() {
+        return databasePassword;
+    }
+
     final String databaseName = "emails";
     final String databasePassword = "password";
-    DB db = null;
-    DBCollection dbPasswordCollection = null;
+    private DB db = null;
+    private DBCollection dbPasswordCollection = null;
 
     final String userCollection = "user";
 
 
+    MongoClient mongo;
+
+    public String getUserCollection() {
+        return userCollection;
+    }
+
     public MongoDB(){
-        MongoClient mongo = new MongoClient( "localhost" , 27017 );
+
+        this.mongo = new MongoClient( "localhost" , 27017 );
         //Get database. If the database doesn’t exist, MongoDB will create it for you.
         this.db = mongo.getDB(this.databaseName);
         this.dbPasswordCollection = mongo.getDB(this.databasePassword).getCollection(this.userCollection);
     }
 
+    public DB getDb() {
+        return db;
+    }
+
+    public void setDb(DB db) {
+        this.db = db;
+    }
+
+    public DBCollection getDbPasswordCollection() {
+        return dbPasswordCollection;
+    }
+
+    public void setDbPasswordCollection(DBCollection dbPasswordCollection) {
+        this.dbPasswordCollection = dbPasswordCollection;
+    }
+
     /**
+
      *
      * @param user
      * @param password

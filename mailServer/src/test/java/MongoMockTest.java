@@ -3,36 +3,71 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
+import com.mongodb.*;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import junit.framework.JUnit4TestAdapter;
 
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import org.junit.Before;
 
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.modules.junit4.PowerMockRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import static org.mockito.Mockito.when;
 
 /**
  * Created by inigo on 3/05/17.
  */
 
-@RunWith(MockitoJUnitRunner.class)
+//@RunWith(MockitoJUnitRunner.class)
+@RunWith(PowerMockRunner.class)
 public class MongoMockTest {
 
-    @Mock
     private MongoDB db;
     final static  Logger logger = LoggerFactory.getLogger(MongoMockTest.class);
     static int iteration = 0;
 
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(MongoMockTest.class);
+    }
+
+//    @Mock
+//    private MongoClient mockClient;
+//    @Mock
+//    private MongoCollection mockCollection;
+//    @Mock
+//    private MongoDatabase mockDB;
+//
+//    @InjectMocks
+//    private MongoDB wrapper;
+
+
+    @Before
+    public void setUp_mockito() throws Exception {
+        logger.info("Entering setUp mockito: {}", iteration++);
+//        MockitoAnnotations.initMocks(this);
+//        when(mockClient.getDatabase(db.getDatabasePassword())).thenReturn(mockDB);
+//        when(mockDB.getCollection(db.getUserCollection())).thenReturn(mockCollection);
+        Mongo mongo = PowerMockito.mock(Mongo.class);
+        DB db2 = PowerMockito.mock(DB.class);
+        DBCollection dbCollection = PowerMockito.mock(DBCollection.class);
+        logger.info("Leaving setUp");
+    }
+
+    public void sign_in_using_mockito() throws Exception{
+
     }
 
     @Before
@@ -70,11 +105,12 @@ public class MongoMockTest {
     public void save_emails_AND_getEmails() throws Exception {
         db.sign_up("inigo","inigo");
         int emails = db.getEmails("inigo").size();
-        Email m = new Email("inigo","inigo","mensaje test","mensaje test");
+        Email m = new Email("inigo","inigo55","mensaje test","mensaje test");
         db.save_emails(m);
         ArrayList<Email> emails2 = db.getEmails("inigo");
         assertTrue((emails+1)==emails2.size());
         assertEquals(m.message,emails2.get(emails2.size()-1).message);
+
     }
 
     @Test
