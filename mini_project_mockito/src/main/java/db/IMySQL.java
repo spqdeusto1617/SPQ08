@@ -8,5 +8,6 @@ import entities.User;
 public interface IMySQL {
     public void storeUser(User u);
     public void deleteUser(User u);
-    public User getUser(String email);
+    public User getUser(String username);
+
 }

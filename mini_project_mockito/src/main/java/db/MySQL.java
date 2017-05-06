@@ -65,6 +65,7 @@ public class MySQL implements IMySQL {
         try {
             tx.begin();
             user = pm.getObjectById(User.class, username);
+            user = pm.detachCopy(user);
             tx.commit();
         } catch (Exception ex) {
             System.out.println("# Error getting Extent: " + ex.getMessage());
