@@ -78,13 +78,13 @@ public class WindowTest {
     @Test
     public void deleteEmailTest() throws RemoteException {
         logger.info("Test 4 - Starting deleteEmailTest ");
+        Email email = new Email("inigo", "gotzon", "Test email", "Test delete email");
+        remote.sendEmail(email);
         emails = remote.getEmails("gotzon");
         Delete delete = new Delete(emails.get(emails.size() - 1).source, emails.get(emails.size() - 1).target, emails.get(emails.size() - 1).time);
         logger.info(delete.toString());
         assertTrue( remote.deleteEmail(delete));
         logger.info("Test 4 - Finishing deleteEmailTest ");
-
-
     }
 
     @Test

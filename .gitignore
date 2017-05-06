@@ -54,5 +54,4 @@ mailServer/target/
 User_Windows/target/
 
 
-mailServer/**/resources/*.log
-User_Windows/**/resources/*.log
+**/*.log
