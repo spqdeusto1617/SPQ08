@@ -13,7 +13,9 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ActionMap;
 import javax.swing.DefaultListModel;
+import javax.swing.plaf.ActionMapUIResource;
 import org.slf4j.LoggerFactory;
 
 /**
@@ -30,7 +32,7 @@ public class Window extends javax.swing.JFrame {
     public Window() {
         initComponents();
         this.setEnabled(false);
-        jDialog1.setVisible(true);
+        loginDialog.setVisible(true);
         try {
             cntr=new Controller("127.0.0.1", "1099", "EmailServer");
         } catch (RemoteException ex) {
@@ -48,8 +50,12 @@ public class Window extends javax.swing.JFrame {
                 logger.info("Trying to login user: " + usr + " with password: " + pass);
                 logger.info("++++++++++++++++++++++++++++++++");
                 this.setEnabled(true);
-                jDialog1.dispose();
+                loginDialog.dispose();
                 load();
+            }
+            else
+            {
+                jLabel12.setText("No user found!");
             }
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
@@ -65,7 +71,7 @@ public class Window extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDialog1 = new javax.swing.JDialog();
+        loginDialog = new javax.swing.JDialog();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -73,7 +79,9 @@ public class Window extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jDialog2 = new javax.swing.JDialog();
+        jButton9 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        emailDialog = new javax.swing.JDialog();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -101,17 +109,20 @@ public class Window extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
 
-        jDialog1.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        jDialog1.setTitle("Login");
-        jDialog1.setAlwaysOnTop(true);
-        jDialog1.setResizable(false);
-        jDialog1.setSize(new java.awt.Dimension(305, 194));
-        jDialog1.addWindowListener(new java.awt.event.WindowAdapter() {
+        loginDialog.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        loginDialog.setTitle("Login");
+        loginDialog.setAlwaysOnTop(true);
+        loginDialog.setResizable(false);
+        loginDialog.setSize(new java.awt.Dimension(305, 194));
+        loginDialog.addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
-                jDialog1WindowClosing(evt);
+                loginDialogWindowClosing(evt);
             }
         });
 
+        jPanel3.setMaximumSize(new java.awt.Dimension(305, 290));
+        jPanel3.setMinimumSize(new java.awt.Dimension(305, 290));
+        jPanel3.setPreferredSize(new java.awt.Dimension(305, 290));
         jPanel3.addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentHidden(java.awt.event.ComponentEvent evt) {
                 jPanel3ComponentHidden(evt);
@@ -122,11 +133,14 @@ public class Window extends javax.swing.JFrame {
 
         jLabel2.setText("Password");
 
+        jTextField1.setMinimumSize(new java.awt.Dimension(6, 17));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
+
+        jPasswordField1.setMinimumSize(new java.awt.Dimension(6, 17));
 
         jButton4.setText("Cancel");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -141,6 +155,21 @@ public class Window extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
+        jButton5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton5KeyPressed(evt);
+            }
+        });
+
+        jButton9.setText("Sign Up");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -148,9 +177,14 @@ public class Window extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(91, 91, 91)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton5)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jButton9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                            .addComponent(jButton4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(82, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
@@ -158,20 +192,24 @@ public class Window extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jLabel2)
                         .addComponent(jLabel1))
-                    .addGap(37, 37, 37)
+                    .addGap(29, 29, 29)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPasswordField1)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(80, Short.MAX_VALUE)))
+                        .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE))
+                    .addContainerGap(81, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
+                .addGap(86, 86, 86)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
                     .addComponent(jButton5))
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(127, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
                     .addGap(10, 10, 10)
@@ -182,26 +220,28 @@ public class Window extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel2)
                         .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(169, Short.MAX_VALUE)))
+                    .addContainerGap(212, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
-        jDialog1.getContentPane().setLayout(jDialog1Layout);
-        jDialog1Layout.setHorizontalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        javax.swing.GroupLayout loginDialogLayout = new javax.swing.GroupLayout(loginDialog.getContentPane());
+        loginDialog.getContentPane().setLayout(loginDialogLayout);
+        loginDialogLayout.setHorizontalGroup(
+            loginDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loginDialogLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jDialog1Layout.setVerticalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        loginDialogLayout.setVerticalGroup(
+            loginDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jDialog2.setTitle("New Message");
-        jDialog2.setAlwaysOnTop(true);
-        jDialog2.setMinimumSize(new java.awt.Dimension(400, 340));
-        jDialog2.setResizable(false);
-        jDialog2.setSize(new java.awt.Dimension(400, 340));
-        jDialog2.getContentPane().setLayout(new java.awt.GridBagLayout());
+        emailDialog.setTitle("New Message");
+        emailDialog.setAlwaysOnTop(true);
+        emailDialog.setMinimumSize(new java.awt.Dimension(400, 340));
+        emailDialog.setResizable(false);
+        emailDialog.setSize(new java.awt.Dimension(400, 340));
+        emailDialog.getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jLabel4.setText("To:");
 
@@ -288,7 +328,7 @@ public class Window extends javax.swing.JFrame {
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        jDialog2.getContentPane().add(jPanel4, new java.awt.GridBagConstraints());
+        emailDialog.getContentPane().add(jPanel4, new java.awt.GridBagConstraints());
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inbox");
@@ -440,19 +480,8 @@ public class Window extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        jDialog2.setVisible(true);
+        emailDialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        jDialog1.dispose();
-        this.dispose();
-        exit(0);
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
@@ -464,7 +493,7 @@ public class Window extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        jDialog2.dispose();
+        emailDialog.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
@@ -472,19 +501,10 @@ public class Window extends javax.swing.JFrame {
 
     }//GEN-LAST:event_formKeyPressed
 
-    private void jPanel3ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel3ComponentHidden
-
-    }//GEN-LAST:event_jPanel3ComponentHidden
-
-    private void jDialog1WindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jDialog1WindowClosing
+    private void loginDialogWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_loginDialogWindowClosing
         // TODO add your handling code here:
         exit(0);
-    }//GEN-LAST:event_jDialog1WindowClosing
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-        login();
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_loginDialogWindowClosing
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         try {
@@ -494,7 +514,7 @@ public class Window extends javax.swing.JFrame {
             logger.info("Frontend: Send email: " + e.toString());
             logger.info("+++++++++++++++++++++++++++++++++");
             if (cntr.sendEmail(e)){
-                jDialog2.setVisible(false);
+                emailDialog.setVisible(false);
             }
 
         } catch (RemoteException ex) {
@@ -509,7 +529,7 @@ public class Window extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jDialog2.setVisible(true);
+        emailDialog.setVisible(true);
         jTextField2.setText(jLabel9.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -540,6 +560,49 @@ public class Window extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jList1ValueChanged
+
+    private void jPanel3ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel3ComponentHidden
+
+    }//GEN-LAST:event_jPanel3ComponentHidden
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        login();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        loginDialog.dispose();
+        this.dispose();
+        exit(0);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        pass=jPasswordField1.getText();
+        usr=jTextField1.getText();
+        try {
+            // TODO add your handling code here:
+            if (cntr.signUp(usr, pass)) {
+                logger.info("User created!");
+                login();
+            }
+            else{
+                jLabel12.setText("User already exists!");
+            }
+        } catch (RemoteException ex) {
+            Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5KeyPressed
+
+    
     public Email find(String query){
         if (!emails.isEmpty()) {
              for (Email email : emails) {
@@ -642,6 +705,7 @@ public class Window extends javax.swing.JFrame {
     private ArrayList<Email> emails;
     private Controller cntr;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog emailDialog;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -650,11 +714,11 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JDialog jDialog1;
-    private javax.swing.JDialog jDialog2;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -677,5 +741,6 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JDialog loginDialog;
     // End of variables declaration//GEN-END:variables
 }

@@ -25,8 +25,8 @@ public class WindowTest {
     Logger logger = LoggerFactory.getLogger(WindowTest.class);
     private ArrayList<Email> emails ;
     private int testCounter = 0;
-    private String testName = "inigo";
-    private String testPassword = "inigo";
+    private String testName = "inigo"+Math.random();
+    private String testPassword = "inigo"+Math.random();
 
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(WindowTest.class);
