@@ -19,4 +19,13 @@
 
 ### Installation
 
-->MongoDB 
+->MongoDB
+
+###Commands Maven
+0. Run clean and compile over source code: mvn clean compile
+1. Run test: mvn test
+2. Run cobertura: mvn cobertura:cobertura
+3. Run CheckStyle plugin: mvn checkstyle:checkstyle
+4. Run the JDepend plugin: mvn jdepend:generate
+5. Run the Dashboard plugin: mvn dashboard:dashboard
+6. Run doxygen: mvn doxygen:report 

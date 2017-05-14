@@ -42,14 +42,28 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
         }
     }
 
-    public boolean signUp(String user, String password) throws RemoteException {
+    @Override
+    public boolean signUp(CreateUserRoot createUserRoot) throws RemoteException {
         try {
-            return this.db.sign_up(user, password);
+            if(db.sign_in_as_root(createUserRoot.getUserRoot(),createUserRoot.getPassRoot())){
+                return this.db.sign_up(createUserRoot.getUserCreate(), createUserRoot.getPassUserCreate(),createUserRoot.isUserRightsRoot());
+            }else{
+                return false;
+            }
         } catch(Exception exception) {
             logger.debug("Server when trying to sign up. Exception: " + exception.toString());
             return false;
         }
     }
+
+//    public boolean signUp(String user, String password) throws RemoteException {
+//        try {
+//            return this.db.sign_up(user, password);
+//        } catch(Exception exception) {
+//            logger.debug("Server when trying to sign up. Exception: " + exception.toString());
+//            return false;
+//        }
+//    }
 
     public boolean sendEmail(Email email) throws RemoteException {
         try {

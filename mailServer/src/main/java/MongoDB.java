@@ -73,7 +73,7 @@ public class MongoDB {
      * @param password
      * @return if user exists -> false, else -> true
      */
-    public boolean sign_up(String user, String password){
+    public boolean sign_up(String user, String password, Boolean rootRights){
         BasicDBObject fichero = new BasicDBObject();
         fichero.put("_id", user);
         if(this.dbPasswordCollection.findOne(fichero) != null){
@@ -82,6 +82,7 @@ public class MongoDB {
             BasicDBObject ficheroIntroducir = new BasicDBObject();
             ficheroIntroducir.put("_id", user);
             ficheroIntroducir.put("password", password);
+            ficheroIntroducir.put("rootRights", rootRights);
             this.dbPasswordCollection.insert(ficheroIntroducir);
             db.getCollection(user);
             return true;
@@ -98,6 +99,20 @@ public class MongoDB {
         BasicDBObject document = new BasicDBObject();
         document.put("_id", user);
         document.put("password", password);
+        return this.dbPasswordCollection.findOne(document) != null;
+    }
+
+    /**
+     *
+     * @param user
+     * @param password
+     * @return if user & password & rootRights OK then true, else false
+     */
+    public boolean sign_in_as_root(String user, String password){
+        BasicDBObject document = new BasicDBObject();
+        document.put("_id", user);
+        document.put("password", password);
+        document.put("rootRights", true);
         return this.dbPasswordCollection.findOne(document) != null;
     }
 

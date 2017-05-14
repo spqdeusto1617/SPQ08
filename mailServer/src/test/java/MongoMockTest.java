@@ -46,22 +46,22 @@ public class MongoMockTest {
         logger.info("Starting testRegisterUserCorrectly() ");
         logger.info("Introduce new user");
 //        when( this.db.sign_up("user","user")).thenReturn( true );
-        assertEquals( this.db.sign_up("user","user"),true );
+        assertEquals( this.db.sign_up("user","user",false),true );
         logger.info("User already in the db");
 //        verify(this.db.sign_up("user","user"));
-        assertEquals(this.db.sign_up("user","user"),false);
+        assertEquals(this.db.sign_up("user","user",false),false);
     }
 
     @Test
     public void sign_in() throws Exception {
         assertEquals(db.sign_in("usuario","usuario"), false);
-        db.sign_up("usuario","usuario");
+        db.sign_up("usuario","usuario",false);
         assertEquals(db.sign_in("usuario","usuario"),true);
     }
 
     @Test
     public void save_emails_AND_getEmails() throws Exception {
-        db.sign_up("inigo","inigo");
+        db.sign_up("inigo","inigo",false);
         int emails = db.getEmails("inigo").size();
         Email m = new Email("inigo","inigo","mensaje test","mensaje test");
         db.save_emails(m);
@@ -83,7 +83,7 @@ public class MongoMockTest {
 
     @Test
     public void getEmails() throws Exception {
-        db.sign_up("inigo","inigo");
+        db.sign_up("inigo","inigo",false);
         int emails = db.getEmails("inigo").size();
         Email m = new Email("inigo","inigo","mensaje test","mensaje test");
         db.save_emails(m);
@@ -93,7 +93,7 @@ public class MongoMockTest {
 
     @org.junit.Test
     public void delete_message() throws Exception {
-        db.sign_up("inigo","inigo");
+        db.sign_up("inigo","inigo",false);
         int emails = db.getEmails("inigo").size();
         Email m = new Email("inigo2","inigo","mensaje test","mensaje test");
         Email m2 = new Email("inigo3","inigo","mensaje test","mensaje test");

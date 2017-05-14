@@ -159,6 +159,27 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>2.7</version>
+                <configuration>
+                    <check>
+                        <haltOnFailure>false</haltOnFailure>
+                    </check>
+
+                    <instrumentation>
+                        <!-- This line is for skipping set/get and constructor trivial methods.
+                            The coverage is higher -->
+                        <ignoreTrivial>true</ignoreTrivial>
+                        <excludes>
+                            <exclude>Delete.class</exclude>
+                            <exclude>Email.class</exclude>
+                            <exclude>Window.class</exclude>
+                            <exclude>CreateUserRoot.class</exclude>
+                            <!--<exclude>Server.class</exclude>-->
+
+                            <!-- This lines is for excluding from the instrumentation and the
+                                coverage calculations all the classes from server down <exclude>es/deusto/server/**/*</exclude> -->
+                        </excludes>
+                    </instrumentation>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
