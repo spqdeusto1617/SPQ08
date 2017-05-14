@@ -53,7 +53,12 @@ fabric.properties
 mailServer/target/
 User_Windows/target/
 
+<<<<<<< HEAD
 mailServer/src/test/resources/log4.log.1
 User_Windows/test/resources/log4.log
 User_windows/log/
 **/log4.log
+=======
+
+**/*.log
+>>>>>>> c5a6c037e68b8b1965b51a9e9c21480f9fa13d3a
