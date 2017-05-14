@@ -48,13 +48,13 @@ public class MySQL_mock_test {
     @Test
     public void testLogin_AND_getUser(){
         logger.info("test login and get user");
-        when( dao.getUser("fav") ).thenReturn( null );
-        User u = new User("fav", "fav",40,40);
+        when( dao.getUser("fav12390") ).thenReturn( null );
+        User u = new User("fav12390", "fav",40,40);
         db.storeUser(u);
         ArgumentCaptor<User> userCaptor = ArgumentCaptor.forClass( User.class );
         verify (dao).storeUser(userCaptor.capture());
         User u1 = userCaptor.getValue();
         logger.info("Registering mock new user: " + u1.getUsername());
-        assertEquals( "fav", u1.getUsername());
+        assertEquals( "fav12390", u1.getUsername());
     }
 }

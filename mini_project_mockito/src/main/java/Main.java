@@ -14,6 +14,6 @@ public class Main {
         mySQL.storeUser(b);
         mySQL.deleteUser(a);
         System.out.println(mySQL.getUser(b.getUsername()).toString());
-        System.out.println(mySQL.getUser(a.getUsername()).toString());
+        //System.out.println(mySQL.getUser(a.getUsername()).toString());
     }
 }

@@ -1387,3 +1387,221 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cann
 04-05-17_19:16:36 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class
 04-05-17_19:16:36 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/Main.class
 04-05-17_19:16:37 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-maven-plugin/5.0.2/datanucleus-maven-plugin-5.0.2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-artifact/3.0.4/maven-artifact-3.0.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-plugin-api/3.0.4/maven-plugin-api-3.0.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.3.0/sisu-inject-plexus-2.3.0.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guava/0.9.9/sisu-guava-0.9.9.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/mockito/mockito-core/2.7.21/mockito-core-2.7.21.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/ow2/asm/asm/5.2/asm-5.2.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-simple/1.6.4/slf4j-simple-1.6.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar
+06-05-17_12:52:51 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/inventorydb?useSSL=false
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=sd
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/IMySQL.class
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/DB.class
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/MySQL.class
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class
+06-05-17_12:52:53 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/Main.class
+06-05-17_12:52:54 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-maven-plugin/5.0.2/datanucleus-maven-plugin-5.0.2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-artifact/3.0.4/maven-artifact-3.0.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-plugin-api/3.0.4/maven-plugin-api-3.0.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.3.0/sisu-inject-plexus-2.3.0.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guava/0.9.9/sisu-guava-0.9.9.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/mockito/mockito-core/2.7.21/mockito-core-2.7.21.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/ow2/asm/asm/5.2/asm-5.2.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-simple/1.6.4/slf4j-simple-1.6.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar
+06-05-17_13:36:13 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/inventorydb?useSSL=false
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=sd
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/IMySQL.class
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/DB.class
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/MySQL.class
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/Main.class
+06-05-17_13:36:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+09-05-17_11:05:39 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
+09-05-17_11:05:39 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "/home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class" con definicion enhanced
+09-05-17_11:05:39 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : entities.User
+09-05-17_11:05:39 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 1 clases. Tiempos : input=261 ms, enhance=191 ms, total=452 ms. Compruebe el LOG para los detalles
+09-05-17_11:05:56 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
+09-05-17_11:05:56 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "/home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class" con definicion enhanced
+09-05-17_11:05:56 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : entities.User
+09-05-17_11:05:56 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 1 clases. Tiempos : input=211 ms, enhance=182 ms, total=393 ms. Compruebe el LOG para los detalles
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-maven-plugin/5.0.2/datanucleus-maven-plugin-5.0.2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-artifact/3.0.4/maven-artifact-3.0.4.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-plugin-api/3.0.4/maven-plugin-api-3.0.4.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.3.0/sisu-inject-plexus-2.3.0.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guava/0.9.9/sisu-guava-0.9.9.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/mockito/mockito-core/2.7.21/mockito-core-2.7.21.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/ow2/asm/asm/5.2/asm-5.2.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-simple/1.6.4/slf4j-simple-1.6.4.jar
+09-05-17_11:06:03 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar
+09-05-17_11:06:04 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/inventorydb?useSSL=false
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=sd
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/IMySQL.class
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/DB.class
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/MySQL.class
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class
+09-05-17_11:06:06 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/Main.class
+09-05-17_11:06:07 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-maven-plugin/5.0.2/datanucleus-maven-plugin-5.0.2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-artifact/3.0.4/maven-artifact-3.0.4.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-plugin-api/3.0.4/maven-plugin-api-3.0.4.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.3.0/sisu-inject-plexus-2.3.0.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/sonatype/sisu/sisu-guava/0.9.9/sisu-guava-0.9.9.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/datanucleus/javax.jdo/3.2.0-m6/javax.jdo-3.2.0-m6.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/mockito/mockito-core/2.7.21/mockito-core-2.7.21.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/ow2/asm/asm/5.2/asm-5.2.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-log4j12/1.6.4/slf4j-log4j12-1.6.4.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-simple/1.6.4/slf4j-simple-1.6.4.jar
+09-05-17_11:06:13 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar
+09-05-17_11:06:14 (main) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autocreateall desconocida - vamos a ignorarla
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Propiedades para persistencia
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autocreateall=true
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.autostartmechanism=None
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionurl=jdbc:mysql://localhost/inventorydb?useSSL=false
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.connectionusername=sd
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.detachalloncommit=true
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.mapping=mysql
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.rdbms.checkexisttablesorviews=true
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.readonlydatastore=false
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatecolumns=true
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreateconstraints=true
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  datanucleus.schema.autocreatetables=true
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/IMySQL.class
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/DB.class
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/db/MySQL.class
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/entities/User.class
+09-05-17_11:06:16 (main) INFO  [DataNucleus.SchemaTool] - >>  /home/inigo/workspace/Java/Internet_Communication/SPQ08/mini_project_mockito/target/classes/Main.class
+09-05-17_11:06:17 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+09-05-17_11:06:24 (Main.main()) INFO  [DataNucleus.Persistence] - Propiedad datanucleus.autoCreateAll desconocida - vamos a ignorarla
+09-05-17_11:06:26 (Main.main()) INFO  [DataNucleus.Datastore.Retrieve] - ¡Objeto con el id "a" no existe!
+09-05-17_11:06:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
+09-05-17_11:06:36 (main) INFO  [DataNucleus.Enhancer] - La clase "entities.User" esta enhanced.
+09-05-17_11:06:36 (main) INFO  [DataNucleus.Enhancer] - ENHANCED (Persistable) : entities.User
+09-05-17_11:06:36 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 1 clases. Tiempos : input=228 ms, enhance=51 ms, total=279 ms. Compruebe el LOG para los detalles
