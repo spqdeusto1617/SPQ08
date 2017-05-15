@@ -1,7 +1,10 @@
+
+import java.io.Serializable;
+
 /**
  * Created by inigo on 14/05/17.
  */
-public class CreateUserRoot {
+public class CreateUserRoot implements Serializable{
     private String userRoot;
     private String passRoot;
     private String userCreate;
