@@ -460,8 +460,10 @@ public class Window extends javax.swing.JFrame {
                     .addComponent(jButton11)))
         );
 
+        signUp.setAlwaysOnTop(true);
         signUp.setMaximumSize(new java.awt.Dimension(400, 300));
         signUp.setMinimumSize(new java.awt.Dimension(400, 300));
+        signUp.setResizable(false);
 
         jButton12.setText("Save");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
