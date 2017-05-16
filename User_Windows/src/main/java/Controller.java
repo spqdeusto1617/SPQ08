@@ -14,7 +14,6 @@ public class Controller implements RMIInterface {
         rsl = new RMIServiceLocator();
         rsl.setService(ip, port, serviceName);
     }
-
     public String helloTo(String name) throws RemoteException {
         return rsl.getService().helloTo(name);
     }
