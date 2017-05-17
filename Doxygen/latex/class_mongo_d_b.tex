@@ -1,0 +1,115 @@
+\hypertarget{class_mongo_d_b}{}\section{Mongo\+DB Class Reference}
+\label{class_mongo_d_b}\index{Mongo\+DB@{Mongo\+DB}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_a5e60a5605d070637ce60a3dc4e67138a}\label{class_mongo_d_b_a5e60a5605d070637ce60a3dc4e67138a}} 
+String {\bfseries get\+Database\+Name} ()
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_a86a8fe83d594dc26f709b9e048c79fe6}\label{class_mongo_d_b_a86a8fe83d594dc26f709b9e048c79fe6}} 
+String {\bfseries get\+Database\+Password} ()
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_adf1dfa43d61be69c1673bb8ddfeb210e}\label{class_mongo_d_b_adf1dfa43d61be69c1673bb8ddfeb210e}} 
+String {\bfseries get\+User\+Collection} ()
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_a70007164c403cb52ac8e87b0137aa27e}\label{class_mongo_d_b_a70007164c403cb52ac8e87b0137aa27e}} 
+DB {\bfseries get\+Db} ()
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_afa9b1ff69f975af22fdff7860c600c8e}\label{class_mongo_d_b_afa9b1ff69f975af22fdff7860c600c8e}} 
+void {\bfseries set\+Db} (DB db)
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_aa46409219a8b26d1b0a229e464be7258}\label{class_mongo_d_b_aa46409219a8b26d1b0a229e464be7258}} 
+D\+B\+Collection {\bfseries get\+Db\+Password\+Collection} ()
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_a54e2ada48adc6b47a40d5092113b2369}\label{class_mongo_d_b_a54e2ada48adc6b47a40d5092113b2369}} 
+void {\bfseries set\+Db\+Password\+Collection} (D\+B\+Collection db\+Password\+Collection)
+\item 
+boolean \hyperlink{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}{sign\+\_\+up} (String user, String password, Boolean root\+Rights)
+\item 
+boolean \hyperlink{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}{sign\+\_\+in} (String user, String password)
+\item 
+boolean \hyperlink{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}{sign\+\_\+in\+\_\+as\+\_\+root} (String user, String password)
+\item 
+void \hyperlink{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}{save\+\_\+emails} (\hyperlink{class_email}{Email} email)  throws Exception 
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}\label{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}} 
+Array\+List$<$ \hyperlink{class_email}{Email} $>$ {\bfseries get\+Emails} (String user)
+\item 
+\mbox{\Hypertarget{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}\label{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}} 
+boolean {\bfseries delete\+\_\+message} (\hyperlink{class_delete}{Delete} del)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by inigo on 30/03/17. \href{http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/}{\tt http\+://www.\+mkyong.\+com/mongodb/java-\/mongodb-\/hello-\/world-\/example/} \href{http://howtodoinjava.com/nosql/mongodb/java-mongodb-insert-documents-in-collection-examples/}{\tt http\+://howtodoinjava.\+com/nosql/mongodb/java-\/mongodb-\/insert-\/documents-\/in-\/collection-\/examples/} Crear 1 collección por usuario -\/$>$ los documentos serán los correos 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}\label{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}} 
+\index{Mongo\+DB@{Mongo\+DB}!save\+\_\+emails@{save\+\_\+emails}}
+\index{save\+\_\+emails@{save\+\_\+emails}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{save\+\_\+emails()}{save\_emails()}}
+{\footnotesize\ttfamily void Mongo\+D\+B.\+save\+\_\+emails (\begin{DoxyParamCaption}\item[{\hyperlink{class_email}{Email}}]{email }\end{DoxyParamCaption}) throws Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If target doesn\textquotesingle{}t exist, throws an exception \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}\label{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}} 
+\index{Mongo\+DB@{Mongo\+DB}!sign\+\_\+in@{sign\+\_\+in}}
+\index{sign\+\_\+in@{sign\+\_\+in}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{sign\+\_\+in()}{sign\_in()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+in (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user \& password OK then true, else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}\label{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}} 
+\index{Mongo\+DB@{Mongo\+DB}!sign\+\_\+in\+\_\+as\+\_\+root@{sign\+\_\+in\+\_\+as\+\_\+root}}
+\index{sign\+\_\+in\+\_\+as\+\_\+root@{sign\+\_\+in\+\_\+as\+\_\+root}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{sign\+\_\+in\+\_\+as\+\_\+root()}{sign\_in\_as\_root()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+in\+\_\+as\+\_\+root (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user \& password \& root\+Rights OK then true, else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}\label{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}} 
+\index{Mongo\+DB@{Mongo\+DB}!sign\+\_\+up@{sign\+\_\+up}}
+\index{sign\+\_\+up@{sign\+\_\+up}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{sign\+\_\+up()}{sign\_up()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+up (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{Boolean}]{root\+Rights }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user exists -\/$>$ false, else -\/$>$ true 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/julenherrera/\+Net\+Beans\+Projects/\+S\+P\+Q08/mail\+Server/src/main/java/Mongo\+D\+B.\+java\end{DoxyCompactItemize}

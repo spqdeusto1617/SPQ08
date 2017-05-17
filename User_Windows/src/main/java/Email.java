@@ -43,6 +43,7 @@ public class Email implements Serializable{
     }
 
     @Override
+    /**email content to string*/
     public String toString() {
         return "Email{" +
                 "source='" + source + '\'' +
