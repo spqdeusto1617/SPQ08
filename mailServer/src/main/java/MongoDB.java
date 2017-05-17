@@ -13,9 +13,7 @@ import org.slf4j.LoggerFactory;
  * Created by inigo on 30/03/17.
  * http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/
  * http://howtodoinjava.com/nosql/mongodb/java-mongodb-insert-documents-in-collection-examples/
- */
-/*
-Crear 1 collección por usuario -> los documentos serán los correos
+ *Crear 1 collección por usuario -> los documentos serán los correos
  */
 public class MongoDB {
 

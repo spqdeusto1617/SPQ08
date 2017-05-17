@@ -5,6 +5,15 @@ import java.io.Serializable;
  * Created by inigo on 14/05/17.
  */
 public class CreateUserRoot implements Serializable{
+    
+    /**
+     * @param userRoot
+     * @param passRoot
+     * @param userCreate
+     * @param passUserCreate
+     * @param userRightsRoot
+     */
+    
     private String userRoot;
     private String passRoot;
     private String userCreate;

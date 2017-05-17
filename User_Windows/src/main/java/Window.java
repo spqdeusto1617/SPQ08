@@ -15,6 +15,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import org.slf4j.LoggerFactory;
+import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -24,8 +29,10 @@ public class Window extends javax.swing.JFrame {
 
     static String pass,usr;
     org.slf4j.Logger logger = LoggerFactory.getLogger(Window.class);
+    
     /**
      * Creates new form Window
+     * Connection to the server
      */
     public Window() {
         initComponents();
@@ -38,7 +45,9 @@ public class Window extends javax.swing.JFrame {
         }
     }
     
+    /**login gets user and password from the db a verify*/
     public void login() {
+        
         pass=jPasswordField1.getText();
         usr=jTextField1.getText();
       
@@ -116,8 +125,6 @@ public class Window extends javax.swing.JFrame {
         jPasswordField5 = new javax.swing.JPasswordField();
         jLabel26 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
-        imgDialog = new javax.swing.JDialog();
-        jFileChooser1 = new javax.swing.JFileChooser();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
@@ -272,7 +279,6 @@ public class Window extends javax.swing.JFrame {
         emailDialog.setAlwaysOnTop(true);
         emailDialog.setMinimumSize(new java.awt.Dimension(400, 340));
         emailDialog.setResizable(false);
-        emailDialog.setSize(new java.awt.Dimension(400, 340));
         emailDialog.getContentPane().setLayout(new java.awt.GridBagLayout());
 
         jLabel4.setText("To:");
@@ -363,13 +369,15 @@ public class Window extends javax.swing.JFrame {
         emailDialog.getContentPane().add(jPanel4, new java.awt.GridBagConstraints());
 
         userDialog.setAlwaysOnTop(true);
-        userDialog.setMaximumSize(new java.awt.Dimension(403, 210));
         userDialog.setMinimumSize(new java.awt.Dimension(403, 210));
-        userDialog.setPreferredSize(new java.awt.Dimension(403, 210));
         userDialog.setResizable(false);
-        userDialog.setSize(new java.awt.Dimension(403, 210));
 
         jButton10.setText("Save");
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
 
         jButton11.setText("Exit");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -469,7 +477,6 @@ public class Window extends javax.swing.JFrame {
         );
 
         signUp.setAlwaysOnTop(true);
-        signUp.setMaximumSize(new java.awt.Dimension(400, 300));
         signUp.setMinimumSize(new java.awt.Dimension(400, 300));
         signUp.setResizable(false);
 
@@ -564,39 +571,9 @@ public class Window extends javax.swing.JFrame {
                 .addGap(102, 102, 102))
         );
 
-        imgDialog.setAlwaysOnTop(true);
-        imgDialog.setMaximumSize(new java.awt.Dimension(623, 430));
-        imgDialog.setMinimumSize(new java.awt.Dimension(623, 430));
-        imgDialog.setResizable(false);
-
-        jFileChooser1.setDialogTitle("Choose new image");
-        jFileChooser1.setFileHidingEnabled(false);
-        jFileChooser1.setMaximumSize(new java.awt.Dimension(623, 430));
-        jFileChooser1.setMinimumSize(new java.awt.Dimension(623, 430));
-        jFileChooser1.setPreferredSize(new java.awt.Dimension(623, 430));
-        jFileChooser1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFileChooser1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout imgDialogLayout = new javax.swing.GroupLayout(imgDialog.getContentPane());
-        imgDialog.getContentPane().setLayout(imgDialogLayout);
-        imgDialogLayout.setHorizontalGroup(
-            imgDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jFileChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        imgDialogLayout.setVerticalGroup(
-            imgDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, imgDialogLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jFileChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inbox");
         setMinimumSize(new java.awt.Dimension(717, 698));
-        setSize(new java.awt.Dimension(717, 698));
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -811,8 +788,9 @@ public class Window extends javax.swing.JFrame {
         // TODO add your handling code here:
         exit(0);
     }//GEN-LAST:event_loginDialogWindowClosing
-
+    /**jButton7 event send email*/
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        
         try {
             // TODO add your handling code here:
             Email e=new Email(usr,jTextField2.getText(),jTextField3.getText(),jTextArea1.getText());
@@ -831,14 +809,14 @@ public class Window extends javax.swing.JFrame {
     private void jPanel3ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel3ComponentHidden
 
     }//GEN-LAST:event_jPanel3ComponentHidden
-
+    /**loginDialog login button (jButton4) event*/
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
+        
         login();
     }//GEN-LAST:event_jButton5ActionPerformed
-
+    /**loginDialog cancel button (jButton4) event*/
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        
         loginDialog.dispose();
         this.dispose();
         exit(0);
@@ -847,8 +825,9 @@ public class Window extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
+    /**loginDialog signup button (jButton9) event*/
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        
         loginDialog.setVisible(false);
         signUp.setVisible(true);
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -856,14 +835,14 @@ public class Window extends javax.swing.JFrame {
     private void jButton5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton5KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5KeyPressed
-
+    /**userDialog exit button (jButton11) event*/
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
+        
        userDialog.dispose();
     }//GEN-LAST:event_jButton11ActionPerformed
-
+    /**open userDialog*/
     private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
-        // TODO add your handling code here:
+        
         userDialog.setVisible(true);
         jLabel20.setText(usr);
     }//GEN-LAST:event_jLabel15MouseClicked
@@ -871,9 +850,9 @@ public class Window extends javax.swing.JFrame {
     private void jList2ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList2ValueChanged
         // TODO add your handling code here:
     }//GEN-LAST:event_jList2ValueChanged
-
+    /**shows email list*/
     private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
-        // TODO add your handling code here:.
+        
         if (!jList1.isSelectionEmpty()) {
             cEmail=find(jList1.getSelectedValue());
             if (cEmail!=null) {
@@ -886,9 +865,9 @@ public class Window extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jList1ValueChanged
-
+    /**delete button*/
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
+        
         delete(cEmail);
         refresh();
         jLabel9.setText("");
@@ -898,14 +877,15 @@ public class Window extends javax.swing.JFrame {
         jButton1.setEnabled(false);
         jButton8.setEnabled(false);
     }//GEN-LAST:event_jButton8ActionPerformed
-
+    /**open emailDialog*/
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        
         emailDialog.setVisible(true);
         jTextField2.setText(jLabel9.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    /**refresh email inbox*/
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        /**refresh email inbox*/
         refresh();
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -945,12 +925,25 @@ public class Window extends javax.swing.JFrame {
 
     private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
         // TODO add your handling code here:
-        imgDialog.setVisible(true);
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Images", "jpg", "png", "gif", "bmp"));
+        fileChooser.setAcceptAllFileFilterUsed(true);
+        fileChooser.setSize(500, 200);
+        fileChooser.setVisible(true);
+        int result = fileChooser.showOpenDialog(this);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+        }
     }//GEN-LAST:event_jLabel21MouseClicked
 
-    private void jFileChooser1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFileChooser1ActionPerformed
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFileChooser1ActionPerformed
+        
+        /**Guardar imagen y/o nueva contraseña*/
+    }//GEN-LAST:event_jButton10MouseClicked
 
     
     public Email find(String query){
@@ -963,6 +956,8 @@ public class Window extends javax.swing.JFrame {
         }       
         return null;
     }
+    
+    /**delete emails*/
     public boolean delete(Email email){
          Delete delete = new Delete(email.target, email.source, email.time);
         try {
@@ -975,6 +970,7 @@ public class Window extends javax.swing.JFrame {
     public void setModel(){
         jList1.setModel(listModel);   
     }
+    /**load emails*/
     public void load(){
         setModel();
            try {
@@ -993,6 +989,7 @@ public class Window extends javax.swing.JFrame {
         }
             
     }
+    /**refresh email inbox*/
     public void refresh(){
         //jList1.clearSelection();
         emails.clear();
@@ -1042,7 +1039,7 @@ public class Window extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
 
-        /* Create and display the form */
+        /** Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Window mens=new Window();
@@ -1056,7 +1053,6 @@ public class Window extends javax.swing.JFrame {
     private Controller cntr;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog emailDialog;
-    private javax.swing.JDialog imgDialog;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -1071,7 +1067,6 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
