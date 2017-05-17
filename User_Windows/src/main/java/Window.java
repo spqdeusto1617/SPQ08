@@ -7,6 +7,8 @@
 
 
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import static java.lang.System.exit;
 
 import java.rmi.RemoteException;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
+import javax.swing.Timer;
 import org.slf4j.LoggerFactory;
 
 /**
@@ -33,11 +36,19 @@ public class Window extends javax.swing.JFrame {
         loginDialog.setVisible(true);
         try {
             cntr=new Controller("127.0.0.1", "1099", "EmailServer");
+            
         } catch (RemoteException ex) {
             Logger.getLogger(Window.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
+     
+    Timer timer = new Timer (15000, new ActionListener () 
+{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            refresh();
+        }
+    });
     public void login() {
         pass=jPasswordField1.getText();
         usr=jTextField1.getText();
@@ -121,7 +132,6 @@ public class Window extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -363,9 +373,7 @@ public class Window extends javax.swing.JFrame {
         emailDialog.getContentPane().add(jPanel4, new java.awt.GridBagConstraints());
 
         userDialog.setAlwaysOnTop(true);
-        userDialog.setMaximumSize(new java.awt.Dimension(403, 210));
         userDialog.setMinimumSize(new java.awt.Dimension(403, 210));
-        userDialog.setPreferredSize(new java.awt.Dimension(403, 210));
         userDialog.setResizable(false);
         userDialog.setSize(new java.awt.Dimension(403, 210));
 
@@ -469,7 +477,6 @@ public class Window extends javax.swing.JFrame {
         );
 
         signUp.setAlwaysOnTop(true);
-        signUp.setMaximumSize(new java.awt.Dimension(400, 300));
         signUp.setMinimumSize(new java.awt.Dimension(400, 300));
         signUp.setResizable(false);
 
@@ -565,7 +572,6 @@ public class Window extends javax.swing.JFrame {
         );
 
         imgDialog.setAlwaysOnTop(true);
-        imgDialog.setMaximumSize(new java.awt.Dimension(623, 430));
         imgDialog.setMinimumSize(new java.awt.Dimension(623, 430));
         imgDialog.setResizable(false);
 
@@ -595,27 +601,26 @@ public class Window extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inbox");
-        setMinimumSize(new java.awt.Dimension(717, 698));
-        setSize(new java.awt.Dimension(717, 698));
+        setMaximumSize(new java.awt.Dimension(800, 700));
+        setMinimumSize(new java.awt.Dimension(800, 700));
+        setPreferredSize(new java.awt.Dimension(800, 700));
+        setResizable(false);
+        setSize(new java.awt.Dimension(700, 698));
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
             }
         });
 
+        jPanel1.setMaximumSize(new java.awt.Dimension(800, 700));
+        jPanel1.setMinimumSize(new java.awt.Dimension(800, 700));
+        jPanel1.setPreferredSize(new java.awt.Dimension(800, 700));
+
         jButton2.setText("New");
         jButton2.setToolTipText("Create new email");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("Refresh");
-        jButton3.setToolTipText("Refresh the inbox");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
             }
         });
 
@@ -643,9 +648,7 @@ public class Window extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addGap(67, 67, 67)
+                .addGap(144, 144, 144)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton8)
@@ -655,14 +658,20 @@ public class Window extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(jButton2)
-                .addComponent(jButton3)
                 .addComponent(jButton1)
                 .addComponent(jButton8))
         );
 
+        jScrollPane1.setMaximumSize(new java.awt.Dimension(164, 603));
+        jScrollPane1.setMinimumSize(new java.awt.Dimension(164, 603));
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(164, 603));
+
         jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
+        jTextArea2.setMaximumSize(new java.awt.Dimension(164, 500));
+        jTextArea2.setMinimumSize(new java.awt.Dimension(164, 500));
+        jTextArea2.setPreferredSize(new java.awt.Dimension(164, 500));
         jScrollPane1.setViewportView(jTextArea2);
 
         jLabel3.setText("Sender:");
@@ -670,6 +679,10 @@ public class Window extends javax.swing.JFrame {
         jLabel5.setText("Topic:");
 
         jLabel8.setText("Date:");
+
+        jTabbedPane1.setMaximumSize(new java.awt.Dimension(263, 735));
+        jTabbedPane1.setMinimumSize(new java.awt.Dimension(263, 735));
+        jTabbedPane1.setPreferredSize(new java.awt.Dimension(263, 735));
 
         jList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
@@ -733,7 +746,6 @@ public class Window extends javax.swing.JFrame {
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 621, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -747,8 +759,10 @@ public class Window extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel11)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel11)
+                        .addGap(0, 425, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -771,19 +785,20 @@ public class Window extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 614, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTabbedPane1)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 603, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -905,10 +920,6 @@ public class Window extends javax.swing.JFrame {
         jTextField2.setText(jLabel9.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        refresh();
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         emailDialog.setVisible(true);
@@ -991,7 +1002,7 @@ public class Window extends javax.swing.JFrame {
         for (Email object : emails) {
             listModel.addElement(object.source+" : "+object.header+" : "+object.time);
         }
-            
+        timer.start();    
     }
     public void refresh(){
         //jList1.clearSelection();
@@ -1025,7 +1036,7 @@ public class Window extends javax.swing.JFrame {
 
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -1050,6 +1061,8 @@ public class Window extends javax.swing.JFrame {
             }
         });
     }
+  
+    
     DefaultListModel<String> listModel = new DefaultListModel<>();
     private Email cEmail;
     private ArrayList<Email> emails;
@@ -1063,7 +1076,6 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
