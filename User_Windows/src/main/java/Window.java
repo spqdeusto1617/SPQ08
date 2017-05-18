@@ -7,7 +7,6 @@
 
 
 
-import com.mongodb.BasicDBObject;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static java.lang.System.exit;
@@ -19,11 +18,6 @@ import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.Timer;
 import org.slf4j.LoggerFactory;
-import java.io.File;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.filechooser.FileFilter;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
