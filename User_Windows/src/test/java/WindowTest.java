@@ -46,7 +46,7 @@ public class WindowTest {
     public void signUpTest() throws RemoteException {
         boolean success = false;
         logger.info("Test 1 - Starting registerNewUserTest ");
-        CreateUserRoot user2 = new CreateUserRoot("gotzon", "gotzon", "usuarioPrueba", "usuarioPrueba", false);
+        CreateUserRoot user2 = new CreateUserRoot("gotzon", "gotzon", testName+"1", testName+"1", false);
         success = remote.signUp(user2);
         logger.info("Value of success variable: " + success);
         assertTrue( success);
@@ -57,7 +57,6 @@ public class WindowTest {
     public void loginTest() throws RemoteException {
         boolean success = false;
         logger.info("Test 2 - Starting loginTest ");
-        remote.signUp(testName + "1", testPassword);
         success = remote.signIn(testName + "1", testPassword);
         logger.info("Value of success variable: " + success);
         assertTrue(success);

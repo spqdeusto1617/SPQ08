@@ -71,17 +71,20 @@ public class PerformanceTest {
     @Required(max = 1000, average = 500)
     public void testSignUp() throws Exception {
         logger.info("Starting SignUp PerformanceTest", iterationSignUpTest++);
-
-        remote.signUp(user1Name, passwordUser1);
+        CreateUserRoot user2 = new CreateUserRoot("gotzon", "gotzon", user1Name, user1Name, false);
+        remote.signUp(user2);
         user1LoggedIn = remote.signIn(user1Name, passwordUser1);
         assertTrue(user1LoggedIn);
-        remote.signUp(user2Name, passwordUser2);
+        CreateUserRoot user3 = new CreateUserRoot("gotzon", "gotzon", user2Name, user2Name, false);
+        remote.signUp(user3);
         user2LoggedIn = remote.signIn(user2Name, passwordUser2);
         assertTrue(user2LoggedIn);
-        remote.signUp(user3Name, passwordUser3);
+        CreateUserRoot user4 = new CreateUserRoot("gotzon", "gotzon", user3Name, user3Name, false);
+        remote.signUp(user4);
         user3LoggedIn = remote.signIn(user3Name, passwordUser3);
         assertTrue(user3LoggedIn);
-        remote.signUp(user4Name, passwordUser4);
+        CreateUserRoot user5 = new CreateUserRoot("gotzon", "gotzon", user4Name, user4Name, false);
+        remote.signUp(user5);
         user4LoggedIn = remote.signIn(user4Name, passwordUser4);
         assertTrue(user4LoggedIn);
 
