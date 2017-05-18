@@ -6,5 +6,6 @@ var class_controller =
     [ "helloTo", "class_controller.html#a32989980c784fc933af56f981d208ca1", null ],
     [ "sendEmail", "class_controller.html#a5f9217d932e5189ac91b54bde4136964", null ],
     [ "signIn", "class_controller.html#a8de8d716dde3d96111ef13686c91b10f", null ],
-    [ "signUp", "class_controller.html#aa4680640bce9264c99dd4cc928d31384", null ]
+    [ "signUp", "class_controller.html#aa4680640bce9264c99dd4cc928d31384", null ],
+    [ "updatePassword", "class_controller.html#a45750f5a0867b3a9512681f6e4ddeff9", null ]
 ];

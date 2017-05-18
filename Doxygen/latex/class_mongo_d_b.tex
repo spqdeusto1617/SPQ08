@@ -26,6 +26,8 @@ void {\bfseries set\+Db\+Password\+Collection} (D\+B\+Collection db\+Password\+C
 \item 
 boolean \hyperlink{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}{sign\+\_\+up} (String user, String password, Boolean root\+Rights)
 \item 
+boolean \hyperlink{class_mongo_d_b_a3dcc0c59c2074af772c4dc23411b7d6a}{update\+Password} (String usr, String old\+Pass, String pass)
+\item 
 boolean \hyperlink{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}{sign\+\_\+in} (String user, String password)
 \item 
 boolean \hyperlink{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}{sign\+\_\+in\+\_\+as\+\_\+root} (String user, String password)
@@ -107,6 +109,24 @@ if user \& password \& root\+Rights OK then true, else false
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 if user exists -\/$>$ false, else -\/$>$ true 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_a3dcc0c59c2074af772c4dc23411b7d6a}\label{class_mongo_d_b_a3dcc0c59c2074af772c4dc23411b7d6a}} 
+\index{Mongo\+DB@{Mongo\+DB}!update\+Password@{update\+Password}}
+\index{update\+Password@{update\+Password}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{update\+Password()}{updatePassword()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+update\+Password (\begin{DoxyParamCaption}\item[{String}]{usr,  }\item[{String}]{old\+Pass,  }\item[{String}]{pass }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em pass} & \\
+\hline
+{\em old\+Pass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user exists does not exist -\/$>$ false, else -\/$>$ true and change password if user and pass OK then change password 
 \end{DoxyReturn}
 
 
