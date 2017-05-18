@@ -41,6 +41,17 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
             return false;
         }
     }
+    public boolean updatePassword(String user, String oldPass, String pass) throws RemoteException {
+        try {
+            logger.info("=================================");
+            logger.info("Change : " + user + " old password: " + oldPass + " new password" + pass);
+            logger.info("=================================");
+            return this.db.updatePassword(user, oldPass, pass);
+        } catch(Exception exception) {
+            logger.debug("Server when trying to update password. Exception: " + exception.toString());
+            return false;
+        }
+    }
 
     @Override
     public boolean signUp(CreateUserRoot createUserRoot) throws RemoteException {
@@ -99,4 +110,5 @@ public class Server extends UnicastRemoteObject implements RMIInterface {
         }
 
     }
+
 }

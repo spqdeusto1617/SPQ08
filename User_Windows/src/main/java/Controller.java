@@ -27,6 +27,11 @@ public class Controller implements RMIInterface {
         logger.info("Sign in user: " + user + " with passord: " + password);
         return rsl.getService().signIn(user, password);
     }
+    
+    public boolean updatePassword(String user, String oldPass, String pass) throws RemoteException {
+        logger.info("Change : " + user + " old password: " + oldPass + " new password" + pass);
+        return rsl.getService().updatePassword(user, oldPass, pass);
+    }
 
     public boolean signUp(CreateUserRoot createUserRoot) throws RemoteException {
         logger.info("createUserRoot = " + createUserRoot);

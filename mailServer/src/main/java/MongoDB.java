@@ -86,6 +86,38 @@ public class MongoDB {
             return true;
         }
     }
+    
+    /**
+
+     *
+     * @param user
+     * @param pass
+     * @param oldPass
+     * @return if user exists does not exist -> false, else -> true and change password
+     */
+    public boolean updatePassword(String usr, String oldPass, String pass){
+        BasicDBObject fichero = new BasicDBObject();
+        fichero.put("_id", usr);
+        if(this.dbPasswordCollection.findOne(fichero) == null){
+            return false;
+        } else {
+            BasicDBObject ficheroIntroducir = new BasicDBObject();
+            ficheroIntroducir.put("_id", usr);
+            ficheroIntroducir.put("password", pass);
+            BasicDBObject searchQuery = new BasicDBObject().append("_id", usr);
+            BasicDBObject comprobar = new BasicDBObject();
+            comprobar.put("_id", usr);
+            comprobar.put("password", oldPass);
+            if(this.dbPasswordCollection.findOne(comprobar) != null){
+                
+                this.dbPasswordCollection.update(searchQuery, ficheroIntroducir);
+            }
+            else{
+                return false;
+            }
+            return true;
+        }
+    }
 
     /**
      *
@@ -99,7 +131,8 @@ public class MongoDB {
         document.put("password", password);
         return this.dbPasswordCollection.findOne(document) != null;
     }
-
+    
+    
     /**
      *
      * @param user
