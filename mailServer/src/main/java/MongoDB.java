@@ -64,11 +64,12 @@ public class MongoDB {
         this.dbPasswordCollection = dbPasswordCollection;
     }
 
-    /**
 
-     *
-     * @param user
+    /**
+     * Sign up  introduces the user in the system
+     * @param user string that resembles the username of that new user
      * @param password
+     * @param rootRights
      * @return if user exists -> false, else -> true
      */
     public boolean sign_up(String user, String password, Boolean rootRights){
@@ -89,26 +90,26 @@ public class MongoDB {
     
     /**
 
-     *
+     * Changes the password
      * @param user
      * @param pass
      * @param oldPass
      * @return if user exists does not exist -> false, else -> true and change password
      * if user and pass OK then change password
      */
-    public boolean updatePassword(String usr, String oldPass, String pass){
+    public boolean updatePassword(String user, String oldPass, String pass){
         BasicDBObject fichero = new BasicDBObject();
-        fichero.put("_id", usr);
+        fichero.put("_id", user);
         
         if(this.dbPasswordCollection.findOne(fichero) == null){
             return false;
         } else {
             BasicDBObject ficheroIntroducir = new BasicDBObject();
-            ficheroIntroducir.put("_id", usr);
+            ficheroIntroducir.put("_id", user);
             ficheroIntroducir.put("password", pass);
-            BasicDBObject searchQuery = new BasicDBObject().append("_id", usr);
+            BasicDBObject searchQuery = new BasicDBObject().append("_id", user);
             BasicDBObject comprobar = new BasicDBObject();
-            comprobar.put("_id", usr);
+            comprobar.put("_id", user);
             comprobar.put("password", oldPass);
             if(this.dbPasswordCollection.findOne(comprobar) != null){
                 
@@ -122,7 +123,7 @@ public class MongoDB {
     }
 
     /**
-     *
+     * Check if the user + password exist in the system
      * @param user
      * @param password
      * @return if user & password OK then true, else false
@@ -136,7 +137,7 @@ public class MongoDB {
     
     
     /**
-     *
+     *Check if the user + password exist in the system  + check is it is an admin
      * @param user
      * @param password
      * @return if user & password & rootRights OK then true, else false
@@ -150,7 +151,7 @@ public class MongoDB {
     }
 
     /**
-     *
+     *Introduce the message in the system
      * @param email
      * @throws Exception If target doesn't exist, throws an exception
      */
@@ -171,6 +172,11 @@ public class MongoDB {
         }
     }
 
+    /**
+     * Get all the emails from an user
+     * @param user
+     * @return
+     */
     public ArrayList<Email> getEmails(String user){
         DBCollection usuario = this.db.getCollection(user);
         BasicDBObject sortby = new BasicDBObject();
@@ -189,6 +195,11 @@ public class MongoDB {
         return listaCorreo;
     }
 
+    /**
+     * Delete the message from the system 
+     * @param del
+     * @return
+     */
     public boolean delete_message(Delete del){
         DBCollection table = db.getCollection(del.getUser());
         BasicDBObject searchQuery = new BasicDBObject();

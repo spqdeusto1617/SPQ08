@@ -1,0 +1,209 @@
+\hypertarget{class_mongo_d_b}{}\section{Mongo\+DB Class Reference}
+\label{class_mongo_d_b}\index{Mongo\+DB@{Mongo\+DB}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_mongo_d_b_a5e60a5605d070637ce60a3dc4e67138a}{get\+Database\+Name} ()
+\item 
+String \hyperlink{class_mongo_d_b_a86a8fe83d594dc26f709b9e048c79fe6}{get\+Database\+Password} ()
+\item 
+String \hyperlink{class_mongo_d_b_adf1dfa43d61be69c1673bb8ddfeb210e}{get\+User\+Collection} ()
+\item 
+\hyperlink{class_mongo_d_b_a7170cf8463b15fad9f4b8d9373b16201}{Mongo\+DB} ()
+\item 
+DB \hyperlink{class_mongo_d_b_a70007164c403cb52ac8e87b0137aa27e}{get\+Db} ()
+\item 
+void \hyperlink{class_mongo_d_b_afa9b1ff69f975af22fdff7860c600c8e}{set\+Db} (DB db)
+\item 
+D\+B\+Collection \hyperlink{class_mongo_d_b_aa46409219a8b26d1b0a229e464be7258}{get\+Db\+Password\+Collection} ()
+\item 
+void \hyperlink{class_mongo_d_b_a54e2ada48adc6b47a40d5092113b2369}{set\+Db\+Password\+Collection} (D\+B\+Collection db\+Password\+Collection)
+\item 
+boolean \hyperlink{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}{sign\+\_\+up} (String user, String password, Boolean root\+Rights)
+\item 
+boolean \hyperlink{class_mongo_d_b_a43b2b812eb5b88c87d2c3e2b100ae74b}{update\+Password} (String user, String old\+Pass, String pass)
+\item 
+boolean \hyperlink{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}{sign\+\_\+in} (String user, String password)
+\item 
+boolean \hyperlink{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}{sign\+\_\+in\+\_\+as\+\_\+root} (String user, String password)
+\item 
+void \hyperlink{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}{save\+\_\+emails} (\hyperlink{class_email}{Email} email)  throws Exception 
+\item 
+Array\+List$<$ \hyperlink{class_email}{Email} $>$ \hyperlink{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}{get\+Emails} (String user)
+\item 
+boolean \hyperlink{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}{delete\+\_\+message} (\hyperlink{class_delete}{Delete} del)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by inigo on 30/03/17. \href{http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/}{\tt http\+://www.\+mkyong.\+com/mongodb/java-\/mongodb-\/hello-\/world-\/example/} \href{http://howtodoinjava.com/nosql/mongodb/java-mongodb-insert-documents-in-collection-examples/}{\tt http\+://howtodoinjava.\+com/nosql/mongodb/java-\/mongodb-\/insert-\/documents-\/in-\/collection-\/examples/} Crear 1 collección por usuario -\/$>$ los documentos serán los correos 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mongo_d_b_a7170cf8463b15fad9f4b8d9373b16201}\label{class_mongo_d_b_a7170cf8463b15fad9f4b8d9373b16201}} 
+\index{Mongo\+DB@{Mongo\+DB}!Mongo\+DB@{Mongo\+DB}}
+\index{Mongo\+DB@{Mongo\+DB}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{Mongo\+D\+B()}{MongoDB()}}
+{\footnotesize\ttfamily Mongo\+D\+B.\+Mongo\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}\label{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}} 
+\index{Mongo\+DB@{Mongo\+DB}!delete\+\_\+message@{delete\+\_\+message}}
+\index{delete\+\_\+message@{delete\+\_\+message}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{delete\+\_\+message()}{delete\_message()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+delete\+\_\+message (\begin{DoxyParamCaption}\item[{\hyperlink{class_delete}{Delete}}]{del }\end{DoxyParamCaption})}
+
+\hyperlink{class_delete}{Delete} the message from the system 
+\begin{DoxyParams}{Parameters}
+{\em del} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_a5e60a5605d070637ce60a3dc4e67138a}\label{class_mongo_d_b_a5e60a5605d070637ce60a3dc4e67138a}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+Database\+Name@{get\+Database\+Name}}
+\index{get\+Database\+Name@{get\+Database\+Name}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+Database\+Name()}{getDatabaseName()}}
+{\footnotesize\ttfamily String Mongo\+D\+B.\+get\+Database\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_a86a8fe83d594dc26f709b9e048c79fe6}\label{class_mongo_d_b_a86a8fe83d594dc26f709b9e048c79fe6}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+Database\+Password@{get\+Database\+Password}}
+\index{get\+Database\+Password@{get\+Database\+Password}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+Database\+Password()}{getDatabasePassword()}}
+{\footnotesize\ttfamily String Mongo\+D\+B.\+get\+Database\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_a70007164c403cb52ac8e87b0137aa27e}\label{class_mongo_d_b_a70007164c403cb52ac8e87b0137aa27e}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+Db@{get\+Db}}
+\index{get\+Db@{get\+Db}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+Db()}{getDb()}}
+{\footnotesize\ttfamily DB Mongo\+D\+B.\+get\+Db (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_aa46409219a8b26d1b0a229e464be7258}\label{class_mongo_d_b_aa46409219a8b26d1b0a229e464be7258}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+Db\+Password\+Collection@{get\+Db\+Password\+Collection}}
+\index{get\+Db\+Password\+Collection@{get\+Db\+Password\+Collection}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+Db\+Password\+Collection()}{getDbPasswordCollection()}}
+{\footnotesize\ttfamily D\+B\+Collection Mongo\+D\+B.\+get\+Db\+Password\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}\label{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+Emails@{get\+Emails}}
+\index{get\+Emails@{get\+Emails}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+Emails()}{getEmails()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{class_email}{Email}$>$ Mongo\+D\+B.\+get\+Emails (\begin{DoxyParamCaption}\item[{String}]{user }\end{DoxyParamCaption})}
+
+Get all the emails from an user 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_adf1dfa43d61be69c1673bb8ddfeb210e}\label{class_mongo_d_b_adf1dfa43d61be69c1673bb8ddfeb210e}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+User\+Collection@{get\+User\+Collection}}
+\index{get\+User\+Collection@{get\+User\+Collection}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+User\+Collection()}{getUserCollection()}}
+{\footnotesize\ttfamily String Mongo\+D\+B.\+get\+User\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}\label{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}} 
+\index{Mongo\+DB@{Mongo\+DB}!save\+\_\+emails@{save\+\_\+emails}}
+\index{save\+\_\+emails@{save\+\_\+emails}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{save\+\_\+emails()}{save\_emails()}}
+{\footnotesize\ttfamily void Mongo\+D\+B.\+save\+\_\+emails (\begin{DoxyParamCaption}\item[{\hyperlink{class_email}{Email}}]{email }\end{DoxyParamCaption}) throws Exception}
+
+Introduce the message in the system 
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If target doesn\textquotesingle{}t exist, throws an exception \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_mongo_d_b_afa9b1ff69f975af22fdff7860c600c8e}\label{class_mongo_d_b_afa9b1ff69f975af22fdff7860c600c8e}} 
+\index{Mongo\+DB@{Mongo\+DB}!set\+Db@{set\+Db}}
+\index{set\+Db@{set\+Db}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{set\+Db()}{setDb()}}
+{\footnotesize\ttfamily void Mongo\+D\+B.\+set\+Db (\begin{DoxyParamCaption}\item[{DB}]{db }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_a54e2ada48adc6b47a40d5092113b2369}\label{class_mongo_d_b_a54e2ada48adc6b47a40d5092113b2369}} 
+\index{Mongo\+DB@{Mongo\+DB}!set\+Db\+Password\+Collection@{set\+Db\+Password\+Collection}}
+\index{set\+Db\+Password\+Collection@{set\+Db\+Password\+Collection}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{set\+Db\+Password\+Collection()}{setDbPasswordCollection()}}
+{\footnotesize\ttfamily void Mongo\+D\+B.\+set\+Db\+Password\+Collection (\begin{DoxyParamCaption}\item[{D\+B\+Collection}]{db\+Password\+Collection }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}\label{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}} 
+\index{Mongo\+DB@{Mongo\+DB}!sign\+\_\+in@{sign\+\_\+in}}
+\index{sign\+\_\+in@{sign\+\_\+in}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{sign\+\_\+in()}{sign\_in()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+in (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+Check if the user + password exist in the system 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user \& password OK then true, else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}\label{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}} 
+\index{Mongo\+DB@{Mongo\+DB}!sign\+\_\+in\+\_\+as\+\_\+root@{sign\+\_\+in\+\_\+as\+\_\+root}}
+\index{sign\+\_\+in\+\_\+as\+\_\+root@{sign\+\_\+in\+\_\+as\+\_\+root}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{sign\+\_\+in\+\_\+as\+\_\+root()}{sign\_in\_as\_root()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+in\+\_\+as\+\_\+root (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+Check if the user + password exist in the system + check is it is an admin 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user \& password \& root\+Rights OK then true, else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}\label{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}} 
+\index{Mongo\+DB@{Mongo\+DB}!sign\+\_\+up@{sign\+\_\+up}}
+\index{sign\+\_\+up@{sign\+\_\+up}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{sign\+\_\+up()}{sign\_up()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+up (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{Boolean}]{root\+Rights }\end{DoxyParamCaption})}
+
+Sign up introduces the user in the system 
+\begin{DoxyParams}{Parameters}
+{\em user} & string that resembles the username of that new user \\
+\hline
+{\em password} & \\
+\hline
+{\em root\+Rights} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user exists -\/$>$ false, else -\/$>$ true 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_a43b2b812eb5b88c87d2c3e2b100ae74b}\label{class_mongo_d_b_a43b2b812eb5b88c87d2c3e2b100ae74b}} 
+\index{Mongo\+DB@{Mongo\+DB}!update\+Password@{update\+Password}}
+\index{update\+Password@{update\+Password}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{update\+Password()}{updatePassword()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+update\+Password (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{old\+Pass,  }\item[{String}]{pass }\end{DoxyParamCaption})}
+
+Changes the password 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em pass} & \\
+\hline
+{\em old\+Pass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user exists does not exist -\/$>$ false, else -\/$>$ true and change password if user and pass OK then change password 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/ud/temp/\+S\+P\+Q08/mail\+Server/src/main/java/\hyperlink{_mongo_d_b_8java}{Mongo\+D\+B.\+java}\end{DoxyCompactItemize}
