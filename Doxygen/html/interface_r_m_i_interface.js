@@ -11,5 +11,7 @@ var interface_r_m_i_interface =
     [ "signIn", "interface_r_m_i_interface.html#a826db0ba8f0814985cfa911ef76a68cc", null ],
     [ "signIn", "interface_r_m_i_interface.html#a826db0ba8f0814985cfa911ef76a68cc", null ],
     [ "signUp", "interface_r_m_i_interface.html#a39fbf15bb1115837ce6025aaa47784bb", null ],
-    [ "signUp", "interface_r_m_i_interface.html#a39fbf15bb1115837ce6025aaa47784bb", null ]
+    [ "signUp", "interface_r_m_i_interface.html#a39fbf15bb1115837ce6025aaa47784bb", null ],
+    [ "updatePassword", "interface_r_m_i_interface.html#a643b5963469fbc121032c7d75c01c7b9", null ],
+    [ "updatePassword", "interface_r_m_i_interface.html#a643b5963469fbc121032c7d75c01c7b9", null ]
 ];

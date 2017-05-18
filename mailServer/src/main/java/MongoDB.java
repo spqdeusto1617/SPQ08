@@ -94,10 +94,12 @@ public class MongoDB {
      * @param pass
      * @param oldPass
      * @return if user exists does not exist -> false, else -> true and change password
+     * if user and pass OK then change password
      */
     public boolean updatePassword(String usr, String oldPass, String pass){
         BasicDBObject fichero = new BasicDBObject();
         fichero.put("_id", usr);
+        
         if(this.dbPasswordCollection.findOne(fichero) == null){
             return false;
         } else {

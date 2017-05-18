@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window',['Window',['../class_window.html#ad0552903a3d5b009c0d882f9ad2571ff',1,'Window']]]
+  ['updatepassword',['updatePassword',['../class_mongo_d_b.html#a3dcc0c59c2074af772c4dc23411b7d6a',1,'MongoDB']]]
 ];
