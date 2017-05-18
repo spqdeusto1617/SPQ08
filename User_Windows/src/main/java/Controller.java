@@ -42,4 +42,7 @@ public class Controller implements RMIInterface {
         logger.info("Retrive emails for user: " + user);
         return rsl.getService().getEmails(user);
     }
+
+    
+
 }
