@@ -4,7 +4,9 @@ import java.io.Serializable;
 /**
  * Created by inigo on 14/05/17.
  */
+
 public class CreateUserRoot implements Serializable{
+
     private String userRoot;
     private String passRoot;
     private String userCreate;
@@ -87,6 +89,14 @@ public class CreateUserRoot implements Serializable{
         this.userRightsRoot = userRightsRoot;
     }
 
+    /**
+     *
+     * @param userRoot username of the admin
+     * @param passRoot pass of the admin
+     * @param userCreate username of the user to create
+     * @param passUserCreate pass of the user to create
+     * @param userRightsRoot rights of the user to create (admin/user)
+     */
     public CreateUserRoot(String userRoot, String passRoot, String userCreate, String passUserCreate, boolean userRightsRoot) {
 
         this.userRoot = userRoot;

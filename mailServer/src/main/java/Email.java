@@ -14,10 +14,10 @@ public class Email implements Serializable{
 
     /**
      * Use on user
-     * @param source
-     * @param target
-     * @param header
-     * @param message
+     * @param source sender
+     * @param target receiver
+     * @param header the title
+     * @param message the text
      */
     public Email(String source, String target, String header,String message){
         this.source=source;
@@ -28,11 +28,12 @@ public class Email implements Serializable{
     }
 
     /**
-     * Use on server when queried
-     * @param source
-     * @param header
-     * @param message
-     * @param time
+     *  Use on server when queried
+     * @param target receiver
+     * @param source sender
+     * @param header the title
+     * @param message the text
+     * @param time the moment
      */
     public Email(String target, String source, String header,String message, Long time){
         this.target=target;

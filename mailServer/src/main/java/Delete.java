@@ -8,6 +8,12 @@ public class Delete implements Serializable{
     private String source;
     private Long date;
 
+    /**
+     *
+     * @param user user that the account belongs to
+     * @param source who sent the message
+     * @param date moment the message was sent
+     */
     public Delete(String user, String source, Long date){
         this.user = user;
         this.source = source;
