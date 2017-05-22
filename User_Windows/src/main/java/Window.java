@@ -44,7 +44,7 @@ public class Window extends javax.swing.JFrame {
         }
     }
      
-    Timer timer = new Timer (15000, new ActionListener () 
+    Timer timer = new Timer (250, new ActionListener ()
     {
         @Override
         public void actionPerformed(ActionEvent e) {
