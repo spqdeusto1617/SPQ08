@@ -105,12 +105,24 @@ public class MongoDB {
             return false;
         } else {
             BasicDBObject ficheroIntroducir = new BasicDBObject();
+            BasicDBObject comprobar = new BasicDBObject();
             ficheroIntroducir.put("_id", user);
             ficheroIntroducir.put("password", pass);
-            BasicDBObject searchQuery = new BasicDBObject().append("_id", user);
-            BasicDBObject comprobar = new BasicDBObject();
             comprobar.put("_id", user);
             comprobar.put("password", oldPass);
+            if (sign_in_as_root(user, oldPass)) {
+                ficheroIntroducir.put("rootRights", true);
+                comprobar.put("rootRights", true);
+            }
+            else{
+                ficheroIntroducir.put("rootRights", false);
+                comprobar.put("rootRights", false);
+            }
+            
+            
+            BasicDBObject searchQuery = new BasicDBObject().append("_id", user);
+            
+            
             if(this.dbPasswordCollection.findOne(comprobar) != null){
                 
                 this.dbPasswordCollection.update(searchQuery, ficheroIntroducir);

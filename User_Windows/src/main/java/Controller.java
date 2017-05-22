@@ -24,7 +24,7 @@ public class Controller implements RMIInterface {
     }
 
     public boolean signIn(String user, String password) throws RemoteException {
-        logger.info("Sign in user: " + user + " with passord: " + password);
+        logger.info("Sign in user: " + user + " with password: " + password);
         return rsl.getService().signIn(user, password);
     }
     
