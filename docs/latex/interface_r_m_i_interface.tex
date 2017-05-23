@@ -1,0 +1,202 @@
+\hypertarget{interface_r_m_i_interface}{}\section{R\+M\+I\+Interface Interface Reference}
+\label{interface_r_m_i_interface}\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+Inheritance diagram for R\+M\+I\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_r_m_i_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_a44a3680b28462fce581d362dbc6cf1db}\label{interface_r_m_i_interface_a44a3680b28462fce581d362dbc6cf1db}} 
+String {\bfseries hello\+To} (String name)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interface_r_m_i_interface_a826db0ba8f0814985cfa911ef76a68cc}{sign\+In} (String user, String password)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interface_r_m_i_interface_a39fbf15bb1115837ce6025aaa47784bb}{sign\+Up} (\hyperlink{class_create_user_root}{Create\+User\+Root} create\+User\+Root)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interface_r_m_i_interface_ad86e01382cdb0cb8a64710a7e9102524}{send\+Email} (\hyperlink{class_email}{Email} email)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interface_r_m_i_interface_a86bc2a5cb0bdb04a1aeb9b36e373cd5e}{delete\+Email} (\hyperlink{class_delete}{Delete} delete)  throws Remote\+Exception
+\item 
+Array\+List$<$ \hyperlink{class_email}{Email} $>$ \hyperlink{interface_r_m_i_interface_ad326010c8c132dd3398a4443cf827601}{get\+Emails} (String user)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interface_r_m_i_interface_a643b5963469fbc121032c7d75c01c7b9}{update\+Password} (String user, String old\+Pass, String pass)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_a44a3680b28462fce581d362dbc6cf1db}\label{interface_r_m_i_interface_a44a3680b28462fce581d362dbc6cf1db}} 
+String {\bfseries hello\+To} (String name)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_a826db0ba8f0814985cfa911ef76a68cc}\label{interface_r_m_i_interface_a826db0ba8f0814985cfa911ef76a68cc}} 
+boolean {\bfseries sign\+In} (String user, String password)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_a39fbf15bb1115837ce6025aaa47784bb}\label{interface_r_m_i_interface_a39fbf15bb1115837ce6025aaa47784bb}} 
+boolean {\bfseries sign\+Up} (\hyperlink{class_create_user_root}{Create\+User\+Root} create\+User\+Root)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_ad86e01382cdb0cb8a64710a7e9102524}\label{interface_r_m_i_interface_ad86e01382cdb0cb8a64710a7e9102524}} 
+boolean {\bfseries send\+Email} (\hyperlink{class_email}{Email} email)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_a86bc2a5cb0bdb04a1aeb9b36e373cd5e}\label{interface_r_m_i_interface_a86bc2a5cb0bdb04a1aeb9b36e373cd5e}} 
+boolean {\bfseries delete\+Email} (\hyperlink{class_delete}{Delete} delete)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_ad326010c8c132dd3398a4443cf827601}\label{interface_r_m_i_interface_ad326010c8c132dd3398a4443cf827601}} 
+Array\+List$<$ \hyperlink{class_email}{Email} $>$ {\bfseries get\+Emails} (String user)  throws Remote\+Exception
+\item 
+\mbox{\Hypertarget{interface_r_m_i_interface_a643b5963469fbc121032c7d75c01c7b9}\label{interface_r_m_i_interface_a643b5963469fbc121032c7d75c01c7b9}} 
+boolean {\bfseries update\+Password} (String user, String old\+Pass, String pass)  throws Remote\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_r_m_i_interface_a86bc2a5cb0bdb04a1aeb9b36e373cd5e}\label{interface_r_m_i_interface_a86bc2a5cb0bdb04a1aeb9b36e373cd5e}} 
+\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}!delete\+Email@{delete\+Email}}
+\index{delete\+Email@{delete\+Email}!R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+\subsubsection{\texorpdfstring{delete\+Email()}{deleteEmail()}}
+{\footnotesize\ttfamily boolean R\+M\+I\+Interface.\+delete\+Email (\begin{DoxyParamCaption}\item[{\hyperlink{class_delete}{Delete}}]{delete }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+\hyperlink{class_delete}{Delete} the message from the system 
+\begin{DoxyParams}{Parameters}
+{\em delete} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_server_ad679fc8c7704690482684e42cc15c740}{Server}, and \hyperlink{class_controller_ab681529b51d028c04978b1856f481809}{Controller}.
+
+\mbox{\Hypertarget{interface_r_m_i_interface_ad326010c8c132dd3398a4443cf827601}\label{interface_r_m_i_interface_ad326010c8c132dd3398a4443cf827601}} 
+\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}!get\+Emails@{get\+Emails}}
+\index{get\+Emails@{get\+Emails}!R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+\subsubsection{\texorpdfstring{get\+Emails()}{getEmails()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{class_email}{Email}$>$ R\+M\+I\+Interface.\+get\+Emails (\begin{DoxyParamCaption}\item[{String}]{user }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+Get all the emails from an user 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_server_a348f49650335ef5341a4d960d6adac2e}{Server}, and \hyperlink{class_controller_ab019b3e68c16d6be3c3e9a33ca11ba8f}{Controller}.
+
+\mbox{\Hypertarget{interface_r_m_i_interface_ad86e01382cdb0cb8a64710a7e9102524}\label{interface_r_m_i_interface_ad86e01382cdb0cb8a64710a7e9102524}} 
+\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}!send\+Email@{send\+Email}}
+\index{send\+Email@{send\+Email}!R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+\subsubsection{\texorpdfstring{send\+Email()}{sendEmail()}}
+{\footnotesize\ttfamily boolean R\+M\+I\+Interface.\+send\+Email (\begin{DoxyParamCaption}\item[{\hyperlink{class_email}{Email}}]{email }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+Introduce the message in the system 
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_server_a4c26769f2867086519a196bc92502af6}{Server}, and \hyperlink{class_controller_a5f9217d932e5189ac91b54bde4136964}{Controller}.
+
+\mbox{\Hypertarget{interface_r_m_i_interface_a826db0ba8f0814985cfa911ef76a68cc}\label{interface_r_m_i_interface_a826db0ba8f0814985cfa911ef76a68cc}} 
+\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}!sign\+In@{sign\+In}}
+\index{sign\+In@{sign\+In}!R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+\subsubsection{\texorpdfstring{sign\+In()}{signIn()}}
+{\footnotesize\ttfamily boolean R\+M\+I\+Interface.\+sign\+In (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+Check if the user + password exist in the system 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if user \& password OK then true, else false
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_server_a817e1af39aeac07664ce011c44013e55}{Server}, and \hyperlink{class_controller_a8de8d716dde3d96111ef13686c91b10f}{Controller}.
+
+\mbox{\Hypertarget{interface_r_m_i_interface_a39fbf15bb1115837ce6025aaa47784bb}\label{interface_r_m_i_interface_a39fbf15bb1115837ce6025aaa47784bb}} 
+\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}!sign\+Up@{sign\+Up}}
+\index{sign\+Up@{sign\+Up}!R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+\subsubsection{\texorpdfstring{sign\+Up()}{signUp()}}
+{\footnotesize\ttfamily boolean R\+M\+I\+Interface.\+sign\+Up (\begin{DoxyParamCaption}\item[{\hyperlink{class_create_user_root}{Create\+User\+Root}}]{create\+User\+Root }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+Checks if the admin is correct and introduces the user in the system 
+\begin{DoxyParams}{Parameters}
+{\em create\+User\+Root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_server_a9e4fcd4cc8bfb0484735adfcf38be657}{Server}, and \hyperlink{class_controller_aa4680640bce9264c99dd4cc928d31384}{Controller}.
+
+\mbox{\Hypertarget{interface_r_m_i_interface_a643b5963469fbc121032c7d75c01c7b9}\label{interface_r_m_i_interface_a643b5963469fbc121032c7d75c01c7b9}} 
+\index{R\+M\+I\+Interface@{R\+M\+I\+Interface}!update\+Password@{update\+Password}}
+\index{update\+Password@{update\+Password}!R\+M\+I\+Interface@{R\+M\+I\+Interface}}
+\subsubsection{\texorpdfstring{update\+Password()}{updatePassword()}}
+{\footnotesize\ttfamily boolean R\+M\+I\+Interface.\+update\+Password (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{old\+Pass,  }\item[{String}]{pass }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+Update the user password from the DB 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em old\+Pass} & \\
+\hline
+{\em pass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_server_a729c6728075152e3550160273869e992}{Server}, and \hyperlink{class_controller_a45750f5a0867b3a9512681f6e4ddeff9}{Controller}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/julenherrera/\+Net\+Beans\+Projects/\+S\+P\+Q08/mail\+Server/src/main/java/R\+M\+I\+Interface.\+java\end{DoxyCompactItemize}
