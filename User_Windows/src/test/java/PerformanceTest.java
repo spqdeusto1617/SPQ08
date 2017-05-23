@@ -23,6 +23,8 @@ import java.util.logging.Level;
 @Required(max = 1200, average = 250)
 public class PerformanceTest {
     private boolean user1LoggedIn = true;
+    private boolean user1LoggedIn2 = true;
+    private boolean user1LoggedIn3 = true;
 
     private String user1Name = "John";
     private String passwordUser1 = "123456";
@@ -64,23 +66,13 @@ int i=0;
         logger.info("Starting SignUp PerformanceTest", iterationSignUpTest++);
         CreateUserRoot user2 = new CreateUserRoot("gotzon", "gotzon", user1Name+i, user1Name+i, false);
         user1LoggedIn = remote.signUp(user2);
+        user1LoggedIn2 = remote.updatePassword(user1Name+i, user1Name+i, user1Name+2);
         logger.info(Boolean.toString(user1LoggedIn));
-        user1LoggedIn = remote.signIn(user1Name+i, user1Name+i);
+        user1LoggedIn3 = remote.signIn(user1Name+i, user1Name+2);
         assertTrue(user1LoggedIn);
+        assertTrue(user1LoggedIn2);
+        assertTrue(user1LoggedIn3);
         i++;
-       /* CreateUserRoot user3 = new CreateUserRoot("gotzon", "gotzon", user2Name, user2Name, false);
-        user2LoggedIn = remote.signUp(user3);
-        //user2LoggedIn = remote.signIn(user2Name, passwordUser2);
-       // assertTrue(user2LoggedIn);
-        CreateUserRoot user4 = new CreateUserRoot("gotzon", "gotzon", user3Name, user3Name, false);
-        user3LoggedIn = remote.signUp(user4);
-        //user3LoggedIn = remote.signIn(user3Name, passwordUser3);
-       // assertTrue(user3LoggedIn);
-        CreateUserRoot user5 = new CreateUserRoot("gotzon", "gotzon", user4Name, user4Name, false);
-        user4LoggedIn = remote.signUp(user5);
-        //user4LoggedIn = remote.signIn(user4Name, passwordUser4);
-       // assertTrue(user4LoggedIn);
-*/
         Thread.sleep(200);
 
         logger.debug("Finishing SignUp PerformanceTest");

@@ -25,7 +25,8 @@ public class WindowTest {
     Logger logger = LoggerFactory.getLogger(WindowTest.class);
     private ArrayList<Email> emails ;
     private int testCounter = 0;
-    final private String testName = "usuarioPrueba";
+    String testName = "usuarioPrueba";
+    String testName2 = "usuarioPrueba2";
 
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(WindowTest.class);
@@ -45,18 +46,28 @@ public class WindowTest {
     public void signUpTest() throws RemoteException {
         boolean success = false;
         logger.info("Test 1 - Starting registerNewUserTest ");
-        CreateUserRoot user2 = new CreateUserRoot("inigo", "inigo", testName, testName, false);
+        CreateUserRoot user2 = new CreateUserRoot("gotzon", "gotzon", testName, testName, false);
         success = remote.signUp(user2);
         logger.info("Value of success variable: " + success);
         assertTrue( success);
         logger.info("Test 1 - Finish registerNewUserTest");
     }
+    
+    @Test
+    public void passChangeTest() throws RemoteException {
+        boolean success = false;
+        logger.info("Test 9 - Starting change password ");
+        success=remote.updatePassword(testName,testName,testName2);
+        logger.info("Value of success variable: " + success);
+        assertTrue( success);
+        logger.info("Test 9 - Finish change password");
+    }
 
     @Test
     public void loginTest() throws RemoteException {
-        boolean success = true;
+        boolean success = false;
         logger.info("Test 2 - Starting loginTest ");
-        //success = remote.signIn(testName , testName);
+        success = remote.signIn("gotzon", "gotzon");
         logger.info("Value of success variable: " + success);
         assertTrue(success);
         logger.info("Test 2 - Finishing loginTest");
@@ -118,13 +129,13 @@ public class WindowTest {
     }
     @Test
     public void emailClassTest() {
-        logger.info("Test 6 - Starting emailClassTest ");
+        logger.info("Test 8 - Starting emailClassTest ");
         Email email = new Email("gotzon", "inigo", "test", "test", Long.MIN_VALUE);
         assertEquals(email.target, "gotzon");
         assertEquals(email.source, "inigo");
         assertEquals(email.header, "test");
         assertEquals(email.message, "test");
-        logger.info("Test 6 - Finishing emailClassTest ");
+        logger.info("Test 8 - Finishing emailClassTest ");
 
     }
 }
