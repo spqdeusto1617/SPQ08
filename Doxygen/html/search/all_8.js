@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['spq08',['SPQ08',['../md___users_julenherrera__net_beans_projects__s_p_q08__r_e_a_d_m_e.html',1,'']]],
-  ['save_5femails',['save_emails',['../class_mongo_d_b.html#a2e376b333a71c82b5dd8e054d538e7f4',1,'MongoDB']]],
-  ['server',['Server',['../class_server.html',1,'']]],
-  ['sign_5fin',['sign_in',['../class_mongo_d_b.html#a672df0039a1fcd302bd399089bb7fe28',1,'MongoDB']]],
-  ['sign_5fin_5fas_5froot',['sign_in_as_root',['../class_mongo_d_b.html#afa13d12f56548fcf6c5ca12ec66bc73c',1,'MongoDB']]],
-  ['sign_5fup',['sign_up',['../class_mongo_d_b.html#a9c69be7c091bffc9d1950e118fdb2251',1,'MongoDB']]]
+  ['refresh',['refresh',['../class_window.html#ae0c2bf00a564beb8f03ee2ae97a4feb5',1,'Window']]],
+  ['rmiinterface',['RMIInterface',['../interface_r_m_i_interface.html',1,'']]],
+  ['rmiservicelocator',['RMIServiceLocator',['../class_r_m_i_service_locator.html',1,'']]]
 ];

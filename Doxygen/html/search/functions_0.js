@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['delete',['Delete',['../class_delete.html#acb6bc707d28650bdeb2283f87630e0b6',1,'Delete.Delete()'],['../class_window.html#a483632edb0590ebb925da330fd422e2f',1,'Window.delete()']]]
+  ['createuserroot',['CreateUserRoot',['../class_create_user_root.html#a089337f6faedcd6f4850ac9bf60c7d85',1,'CreateUserRoot.CreateUserRoot(String userRoot, String passRoot, String userCreate, String passUserCreate, boolean userRightsRoot)'],['../class_create_user_root.html#a089337f6faedcd6f4850ac9bf60c7d85',1,'CreateUserRoot.CreateUserRoot(String userRoot, String passRoot, String userCreate, String passUserCreate, boolean userRightsRoot)']]]
 ];

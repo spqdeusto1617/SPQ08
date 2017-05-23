@@ -14,5 +14,5 @@ var class_mongo_d_b =
     [ "sign_in", "class_mongo_d_b.html#a672df0039a1fcd302bd399089bb7fe28", null ],
     [ "sign_in_as_root", "class_mongo_d_b.html#afa13d12f56548fcf6c5ca12ec66bc73c", null ],
     [ "sign_up", "class_mongo_d_b.html#a9c69be7c091bffc9d1950e118fdb2251", null ],
-    [ "updatePassword", "class_mongo_d_b.html#a3dcc0c59c2074af772c4dc23411b7d6a", null ]
+    [ "updatePassword", "class_mongo_d_b.html#a43b2b812eb5b88c87d2c3e2b100ae74b", null ]
 ];

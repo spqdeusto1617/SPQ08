@@ -26,7 +26,7 @@ void {\bfseries set\+Db\+Password\+Collection} (D\+B\+Collection db\+Password\+C
 \item 
 boolean \hyperlink{class_mongo_d_b_a9c69be7c091bffc9d1950e118fdb2251}{sign\+\_\+up} (String user, String password, Boolean root\+Rights)
 \item 
-boolean \hyperlink{class_mongo_d_b_a3dcc0c59c2074af772c4dc23411b7d6a}{update\+Password} (String usr, String old\+Pass, String pass)
+boolean \hyperlink{class_mongo_d_b_a43b2b812eb5b88c87d2c3e2b100ae74b}{update\+Password} (String user, String old\+Pass, String pass)
 \item 
 boolean \hyperlink{class_mongo_d_b_a672df0039a1fcd302bd399089bb7fe28}{sign\+\_\+in} (String user, String password)
 \item 
@@ -34,11 +34,9 @@ boolean \hyperlink{class_mongo_d_b_afa13d12f56548fcf6c5ca12ec66bc73c}{sign\+\_\+
 \item 
 void \hyperlink{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}{save\+\_\+emails} (\hyperlink{class_email}{Email} email)  throws Exception 
 \item 
-\mbox{\Hypertarget{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}\label{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}} 
-Array\+List$<$ \hyperlink{class_email}{Email} $>$ {\bfseries get\+Emails} (String user)
+Array\+List$<$ \hyperlink{class_email}{Email} $>$ \hyperlink{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}{get\+Emails} (String user)
 \item 
-\mbox{\Hypertarget{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}\label{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}} 
-boolean {\bfseries delete\+\_\+message} (\hyperlink{class_delete}{Delete} del)
+boolean \hyperlink{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}{delete\+\_\+message} (\hyperlink{class_delete}{Delete} del)
 \end{DoxyCompactItemize}
 
 
@@ -46,13 +44,41 @@ boolean {\bfseries delete\+\_\+message} (\hyperlink{class_delete}{Delete} del)
 Created by inigo on 30/03/17. \href{http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/}{\tt http\+://www.\+mkyong.\+com/mongodb/java-\/mongodb-\/hello-\/world-\/example/} \href{http://howtodoinjava.com/nosql/mongodb/java-mongodb-insert-documents-in-collection-examples/}{\tt http\+://howtodoinjava.\+com/nosql/mongodb/java-\/mongodb-\/insert-\/documents-\/in-\/collection-\/examples/} Crear 1 collección por usuario -\/$>$ los documentos serán los correos 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}\label{class_mongo_d_b_a1bc531a4e919dd942edeafc749e30f81}} 
+\index{Mongo\+DB@{Mongo\+DB}!delete\+\_\+message@{delete\+\_\+message}}
+\index{delete\+\_\+message@{delete\+\_\+message}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{delete\+\_\+message()}{delete\_message()}}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+delete\+\_\+message (\begin{DoxyParamCaption}\item[{\hyperlink{class_delete}{Delete}}]{del }\end{DoxyParamCaption})}
+
+\hyperlink{class_delete}{Delete} the message from the system 
+\begin{DoxyParams}{Parameters}
+{\em del} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}\label{class_mongo_d_b_afb31e6d36e9b20ceff3f13901bfc4012}} 
+\index{Mongo\+DB@{Mongo\+DB}!get\+Emails@{get\+Emails}}
+\index{get\+Emails@{get\+Emails}!Mongo\+DB@{Mongo\+DB}}
+\subsubsection{\texorpdfstring{get\+Emails()}{getEmails()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{class_email}{Email}$>$ Mongo\+D\+B.\+get\+Emails (\begin{DoxyParamCaption}\item[{String}]{user }\end{DoxyParamCaption})}
+
+Get all the emails from an user 
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}\label{class_mongo_d_b_a2e376b333a71c82b5dd8e054d538e7f4}} 
 \index{Mongo\+DB@{Mongo\+DB}!save\+\_\+emails@{save\+\_\+emails}}
 \index{save\+\_\+emails@{save\+\_\+emails}!Mongo\+DB@{Mongo\+DB}}
 \subsubsection{\texorpdfstring{save\+\_\+emails()}{save\_emails()}}
 {\footnotesize\ttfamily void Mongo\+D\+B.\+save\+\_\+emails (\begin{DoxyParamCaption}\item[{\hyperlink{class_email}{Email}}]{email }\end{DoxyParamCaption}) throws Exception}
 
-
+Introduce the message in the system 
 \begin{DoxyParams}{Parameters}
 {\em email} & \\
 \hline
@@ -68,7 +94,7 @@ Created by inigo on 30/03/17. \href{http://www.mkyong.com/mongodb/java-mongodb-h
 \subsubsection{\texorpdfstring{sign\+\_\+in()}{sign\_in()}}
 {\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+in (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
 
-
+Check if the user + password exist in the system 
 \begin{DoxyParams}{Parameters}
 {\em user} & \\
 \hline
@@ -84,7 +110,7 @@ if user \& password OK then true, else false
 \subsubsection{\texorpdfstring{sign\+\_\+in\+\_\+as\+\_\+root()}{sign\_in\_as\_root()}}
 {\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+in\+\_\+as\+\_\+root (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
 
-
+Check if the user + password exist in the system + check is it is an admin 
 \begin{DoxyParams}{Parameters}
 {\em user} & \\
 \hline
@@ -100,23 +126,25 @@ if user \& password \& root\+Rights OK then true, else false
 \subsubsection{\texorpdfstring{sign\+\_\+up()}{sign\_up()}}
 {\footnotesize\ttfamily boolean Mongo\+D\+B.\+sign\+\_\+up (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password,  }\item[{Boolean}]{root\+Rights }\end{DoxyParamCaption})}
 
-
+Sign up introduces the user in the system 
 \begin{DoxyParams}{Parameters}
-{\em user} & \\
+{\em user} & string that resembles the username of that new user \\
 \hline
 {\em password} & \\
+\hline
+{\em root\+Rights} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 if user exists -\/$>$ false, else -\/$>$ true 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_mongo_d_b_a3dcc0c59c2074af772c4dc23411b7d6a}\label{class_mongo_d_b_a3dcc0c59c2074af772c4dc23411b7d6a}} 
+\mbox{\Hypertarget{class_mongo_d_b_a43b2b812eb5b88c87d2c3e2b100ae74b}\label{class_mongo_d_b_a43b2b812eb5b88c87d2c3e2b100ae74b}} 
 \index{Mongo\+DB@{Mongo\+DB}!update\+Password@{update\+Password}}
 \index{update\+Password@{update\+Password}!Mongo\+DB@{Mongo\+DB}}
 \subsubsection{\texorpdfstring{update\+Password()}{updatePassword()}}
-{\footnotesize\ttfamily boolean Mongo\+D\+B.\+update\+Password (\begin{DoxyParamCaption}\item[{String}]{usr,  }\item[{String}]{old\+Pass,  }\item[{String}]{pass }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily boolean Mongo\+D\+B.\+update\+Password (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{old\+Pass,  }\item[{String}]{pass }\end{DoxyParamCaption})}
 
-
+Changes the password 
 \begin{DoxyParams}{Parameters}
 {\em user} & \\
 \hline

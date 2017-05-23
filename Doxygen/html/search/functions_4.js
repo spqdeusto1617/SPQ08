@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['refresh',['refresh',['../class_window.html#ae0c2bf00a564beb8f03ee2ae97a4feb5',1,'Window']]]
+  ['load',['load',['../class_window.html#ab76a4c258774324cbd2559a912c8d89b',1,'Window']]]
 ];

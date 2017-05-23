@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tostring',['toString',['../class_email.html#ada3a942a6a2471322bf1fa6ab44e0dbd',1,'Email']]]
+  ['refresh',['refresh',['../class_window.html#ae0c2bf00a564beb8f03ee2ae97a4feb5',1,'Window']]]
 ];
