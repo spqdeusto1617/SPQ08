@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.18)  18 MAY 2017 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.18)  23 MAY 2017 11:16
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1192,373 +1192,41 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 135.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 135.
- (refman.toc
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 1.
- [1
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 41.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 41.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 67.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 67.
- [2] [3])
+ (refman.toc)
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [4]
-Package hyperref Info: Option `pageanchor' set `true' on input line 138.
-
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
-(hierarchy.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
-) [1
-
+ [1
 
 ] [2
 
 ]
-Chapter 2.
-(annotated.tex) [3] [4
+Package hyperref Info: Option `pageanchor' set `true' on input line 138.
+ (refman.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
 
-]
-Chapter 3.
-(files.tex) [5] [6
-
-]
-Chapter 4.
-(class_create_user_root.tex
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 1.
-Package epstopdf Info: Source file: <class_create_user_root.eps>
-(epstopdf)                    date: 2017-05-18 19:18:04
-(epstopdf)                    size: 3794 bytes
-(epstopdf)             Output file: <class_create_user_root-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2017-05-18 19:19:12
-(epstopdf)                    size: 2864 bytes
-(epstopdf)             Command: <epstopdf --outfile=class_create_user_root-eps-
-converted-to.pdf class_create_user_root.eps>
-(epstopdf)             \includegraphics on input line 6.
-Package epstopdf Info: Output file is already uptodate.
-
-<class_create_user_root-eps-converted-to.pdf, id=592, 501.875pt x 368.37625pt>
-File: class_create_user_root-eps-converted-to.pdf Graphic file (type pdf)
-
-<use class_create_user_root-eps-converted-to.pdf>
-Package pdftex.def Info: class_create_user_root-eps-converted-to.pdf used on in
-put line 6.
-(pdftex.def)             Requested size: 77.52179pt x 56.9055pt.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 9.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 9.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 12.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1phv.fd"
-File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 49.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 50.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 50.
- [7 <./class_create_user_root-eps-converted-to.pdf>] [8]) (class_delete.tex
-Package epstopdf Info: Source file: <class_delete.eps>
-(epstopdf)                    date: 2017-05-18 19:18:04
-(epstopdf)                    size: 3778 bytes
-(epstopdf)             Output file: <class_delete-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-18 19:19:15
-(epstopdf)                    size: 2799 bytes
-(epstopdf)             Command: <epstopdf --outfile=class_delete-eps-converted-
-to.pdf class_delete.eps>
-(epstopdf)             \includegraphics on input line 6.
-Package epstopdf Info: Output file is already uptodate.
-
-<class_delete-eps-converted-to.pdf, id=637, 501.875pt x 467.7475pt>
-File: class_delete-eps-converted-to.pdf Graphic file (type pdf)
-
-<use class_delete-eps-converted-to.pdf>
-Package pdftex.def Info: class_delete-eps-converted-to.pdf used on input line 6
-.
-(pdftex.def)             Requested size: 61.05711pt x 56.9055pt.
- [9] [10 <./class_delete-eps-converted-to.pdf>]) (class_email.tex
-Package epstopdf Info: Source file: <class_email.eps>
-(epstopdf)                    date: 2017-05-18 19:18:04
-(epstopdf)                    size: 3776 bytes
-(epstopdf)             Output file: <class_email-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-18 19:19:17
-(epstopdf)                    size: 2799 bytes
-(epstopdf)             Command: <epstopdf --outfile=class_email-eps-converted-t
-o.pdf class_email.eps>
-(epstopdf)             \includegraphics on input line 6.
-Package epstopdf Info: Output file is already uptodate.
-
-<class_email-eps-converted-to.pdf, id=668, 501.875pt x 467.7475pt>
-File: class_email-eps-converted-to.pdf Graphic file (type pdf)
-
-<use class_email-eps-converted-to.pdf>
-Package pdftex.def Info: class_email-eps-converted-to.pdf used on input line 6.
-
-(pdftex.def)             Requested size: 61.05711pt x 56.9055pt.
- [11]
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 7.19995pt on input line 27.
-
-
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 27.
-
-
-Overfull \vbox (32.25943pt too high) has occurred while \output is active []
-
-
-[12 <./class_email-eps-converted-to.pdf>]) (class_main.tex [13])
-(class_mongo_d_b.tex
-Overfull \hbox (41.16647pt too wide) in paragraph at lines 39--40
-\T1/phv/m/n/10 Created by inigo on 30/03/17. [][]\T1/pcr/m/n/10 http[]://www.[]
-mkyong.[]com/mongodb/java-mongodb-hello-world-example/[][]
- []
-
-
-Overfull \hbox (96.75589pt too wide) in paragraph at lines 39--40
-[][]\T1/pcr/m/n/10 http[]://howtodoinjava.[]com/nosql/mongodb/java-mongodb-inse
-rt-documents-in-collection-examples/[][]
- []
-
-[14]
-Underfull \hbox (badness 10000) detected at line 62
-[][][]
- []
-
-[15]
-Underfull \hbox (badness 10000) detected at line 100
-[][][]
- []
-
-[16]
-Underfull \hbox (badness 10000) detected at line 150
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 166
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 184
-[][][]
- []
-
-[17]
-Underfull \hbox (badness 10000) detected at line 202
-[][][]
- []
-
-) (interface_r_m_i_interface.tex
-Package epstopdf Info: Source file: <interface_r_m_i_interface.eps>
-(epstopdf)                    date: 2017-05-18 19:18:04
-(epstopdf)                    size: 3881 bytes
-(epstopdf)             Output file: <interface_r_m_i_interface-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2017-05-18 19:19:20
-(epstopdf)                    size: 2869 bytes
-(epstopdf)             Command: <epstopdf --outfile=interface_r_m_i_interface-e
-ps-converted-to.pdf interface_r_m_i_interface.eps>
-(epstopdf)             \includegraphics on input line 6.
-Package epstopdf Info: Output file is already uptodate.
-
-<interface_r_m_i_interface-eps-converted-to.pdf, id=767, 501.875pt x 655.44875p
-t>
-File: interface_r_m_i_interface-eps-converted-to.pdf Graphic file (type pdf)
- <use interface_r_m_i_interface-eps-converted-to.pdf>
-Package pdftex.def Info: interface_r_m_i_interface-eps-converted-to.pdf used on
- input line 6.
-(pdftex.def)             Requested size: 65.35324pt x 85.35826pt.
- [18 <./interface_r_m_i_interface-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) detected at line 40
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 63
-[][][]
- []
-
-[19]
-Underfull \hbox (badness 10000) detected at line 121
-[][][]
- []
-
-[20]
-Underfull \hbox (badness 10000) detected at line 147
-[][][]
- []
-
-[21]
-Underfull \hbox (badness 10000) detected at line 174
-[][][]
- []
-
-) (class_server.tex
-Package epstopdf Info: Source file: <class_server.eps>
-(epstopdf)                    date: 2017-05-18 19:18:05
-(epstopdf)                    size: 4018 bytes
-(epstopdf)             Output file: <class_server-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-05-18 19:19:23
-(epstopdf)                    size: 2930 bytes
-(epstopdf)             Command: <epstopdf --outfile=class_server-eps-converted-
-to.pdf class_server.eps>
-(epstopdf)             \includegraphics on input line 6.
-Package epstopdf Info: Output file is already uptodate.
-
-<class_server-eps-converted-to.pdf, id=839, 501.875pt x 216.81pt>
-File: class_server-eps-converted-to.pdf Graphic file (type pdf)
-
-<use class_server-eps-converted-to.pdf>
-Package pdftex.def Info: class_server-eps-converted-to.pdf used on input line 6
-.
-(pdftex.def)             Requested size: 197.59134pt x 85.35826pt.
- [22 <./class_server-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) detected at line 62
-[][][]
- []
-
-[23]
-Underfull \hbox (badness 10000) detected at line 85
-[][][]
- []
-
-[24]
-Underfull \hbox (badness 10000) detected at line 149
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 175
-[][][]
- []
-
-[25]
-Underfull \hbox (badness 10000) detected at line 202
-[][][]
- []
-
-) [26]
-Chapter 5.
-(_create_user_root_8java.tex) (_delete_8java.tex) (_email_8java.tex)
-(_main_8java.tex) (_mongo_d_b_8java.tex) (_r_m_i_interface_8java.tex)
-(_server_8java.tex [27
-
-]) [28] (refman.ind
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]Create[]
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]Delete.[
-]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]Email.[]
-java,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]Main.[]j
-ava,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]Mongo[]D
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]R[]M[]I[
-]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-[]\T1/phv/m/n/10 D[]:/ud/temp/[]S[]P[]Q08/mail[]Server/src/main/java/[]Server.[
-]
- []
-
-[29
-
-
-
-] [30])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
- (refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+(refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 0081923A497FC97BB9FFD7D3ED8FEF19;20647.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 15364 strings out of 493328
- 221681 string characters out of 3139104
- 319576 words of memory out of 3000000
- 18344 multiletter control sequences out of 15000+200000
- 62604 words of font info for 82 fonts, out of 3000000 for 9000
+ 14677 strings out of 493328
+ 207155 string characters out of 3139104
+ 298477 words of memory out of 3000000
+ 17994 multiletter control sequences out of 15000+200000
+ 21474 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,15n,92p,1205b,630s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,11n,92p,298b,355s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/uc
-rr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvro8a.pfb>
-Output written on refman.pdf (36 pages, 289834 bytes).
+KTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvr8a.pfb>
+Output written on refman.pdf (4 pages, 15227 bytes).
 PDF statistics:
- 1153 PDF objects out of 1200 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
- 810 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 29 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
